@@ -8,42 +8,14 @@
 <body>
   <header id="top">
     <div>
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136" height="136" viewBox="0 0 136 136">
-        <defs>
-          <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
-            <stop offset="0" stop-color="#002892"/>
-            <stop offset="1" stop-color="#1585d7"/>
-          </linearGradient>
-          <filter id="IMG_4082" x="0" y="0" width="126" height="126" filterUnits="userSpaceOnUse">
-            <feOffset dy="3" input="SourceAlpha"/>
-            <feGaussianBlur stdDeviation="3" result="blur"/>
-            <feFlood flood-opacity="0.161"/>
-            <feComposite operator="in" in2="blur"/>
-            <feComposite in="SourceGraphic"/>
-          </filter>
-          <filter id="IMG_4082-2" x="10" y="10" width="126" height="126" filterUnits="userSpaceOnUse">
-            <feOffset dy="3" input="SourceAlpha"/>
-            <feGaussianBlur stdDeviation="3" result="blur-2"/>
-            <feFlood flood-opacity="0.161"/>
-            <feComposite operator="in" in2="blur-2"/>
-            <feComposite in="SourceGraphic"/>
-          </filter>
-        </defs>
-        <g id="Composant_428_1" data-name="Composant 428 – 1" transform="translate(9 6)">
-          <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#IMG_4082)">
-            <rect id="IMG_4082-3" data-name="IMG_4082" width="108" height="108" rx="10" transform="translate(9 6)" fill="url(#linear-gradient)"/>
-          </g>
-          <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#IMG_4082-2)">
-            <rect id="IMG_4082-4" data-name="IMG_4082" width="108" height="108" rx="10" transform="translate(19 16)" fill="#fff"/>
-          </g>
-          <text id="C" transform="translate(64 93)" fill="#1585d7" font-size="90" font-family="Dancing Script"><tspan x="-24.03" y="0">C</tspan></text>
-        </g>
-      </svg>
+      <picture>
+        <source srcset="img/logo.png" media="(max-width:767px)">
+        <img src="img/logo@2.png" alt="Logo">
+      </picture>
       <nav>
         <ul>
           <li><a href="index.html">MY PORTFOLIO</a></li>
           <li><a href="about.html">ABOUT ME</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
     </div>
@@ -96,16 +68,16 @@
       </div> <!--CLOSES ABOUT SECTION CONTAINER-->
     </div> <!--CLOSES ABOUT BLOCK-->
   </main>
-    <footer>
-      <div> <!--OPENS FOOTER BLOCK-->
-        <div> <!--OPENS FOOTER CONTAINER-->
-          <h2>Get in touch</h2>
-          <p>
-            Do you like my work and want to discuss opportunities?
-          </p>
-          <div> <!--OPENS Contact CONTAINER-->
-            <a href="contact.html"> Contact me </a>
-          </div> <!--CLOSES CONTACT CONTAINER-->
+  <footer>
+    <div> <!--OPENS FOOTER BLOCK-->
+      <div> <!--OPENS FOOTER CONTAINER-->
+        <h2>Get in touch</h2>
+        <p>
+          Do you like my work and want to discuss opportunities? Please get in touch either via phone: <a href="tel:+33 123456789">+33 123456789</a> or via Skype: <a href="skype:firstname.name">firstname.name</a> Prefer sending an email?
+        </p>
+        <div> <!--OPENS EMAIL CONTAINER-->
+          <a href="mailto:name@gmail.com"> Email me </a>
+        </div> <!--CLOSES EMAIL CONTAINER-->
         <div> <!--OPENS SOCIAL MEDIAS CONTAINER-->
           <a href="https://www.linkedin.com/in/ccosneauampis-070619/" target="_blank">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
