@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <link href="img/favicon.ico" rel="shortcut icon">
   <title>Céline Cosneau-Ampis - UX Designer - Paris</title>
 </head>
+
 <body>
   <header>
-    <div>
+    <div class="container">
       <picture>
         <source srcset="img/logo.png" media="(max-width:767px)">
         <img src="img/logo@2x.png" alt="Logo">
@@ -20,81 +22,112 @@
         </ul>
       </nav>
     </div>
+    <!--CONTAINER CLOSED-->
   </header>
+
   <main id="top">
-    <div> <!--OPENS HERO SECTION BLOCK-->
-      <div> <!--OPENS HERO CONTAINER-->
-        <div>
+    <!--HERO-->
+    <div class="section">
+      <div class="container">
+        <div class="row">
           <h1>Hi, my name is Céline. <span> I am an aspiring UX Designer from France!</span></h1>
           <p>
             I enjoy using my empathy to understand users’ needs, and my pro-activity helps me create intuitive experiences.
           </p>
         </div>
-        <div>
+        <div class="row">
           <picture>
             <source srcset="img/me@1.jpg" media="(max-width:767px)">
             <img src="img/me@2.jpg" alt="Profile Picture">
           </picture>
         </div>
-      </div> <!--CLOSES HERO CONTAINER-->
-    </div> <!--CLOSES HERO SECTION BLOCK-->
-    <div> <!--OPENS WORK SECTION BLOCK-->
-      <div> <!--OPENS WORK SECTION CONTAINER-->
+      </div>
+      <!--HERO CONTAINER CLOSED-->
+    </div>
+    <!--HERO SECTION CLOSED-->
+
+    <!--WORK-->
+    <div class="section">
+      <div class="container">
         <h2>My latest projects</h2>
-        <div> <!--OPENS ROW FOR COLUMNS EXPERTSNOW-->
-          <div> <!--OPENS COLUMN 1 EXPERTSNOW-->
+
+        <!--EXPERTSNOW-->
+        <div class="row">
+          <div class="column">
             <picture>
               <source srcset="img/expertsnow@1.jpg" media="(max-width:767px)">
               <img src="img/expertsnow@2.jpg" alt="ExpertsNow">
             </picture>
-          </div> <!--CLOSES COLUMN 1 EXPERTSNOW-->
-          <div> <!--OPENS COLUMN 2 EXPERTSNOW-->
+          </div>
+          <div class="column">
             <h3>ExpertsNow</h3>
             <p>
               I worked on ExpertsNow, a responsive web app, during my training with CareerFoundry (2021).I was the sole UX/UI designer of this 6-month project.
             </p>
             <a href="expertsnow.html"> View ExpertsNow case study</a>
-          </div> <!--CLOSES COLUMN 2 EXPERTSNOW-->
-        </div> <!--CLOSES ROW FOR COLUMNS EXPERTSNOW-->
-        <div> <!--OPENS ROW FOR COLUMNS CELINECOSNEAUAMPIS.COM-->
-          <div> <!--OPENS COLUMN 1 CELINECOSNEAUAMPIS.COM-->
+          </div>
+        </div>
+        <!--EXPERTSNOW CLOSED-->
+
+        <!--CELINECOSNEAUAMPIS.COM-->
+        <div class="row">
+          <div class="column">
             <picture>
               <source srcset="img/celinecosneauampis.com@1.png" media="(max-width:767px)">
               <img src="img/celinecosneauampis.com@2.png" alt="Celinecosneauampis.com">
             </picture>
-          </div> <!--CLOSES COLUMN 1 CELINECOSNEAUAMPIS.COM-->
-          <div> <!--OPENS COLUMN 2 CELINECOSNEAUAMPIS.COM-->
+          </div>
+          <div>
             <h3>Celinecosneauampis.com</h3>
             <p>
               During my training with CareerFoundry, I developed my own portfolio website.I was the sole UX/UI Designer & Front-end Developer of this 3 weeks project.
             </p>
             <a href="portfolio.html#celinecosneauampis.com"> View Celinecosneauampis.com case study</a>
-          </div> <!--CLOSES COLUMN 2 CELINECOSNEAUAMPIS.COM-->
-        </div>  <!--CLOSES ROW FOR COLUMS CELINECOSNEAUAMPIS.COM-->
-      </div> <!--CLOSES WORK SECTION CONTAINER-->
-    </div> <!--CLOSES WORK SECTION BLOCK-->
+          </div>
+        </div>
+        <!--CELINECOSNEAUAMPIS.COM CLOSED-->
+
+      </div>
+      <!--WORK CONTAINER CLOSED-->
+    </div>
+    <!--WORK SECTION CLOSED-->
   </main>
+
   <footer id="contact">
-    <div> <!--OPENS FOOTER BLOCK-->
-      <div> <!--OPENS FOOTER CONTAINER-->
+    <div class="container">
+      <div class="row">
         <h2>Get in touch</h2>
         <p>
-          Do you like my work and want to discuss opportunities? Please get in touch either via phone: <a href="tel:+33 123456789">+33 123456789</a> or via Skype: <a href="skype:firstname.name">firstname.name</a> Prefer sending an email?
+          Do you like my work and want to discuss opportunities?
         </p>
-        <div> <!--OPENS EMAIL CONTAINER-->
-          <a href="mailto:name@gmail.com"> Email me </a>
-        </div> <!--CLOSES EMAIL CONTAINER-->
-        <div> <!--OPENS SOCIAL MEDIAS CONTAINER-->
+
+        <!--EMAIL-->
+        <div class="column">
+          <a href="mailto:c.cosneauampis@gmail.com"> Email me </a>
+        </div>
+        <!--EMAIL CLOSED-->
+
+        <!--SOCIAL MEDIAS-->
+        <div class="column">
           <a href="https://www.linkedin.com/in/ccosneauampis-070619/" target="_blank">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+              </path>
+            </svg>
           </a>
-        </div> <!--CLOSES SOCIAL MEDIAS CONTAINER-->
+        </div>
+        <!--SOCIAL MEDIAS CLOSED-->
+
         <a href="#top">Go back to the top</a>
         <p>
           &copy; Celine Cosneau-Ampis 2021
         </p>
-      </div> <!--CLOSES FOOTER CONTAINER-->
-    </div> <!--CLOSES FOOTER BLOCK-->
+      </div>
+      <!--ROW CLOSED-->
+    </div>
+    <!--CONTAINER CLOSED-->
   </footer>
 </body>
+
 </html>
