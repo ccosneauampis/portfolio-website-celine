@@ -16,25 +16,29 @@ body {
 h1, h2, h3, h4 {
   background-color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
-  line-height: 1.4;
 }
 h1 {
-  font-size: 2.75em;
+  font-size: 2.625em;
   font-weight: 700;
-  color: #1585D7;
+  line-height: 1.548;
+  color: #000000;
 }
 h2 {
-  font-size: 2.25em;
+  font-size: 2.063em;
   font-weight: 700;
+  line-height: 1.576;
   color: #000000;
 }
 h3 {
-  font-size: 1.75em;
+  font-size: 1.625em;
   font-weight: 400;
+  line-height: 1.615;
   color: #000000;
 }
 h4 {
-  font-size: 1.35em;
-  font-weight: 400;
+  font-size: 1.25em;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.65;
   color: #1585D7;
 }
