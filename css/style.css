@@ -42,3 +42,11 @@ h4 {
   line-height: 1.65;
   color: #1585D7;
 }
+
+img {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+}
