@@ -85,6 +85,7 @@ a:active {
   color: #234157;
 }
 
+/* Link Design Process Phases*/
 a.phase {
   font-size: 1.625em;
   font-weight: 400;
@@ -122,6 +123,7 @@ a.phase {
   color: #FFFFFF;
 }
 
+/* Button Contact*/
 .button.contact {
   background-color: transparent;
   color: #1585D7;
@@ -146,6 +148,32 @@ a.phase {
   color: #234157;
 }
 
+/* Button Resume*/
+.button.resume {
+  background-color: transparent;
+  color: #1585D7;
+  text-transform: capitalize;
+  border: 2px solid #1585D7;
+  text-align: center;
+}
+
+.button.resume:hover,
+.button.resume:focus {
+  background-color: #1585D7;
+  opacity: 0.8;
+  color: #FFFFFF;
+}
+
+.button.resume:visited {
+  background-color: transparent;
+  color: #1585D7;
+}
+
+.button.resume:active {
+  background-color: transparent;
+  color: #234157;
+}
+
 /* LAYOUT STYLING */
 * {
   box-sizing: border-box;
@@ -159,26 +187,17 @@ a.phase {
   margin: 25px 0;
 }
 
-#expertsnow {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #75757575;
-}
-
 .center {
   text-align: center;
 }
 
-.column.contact {
-  text-align: center;
-}
-
+/* header */
 .logo {
   width: 48px;
   height: 48px;
   text-align: center;
 }
 
-/* HEADER */
 header {
   background-color: #FFFFFF;
   padding: 10px 0;
@@ -189,7 +208,7 @@ header {
   width: 100%;
 }
 
-/* NAVIGATION BAR */
+/* nav bar */
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -232,7 +251,7 @@ nav {
   width: 100%;
 }
 
-/* MAIN */
+/* main */
 main {
   padding-top: 133px;
 }
@@ -240,26 +259,68 @@ span.blue {
   color: #1585D7;
 }
 
-/* HERO */
+/* index */
 #hero {
   background-color: #FFFFFF;
-  padding: 20px 0;
+  padding: 25px 0 25px 0;
   display: inline-block;
 }
 
-/* WORK */
 #work {
+  padding: 25px 0 25px 0;
   display: inline-block;
 }
 
-/* FOOTER */
+#expertsnow {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #75757575;
+}
+
+#myportfoliowebsite {
+  padding-bottom: 25px;
+}
+
+/* about */
+#title {
+  padding-top: 25px;
+}
+
+#me {
+  display: inline-block;
+  padding: 25px 0 25px 0;
+}
+
+#skillstools {
+  display: inline-block;
+  padding-top: 25px;
+}
+
+.row.skillstools {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%
+}
+
+.column.skillstools {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  width: 66px;
+  height: 120px;
+}
+
+/* footer */
 #contact {
   display: block;
   border-top: 2px solid #75757575;
+  padding: 25px 0 25px 0;
 }
 
 .column.contact {
   padding: 10px 0 10px 0;
+  text-align: center;
 }
 
 .column.social.medias {
