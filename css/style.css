@@ -152,3 +152,12 @@ a.phase {
 .center {
   text-align: center;
 }
+
+.column.contact {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+  text-align: center;
+}
