@@ -22,25 +22,25 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.625em;
-  font-weight: 700;
+  font-size: 2.063em;
+  font-weight: 500;
   color: #000000;
 }
 
 h2 {
-  font-size: 2.063em;
-  font-weight: 700;
+  font-size: 1.625em;
+  font-weight: 500;
   color: #000000;
 }
 
 h3 {
-  font-size: 1.625em;
+  font-size: 1.25em;
   font-weight: 400;
   color: #000000;
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 500;
   text-transform: uppercase;
   color: #1585D7;
@@ -58,6 +58,11 @@ iframe {
 svg.icon {
   width: 24px;
   height: 24px;
+}
+svg.float {
+  width: 72px;
+  height: 72px;
+  opacity: 0.5;
 }
 
 /* LINKS */
@@ -154,7 +159,7 @@ a.phase {
   margin: 25px 0;
 }
 
-#work .row {
+#expertsnow {
   padding-bottom: 25px;
   border-bottom: 1px solid #75757575;
 }
@@ -208,7 +213,7 @@ nav>ul>li>a:visited {
   color: #000000;
 }
 
-nav>ul>li>a:hover {
+nav>ul>li>a:hover, a:focus {
   padding: 0 12px;
   text-transform: uppercase;
   font-weight: 700;
@@ -231,6 +236,9 @@ nav {
 main {
   padding-top: 133px;
 }
+span.blue {
+  color: #1585D7;
+}
 
 /* HERO */
 #hero {
@@ -246,4 +254,19 @@ main {
 
 /* FOOTER */
 #contact {
+  display: block;
+  border-top: 2px solid #75757575;
+}
+
+.column.contact {
+  padding: 10px 0 10px 0;
+}
+
+.column.social.medias {
+  padding: 40px 0 25px 0;
+  text-align: center;
+}
+
+.column.top {
+  text-align: right;
 }

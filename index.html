@@ -15,7 +15,7 @@
 <body>
   <header class="section" id="navigation">
     <div class="container">
-        <img src="img/logo.svg" alt="Logo" class=logo>
+      <img src="img/logo.svg" alt="Logo" class=logo>
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Portfolio</a></li>
@@ -32,10 +32,7 @@
     <div class="section" id="hero">
       <div class="container">
         <div class="row">
-          <h1>Hi, my name is Céline. <span class="blue"> I am an aspiring UX Designer from France!</span></h1>
-          <p>
-            I enjoy using my empathy to understand users’ needs, and my pro-activity helps me create intuitive experiences.
-          </p>
+          <h1>I'm Céline, an <span class="blue">aspiring UX Designer</span>. I enjoy using my empathy to understand users’ needs, and my pro-activity helps me create intuitive experiences.</h1>
         </div>
         <div class="row">
           <picture>
@@ -54,7 +51,7 @@
         <h2>My latest projects</h2>
 
         <!--EXPERTSNOW-->
-        <div class="row">
+        <div class="row" id=expertsnow>
           <div class="column">
             <picture>
               <source srcset="img/expertsnow@1.jpg" media="(max-width:767px)">
@@ -110,7 +107,7 @@
         <!--EMAIL CLOSED-->
 
         <!--SOCIAL MEDIAS-->
-        <div class="column contact">
+        <div class="column social medias">
           <a href="https://www.linkedin.com/in/ccosneauampis-070619/" target="_blank">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path fill="currentColor"
@@ -121,10 +118,19 @@
         </div>
         <!--SOCIAL MEDIAS CLOSED-->
 
-        <a href="#hero" class="center">Go back to the top</a>
-        <p class="center">
-          &copy; Celine Cosneau-Ampis 2021
-        </p>
+        <div class="column top">
+          <a href="#hero">
+            <svg class="float" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+              <image id="icons8-Material_Rounded-99957-96-1481d1" data-name="icons8-Material Rounded-99957-96-1481d1" width="96" height="96"
+                xlink:href="data:image/png;base64,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" />
+            </svg>
+          </a>
+        </div>
+        <div class="column">
+          <p class="center">
+            &copy; Celine Cosneau-Ampis 2021
+          </p>
+        </div>
       </div>
       <!--ROW CLOSED-->
     </div>
