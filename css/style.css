@@ -6,17 +6,6 @@ Accent color: (blue) #1585D7
               (hover) #1066A3
               (active) #234157
 */
-* {
-  box-sizing: border-box;
-}
-header {
-  background-color: #FFFFFF;
-  color: #1585D7;
-  padding: 10px;
-  margin: 10px;
-  border-bottom: 3px solid #757575;
-  max-width: 1200px;
-}
 
 
 /* FONT */
@@ -143,4 +132,19 @@ a.phase {
 .button.contact:active {
   background-color: transparent;
   color: #234157;
+}
+
+
+/* LAYOUT STYLING */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #75757575;
 }
