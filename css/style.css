@@ -6,9 +6,22 @@ Accent color: (blue) #1585D7
               (hover) #1066A3
               (active) #234157
 */
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #FFFFFF;
+  color: #1585D7;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #757575;
+  max-width: 1200px;
+}
+
+
+/* FONT */
 
 body {
-  background-color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -16,34 +29,33 @@ body {
   color: #000000;
 }
 h1, h2, h3, h4 {
-  background-color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
 }
 h1 {
   font-size: 2.625em;
   font-weight: 700;
-  line-height: 1.548;
   color: #000000;
 }
 h2 {
   font-size: 2.063em;
   font-weight: 700;
-  line-height: 1.576;
   color: #000000;
 }
 h3 {
   font-size: 1.625em;
   font-weight: 400;
-  line-height: 1.615;
   color: #000000;
 }
 h4 {
   font-size: 1.25em;
   font-weight: 500;
   text-transform: uppercase;
-  line-height: 1.65;
   color: #1585D7;
 }
+
+
+/* IMG - VIDEOS - SVG */
 
 img {
   width: 100%;
@@ -53,33 +65,39 @@ iframe {
   width: 100%;
 }
 
+svg.icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+/* LINKS */
+
 a {
-  background-color: #FFFFFF;
   color: #1585D7;
   text-decoration: none;
 }
+a:visited {
+  color: #1585D7;
+}
 a:hover,
 a:focus {
-  background-color: #FFFFFF;
   color: #1066A3;
   text-decoration: underline;
 }
-a:visited {
-  background-color: #FFFFFF;
-  color: #1585D7;
-}
 a:active {
-  background-color: #FFFFFF;
   color: #234157;
 }
 a.phase {
   font-size: 1.625em;
   font-weight: 400;
   line-height: 1.615;
-  background-color: #FFFFFF;
   color: #1585D7;
   text-decoration: underline;
 }
+
+
+/* BUTTONS */
 
 .button {
   display: inline-block;
@@ -92,14 +110,14 @@ a.phase {
   border-bottom: 2px solid #1585D7;
   transition: 0.2s opacity;
 }
+.button:visited {
+  background-color: #1585D7;
+  color: #FFFFFF;
+}
 .button:hover,
 .button:focus {
   opacity: 0.8;
   text-decoration: none;
-}
-.button:visited {
-  background-color: #1585D7;
-  color: #FFFFFF;
 }
 .button:active {
   background-color: #234157;
