@@ -148,3 +148,7 @@ a.phase {
   padding-bottom: 25px;
   border-bottom: 1px solid #75757575;
 }
+
+.center {
+  text-align: center;
+}
