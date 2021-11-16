@@ -94,86 +94,6 @@ a.phase {
   text-decoration: underline;
 }
 
-/* BUTTONS */
-.button {
-  display: inline-block;
-  background-color: #1585D7;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #1585D7;
-  transition: 0.2s opacity;
-}
-
-.button:visited {
-  background-color: #1585D7;
-  color: #FFFFFF;
-}
-
-.button:hover,
-.button:focus {
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-.button:active {
-  background-color: #234157;
-  color: #FFFFFF;
-}
-
-/* Button Contact*/
-.button.contact {
-  background-color: transparent;
-  color: #1585D7;
-  text-transform: uppercase;
-  border: 2px solid #1585D7;
-}
-
-.button.contact:hover,
-.button.contact:focus {
-  background-color: #1585D7;
-  opacity: 0.8;
-  color: #FFFFFF;
-}
-
-.button.contact:visited {
-  background-color: transparent;
-  color: #1585D7;
-}
-
-.button.contact:active {
-  background-color: transparent;
-  color: #234157;
-}
-
-/* Button Resume*/
-.button.resume {
-  background-color: transparent;
-  color: #1585D7;
-  text-transform: capitalize;
-  border: 2px solid #1585D7;
-  text-align: center;
-}
-
-.button.resume:hover,
-.button.resume:focus {
-  background-color: #1585D7;
-  opacity: 0.8;
-  color: #FFFFFF;
-}
-
-.button.resume:visited {
-  background-color: transparent;
-  color: #1585D7;
-}
-
-.button.resume:active {
-  background-color: transparent;
-  color: #234157;
-}
-
 /* LAYOUT STYLING */
 * {
   box-sizing: border-box;
@@ -191,7 +111,7 @@ a.phase {
   text-align: center;
 }
 
-/* header */
+/* Header */
 .logo {
   width: 48px;
   height: 48px;
@@ -208,7 +128,7 @@ header {
   width: 100%;
 }
 
-/* nav bar */
+/* Nav Bar */
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -222,7 +142,7 @@ nav>ul>li>a {
   padding: 0 12px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #1585D7;
+  color: #000000;
 }
 
 nav>ul>li>a:visited {
@@ -251,7 +171,7 @@ nav {
   width: 100%;
 }
 
-/* main */
+/* Main */
 main {
   padding-top: 133px;
 }
@@ -259,16 +179,18 @@ span.blue {
   color: #1585D7;
 }
 
-/* index */
+/* Index */
 #hero {
   background-color: #FFFFFF;
   padding: 25px 0 25px 0;
   display: inline-block;
+  width: 100%;
 }
 
 #work {
   padding: 25px 0 25px 0;
   display: inline-block;
+  width: 100%;
 }
 
 #expertsnow {
@@ -280,26 +202,101 @@ span.blue {
   padding-bottom: 25px;
 }
 
-/* about */
+/* ExpertsNow */
+#intro {
+  background-color: #FFFFFF;
+  padding: 25px 0 25px 0;
+  display: inline-block;
+  width:100%;
+}
+
+#logo_expertsnow {
+  background-color: #4A016D;
+  display: inline-block;
+  padding-bottom: 25px;
+  margin: 40px auto 0px auto;
+  border-radius: 4px;
+}
+
+#logo_expertsnow .column {
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+}
+
+span.white {
+  color: #FFFFFF;
+}
+
+#overview {
+  display: inline-block;
+  width: 100%;
+}
+
+.row.skillstools2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#overview .column.overview {
+  padding: 10px 0px 10px 0px;
+}
+
+#summary .column {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+#process {
+  display: inline-block;
+  width: 100%;
+}
+
+#process .row {
+  padding-top: 25px;
+}
+
+#process .column {
+  padding: 10px 0px 10px 0px;
+}
+
+.img {
+  padding: 15px 0px 15px 0px;
+}
+
+.prototype {
+  display: block;
+  margin: auto;
+  padding: 50px 0;
+  width: auto;
+  text-align: center;
+}
+
+#conclusion .row {
+  padding-bottom: 25px;
+}
+
+/* About */
 #title {
   padding-top: 25px;
 }
 
 #me {
-  display: inline-block;
   padding: 25px 0 25px 0;
+  display: inline-block;
+  width: 100%;
 }
 
 #skillstools {
-  display: inline-block;
   padding-top: 25px;
 }
 
 .row.skillstools {
-  display: block;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   margin: 0 auto;
-  text-align: center;
-  width: 100%
+  width: 100%;
 }
 
 .column.skillstools {
@@ -311,7 +308,7 @@ span.blue {
   height: 120px;
 }
 
-/* footer */
+/* Footer */
 #contact {
   display: block;
   border-top: 2px solid #75757575;
@@ -330,4 +327,93 @@ span.blue {
 
 .column.top {
   text-align: right;
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  background-color: #1585D7;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border-bottom: 2px solid #1585D7;
+  transition: 0.2s opacity;
+}
+
+.button:visited {
+  background-color: #1585D7;
+  color: #FFFFFF;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: #234157;
+  color: #FFFFFF;
+}
+
+/* Button Contact*/
+.button.contact {
+  background-color: transparent;
+  color: #1585D7;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: 2px solid #1585D7;
+}
+
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #1585D7;
+  opacity: 0.8;
+  color: #FFFFFF;
+}
+
+.button.contact:visited {
+  background-color: transparent;
+  color: #1585D7;
+}
+
+.button.contact:active {
+  background-color: transparent;
+  color: #234157;
+}
+
+/* Button outlined*/
+.button.outlined {
+  margin: auto;
+  width: auto;
+  background-color: transparent;
+  color: #1585D7;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  border: 2px solid #1585D7;
+}
+
+.button.outlined:hover,
+.button.outlined:focus {
+  background-color: #1585D7;
+  opacity: 0.8;
+  color: #FFFFFF;
+}
+
+.button.outlined:visited {
+  background-color: transparent;
+  color: #1585D7;
+}
+
+.button.outlined:active {
+  background-color: transparent;
+  color: #234157;
 }
