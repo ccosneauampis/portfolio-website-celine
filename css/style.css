@@ -6,7 +6,6 @@ Accent color: (blue) #1585D7
               (hover) #1066A3
               (active) #234157
 */
-
 /* FONT */
 body {
   font-family: 'Roboto', sans-serif;
@@ -18,25 +17,27 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.4;
 }
 
 h1 {
-  font-size: 2.063em;
-  font-weight: 500;
+  font-size: 1.725em;
+  font-weight: 450;
   color: #000000;
+  line-height: 1.5;
 }
 
 h2 {
   font-size: 1.625em;
   font-weight: 500;
   color: #000000;
+  line-height: 1.4;
 }
 
 h3 {
   font-size: 1.25em;
   font-weight: 400;
   color: #000000;
+  line-height: 1.4;
 }
 
 h4 {
@@ -44,6 +45,7 @@ h4 {
   font-weight: 500;
   text-transform: uppercase;
   color: #1585D7;
+  line-height: 1.4;
 }
 
 /* IMG - VIDEOS - SVG */
@@ -59,6 +61,7 @@ svg.icon {
   width: 24px;
   height: 24px;
 }
+
 svg.float {
   width: 72px;
   height: 72px;
@@ -78,7 +81,6 @@ a:visited {
 a:hover,
 a:focus {
   color: #1066A3;
-  text-decoration: underline;
 }
 
 a:active {
@@ -120,6 +122,7 @@ a.phase {
 
 header {
   background-color: #FFFFFF;
+  margin: 0;
   padding: 10px 0;
   text-align: center;
   display: inline-block;
@@ -129,9 +132,15 @@ header {
 }
 
 /* Nav Bar */
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li {
@@ -139,42 +148,49 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 12px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
   color: #000000;
 }
 
 nav>ul>li>a:visited {
-  padding: 0 12px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
   color: #000000;
 }
 
-nav>ul>li>a:hover, a:focus {
-  padding: 0 12px;
+nav>ul>li>a:hover {
+  padding: 0 10px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: #1585D7;
+}
+
+nav>ul>li>a:focus {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #757575;
 }
 
 nav>ul>li>a:active {
-  padding: 0 12px;
+  padding: 0 10px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: #1585D7;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+nav>ul>li>a.active {
+  color: #1585D7;
 }
 
 /* Main */
 main {
-  padding-top: 133px;
+  padding-top: 125px;
 }
+
 span.blue {
   color: #1585D7;
 }
@@ -185,6 +201,10 @@ span.blue {
   padding: 25px 0 25px 0;
   display: inline-block;
   width: 100%;
+}
+
+#hero .row {
+  padding-bottom: 25px;
 }
 
 #work {
@@ -207,7 +227,11 @@ span.blue {
   background-color: #FFFFFF;
   padding: 25px 0 25px 0;
   display: inline-block;
-  width:100%;
+  width: 100%;
+}
+
+#casestudy {
+  padding: 30px 0;
 }
 
 #logo_expertsnow {
@@ -248,29 +272,83 @@ span.white {
   padding: 10px 10px 10px 10px;
 }
 
-#process {
+#discover {
   display: inline-block;
   width: 100%;
 }
 
-#process .row {
+#discover .row {
   padding-top: 25px;
 }
 
-#process .column {
+#discover .column {
   padding: 10px 0px 10px 0px;
 }
 
-.img {
-  padding: 15px 0px 15px 0px;
+#define {
+  display: inline-block;
+  width: 100%;
 }
 
-.prototype {
-  display: block;
-  margin: auto;
+#define .row {
+  padding-top: 25px;
+}
+
+#define .column {
+  padding: 10px 0px 10px 0px;
+}
+
+#develop {
+  display: inline-block;
+  width: 100%;
+}
+
+#develop .row {
+  padding-top: 25px;
+}
+
+#develop .column {
+  padding: 10px 0px 10px 0px;
+}
+
+#deliver {
+  display: inline-block;
+  width: 100%;
+}
+
+#deliver .row {
+  padding-top: 25px;
+}
+
+#deliver .column {
+  padding: 10px 0px 10px 0px;
+}
+
+#refine {
+  display: inline-block;
+  width: 100%;
+}
+
+#refine .row {
+  padding-top: 25px;
+}
+
+#refine .column {
+  padding: 10px 0px 10px 0px;
+}
+.img {
+  width: 240px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#prototype {
   padding: 50px 0;
-  width: auto;
-  text-align: center;
+}
+
+#demo {
+  padding-bottom: 75px;
 }
 
 #conclusion .row {
@@ -288,24 +366,39 @@ span.white {
   width: 100%;
 }
 
+#me .row.me {
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+#resume {
+  padding: 25px 0;
+}
+
 #skillstools {
   padding-top: 25px;
 }
 
-.row.skillstools {
+#skillstools img {
+  height: 48px;
+}
+
+#skillstools .row {
   display: grid;
   grid-template-columns: auto auto auto auto;
   margin: 0 auto;
   width: 100%;
 }
+#skillstools .row:last-child {
+  grid-template-columns: auto auto auto;
+  margin-top: 1em;
+}
 
-.column.skillstools {
+#skillstools .column {
   display: inline-block;
   margin: 0 auto;
   padding: 10px 5px 10px 5px;
   text-align: center;
-  width: 66px;
-  height: 120px;
 }
 
 /* Footer */
@@ -416,4 +509,291 @@ span.white {
 .button.outlined:active {
   background-color: transparent;
   color: #234157;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 640px) {
+  .container {
+    padding: 0 25px;
+  }
+
+  #navigation img {
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  header {
+    margin: 0;
+    padding: 10px 0;
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    padding-top: 15px;
+  }
+
+  h1 {
+    font-size: 2.10em;
+  }
+
+  h2 {
+    padding-bottom: 20px;
+  }
+
+  main {
+    padding-top: 68px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero {
+    display: block;
+  }
+
+  .img {
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #logo_expertsnow .row {
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  #logo_expertsnow .row.description {
+    margin: 0 40px;
+  }
+
+  #logo_expertsnow .column {
+    padding: 20px 100px;
+    text-align: center;
+  }
+
+  .anchor {
+  margin-top: -70px;
+  margin-bottom: 0;
+  }
+
+  h3.anchor-h {
+    margin-top: 70px;
+  }
+
+  .role.timeline {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #summary .img {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  #summary .column {
+    padding: 20px 140px;
+  }
+
+  #me {
+    padding: 15px 0 50px 0;
+}
+
+  iframe {
+    width: 480px;
+    height: 270px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 0 25px;
+  }
+
+  #navigation img {
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  header {
+    margin: 0;
+    padding: 10px 0;
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    padding-top: 15px;
+  }
+
+  h1 {
+    font-size: 2.10em;
+  }
+
+  h2 {
+    padding-bottom: 20px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero {
+    display: block;
+  }
+
+  .img {
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #logo_expertsnow .row {
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  #logo_expertsnow .row.description {
+    margin: 0 40px;
+  }
+
+  #logo_expertsnow .column {
+    padding: 20px 100px;
+    text-align: center;
+  }
+
+  .role.timeline {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #summary .img {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  #summary .column {
+    padding: 20px 140px;
+  }
+
+  #me {
+    padding: 15px 0 50px 0;
+}
+
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding: 0 208px;
+  }
+
+#navigation .container {
+  padding: 0 25px;
+}
+
+  #navigation img {
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  header {
+    margin: 0;
+    padding: 10px 0;
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    padding-top: 15px;
+  }
+
+  h1 {
+    font-size: 2.10em;
+  }
+
+  h2 {
+    padding-bottom: 20px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero {
+    display: block;
+  }
+
+  .img {
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #logo_expertsnow .row {
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  #logo_expertsnow .row.description {
+    margin: 0 40px;
+  }
+
+  #logo_expertsnow .column {
+    padding: 20px 100px;
+    text-align: center;
+  }
+
+  .role.timeline {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #summary .img {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  #summary .column {
+    padding: 20px 140px;
+  }
+
+  #me {
+    padding: 15px 0 50px 0;
+}
+
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
 }
