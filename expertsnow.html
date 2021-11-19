@@ -15,14 +15,25 @@
 <body>
   <header class="section" id="navigation">
     <div class="container">
-      <img src="img/logo.svg" alt="Logo" class=logo>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html" class="active">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="Logo" class=logo>
+        </a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html" class="active">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                  </path>
+                </svg>
+            </a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <!--CONTAINER CLOSED-->
   </header>
@@ -244,7 +255,8 @@
         <div class="anchor" id="section2">
           <a name="target">&nbsp;</a>
         </div>
-        <h3 class="center anchor-h">The results from the Discover phase were very useful in <b>defining types of user</b> who would be using ExpertsNow, <b>potential solutions to answer their needs</b> and a <b>navigation flow that would facilitate their
+        <h3 class="center anchor-h">The results from the Discover phase were very useful in <b>defining types of user</b> who would be using ExpertsNow, <b>potential solutions to answer their needs</b> and a <b>navigation flow that would facilitate
+            their
             experience</b>.
         </h3>
         <div class="row">
@@ -507,6 +519,11 @@
     </div>
     <!--CONTAINER CLOSED-->
   </footer>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
 </body>
 
 </html>
