@@ -87,13 +87,24 @@ a:active {
   color: #234157;
 }
 
-/* Link Design Process Phases*/
-a.phase {
-  font-size: 1.625em;
-  font-weight: 400;
-  line-height: 1.615;
+/* Link FR EN*/
+
+a.language1 {
+  font-size: 0.8em;
+  font-weight: 500;
+  line-height: 1.4;
   color: #1585D7;
   text-decoration: underline;
+  padding-right: 10px;
+}
+
+a.language2 {
+  font-size: 0.8em;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #000000;
+  text-decoration: none;
+  padding-left: 10px;
 }
 
 /* Burger Menu */
@@ -115,6 +126,105 @@ a.menu:active {
   color: #000000;
 }
 
+/* Link Design Process Phases*/
+a.phase {
+  font-size: 1.625em;
+  font-weight: 400;
+  line-height: 1.615;
+  color: #1585D7;
+  text-decoration: underline;
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  background-color: #1585D7;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border-bottom: 2px solid #1585D7;
+  transition: 0.2s opacity;
+}
+
+.button:visited {
+  background-color: #1585D7;
+  color: #FFFFFF;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: #234157;
+  color: #FFFFFF;
+}
+
+/* Button Contact*/
+.button.contact {
+  background-color: transparent;
+  color: #1585D7;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: 2px solid #1585D7;
+  transition: 0.2s opacity;
+}
+
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #1585D7;
+  opacity: 0.8;
+  color: #FFFFFF;
+}
+
+.button.contact:visited {
+  background-color: transparent;
+  color: #1585D7;
+}
+
+.button.contact:active {
+  background-color: transparent;
+  color: #234157;
+}
+
+/* Button outlined*/
+.button.outlined {
+  margin: auto;
+  width: auto;
+  background-color: transparent;
+  color: #1585D7;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  border: 2px solid #1585D7;
+  transition: 0.2s opacity;
+}
+
+.button.outlined:hover,
+.button.outlined:focus {
+  background-color: #1585D7;
+  opacity: 0.8;
+  color: #FFFFFF;
+}
+
+.button.outlined:visited {
+  background-color: transparent;
+  color: #1585D7;
+}
+
+.button.outlined:active {
+  background-color: transparent;
+  color: #234157;
+}
 
 /* LAYOUT STYLING */
 * {
@@ -134,6 +244,13 @@ a.menu:active {
 }
 
 /* Header */
+.language {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
 .logo {
   width: 48px;
   height: 48px;
@@ -143,7 +260,6 @@ a.menu:active {
 header {
   background-color: #FFFFFF;
   margin: 0;
-  padding: 10px 0 4px;
   display: inline-block;
   box-shadow: 0px 1px 4px 0px rgba(75, 75, 75, 0.38);
   position: fixed;
@@ -231,7 +347,7 @@ nav>ul>li>a.active {
 
 /* Main */
 main {
-  padding-top: 70px;
+  padding-top: 83px;
 }
 
 span.blue {
@@ -449,12 +565,12 @@ span.white {
 }
 
 .anchor {
-  margin-top: -105px;
+  margin-top: -83px;
   margin-bottom: 0;
 }
 
 h3.anchor-h {
-  margin-top: 105px;
+  margin-top: 83px;
 }
 
 #prototype {
@@ -539,97 +655,6 @@ h3.anchor-h {
 
 .column.top {
   text-align: right;
-}
-
-/* BUTTONS */
-.button {
-  display: inline-block;
-  background-color: #1585D7;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 10px 16px;
-  border-radius: 4px;
-  border-bottom: 2px solid #1585D7;
-  transition: 0.2s opacity;
-}
-
-.button:visited {
-  background-color: #1585D7;
-  color: #FFFFFF;
-}
-
-.button:hover,
-.button:focus {
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-.button:active {
-  background-color: #234157;
-  color: #FFFFFF;
-}
-
-/* Button Contact*/
-.button.contact {
-  background-color: transparent;
-  color: #1585D7;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 10px 16px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  border: 2px solid #1585D7;
-  transition: 0.2s opacity;
-}
-
-.button.contact:hover,
-.button.contact:focus {
-  background-color: #1585D7;
-  opacity: 0.8;
-  color: #FFFFFF;
-}
-
-.button.contact:visited {
-  background-color: transparent;
-  color: #1585D7;
-}
-
-.button.contact:active {
-  background-color: transparent;
-  color: #234157;
-}
-
-/* Button outlined*/
-.button.outlined {
-  margin: auto;
-  width: auto;
-  background-color: transparent;
-  color: #1585D7;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 10px 16px;
-  border-radius: 4px;
-  text-transform: capitalize;
-  border: 2px solid #1585D7;
-  transition: 0.2s opacity;
-}
-
-.button.outlined:hover,
-.button.outlined:focus {
-  background-color: #1585D7;
-  opacity: 0.8;
-  color: #FFFFFF;
-}
-
-.button.outlined:visited {
-  background-color: transparent;
-  color: #1585D7;
-}
-
-.button.outlined:active {
-  background-color: transparent;
-  color: #234157;
 }
 
 /* MEDIA QUERIES */
