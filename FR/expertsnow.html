@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../img/favicon.ico" rel="shortcut icon">
+  <title>ExpertsNow</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body id="expertsnowpage">
+  <header class="section" id="navigation">
+    <div class="container">
+      <div class="language">
+        <div class="french">
+          <a href="expertsnow.html" class="L-active" id="language1"> Français </a>
+        </div>
+        <div class="english">
+          <a href="../expertsnow.html" id="language2"> English </a>
+        </div>
+      </div>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+          <img src="../img/logo.svg" alt="Logo" class=logo>
+        </a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html" class="active">Portfolio</a></li>
+            <li><a href="about.html">À Propos de</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                  </path>
+                </svg>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--CONTAINER CLOSED-->
+  </header>
+
+  <main id="main">
+    <!--INTRO-->
+    <div class="section" id="intro">
+      <div class="container">
+        <h1 class="center">Une application web "responsive" : <span class="blue">ExpertsNow</span></h1>
+        <div class="center" id="casestudy">
+          <a href="../files/casestudy_expertsnow.pdf" class="button outlined" target="_blank">Étude de cas détaillée (EN)</a>
+        </div>
+        <div class="row" id="logo_expertsnow">
+          <div class="column">
+            <div class="row">
+              <picture>
+                <source srcset="../img/expertsnow/logo_expertsnow.png" media="(max-width:767px)">
+                <img src="../img/expertsnow/logo_expertsnow@2x.png" alt="Logo_ExpertsNow">
+              </picture>
+            </div>
+            <div class="row description">
+              <p>
+                <span class="white">ExpertsNow est une application web dites "responsive", qui connecte ses utilisateurs avec les experts dont ils ont besoin. <br><br>Des professionnels, venant de nombreux corps de métier, sont disponibles pour des
+                  rendez-vous virtuels et/ou physiques ainsi que via un service de messagerie instantanée.</span>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <picture>
+              <source srcset="../img/expertsnow/intro_picture.png" media="(max-width:767px)">
+              <img src="../img/expertsnow/intro_picture@2x.png" alt="ExpertsNow">
+            </picture>
+          </div>
+        </div>
+        <div class="row" id="overview">
+          <div class="column overview" id="context">
+            <h4>Contexte</h4>
+            <p>
+              J'ai travaillé sur ce projet lors de ma formation pour devenir une UX Designer, avec CareerFoundry.
+            </p>
+          </div>
+          <div class="role timeline" id="roletimeline">
+            <div class="column overview" id="role">
+              <h4>Mon rôle</h4>
+              <p>
+                Unique UX/UI designer
+              </p>
+            </div>
+            <div class="column overview" id="timeline">
+              <h4>Période</h4>
+              <p>
+                6 mois
+              </p>
+            </div>
+          </div>
+          <div class="column overview" id="tools">
+            <h4>Outils</h4>
+            <div class="row">
+              <!--Google Draw-->
+              <div class="column">
+                <img src="../img/tools/googledraw.svg" alt="Google_Draw">
+                <p style="font-size:60%;">
+                  Google Draw
+                </p>
+              </div>
+              <!--end Google Draw-->
+              <!--Lucidchart-->
+              <div class="column">
+                <img src="../img/tools/lucidchart.svg" alt="Lucidchart">
+                <p style="font-size:60%;">
+                  Lucidchart
+                </p>
+              </div>
+              <!--end Lucidchart-->
+              <!--Adobe XD-->
+              <div class="column">
+                <img src="../img/tools/adobexd.svg" alt="Adobe XD">
+                <p style="font-size:60%;">
+                  Adobe XD
+                </p>
+              </div>
+              <!--end Adobe XD-->
+              <!--Marvel-->
+              <div class="column">
+                <img src="../img/tools/marvel.svg" alt="Marvel">
+                <p style="font-size:60%;">
+                  Marvel
+                </p>
+              </div>
+              <!--end Marvel-->
+            </div>
+            <div class="row">
+              <!--Zoom-->
+              <div class="column">
+                <img src="../img/tools/zoom.svg" alt="Zoom">
+                <p style="font-size:60%;">
+                  Zoom
+                </p>
+              </div>
+              <!--end Zoom-->
+              <!--Usability Hub-->
+              <div class="column">
+                <img src="../img/tools/usahub.svg" alt="Usability Hub">
+                <p style="font-size:60%;">
+                  Usability Hub
+                </p>
+              </div>
+              <!--end Usability Hub-->
+              <!--Invision-->
+              <div class="column">
+                <img src="../img/tools/invision.svg" alt="Invision">
+                <p style="font-size:60%;">
+                  Invision
+                </p>
+              </div>
+              <!--end Invision-->
+            </div>
+            <!--TOOLS ROW CLOSED-->
+          </div>
+          <!-- TOOLS COLUMN CLOSED-->
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--SUMMARY-->
+    <div class="section" id="summary">
+      <div class="container">
+        <h2 class="center">Quel a été mon design process?</h2>
+        <div class="img">
+          <picture>
+            <source srcset="../img/expertsnow/design_process.png" media="(max-width:767px)">
+            <img src="../img/expertsnow/design_process@2x.png" alt="Design_Process">
+          </picture>
+        </div>
+        <div class="row">
+          <div class="column">
+            <a href=#section1 class="phase">Découvrir</a>
+            <p>
+              Qui sont les autres acteurs sur le marché? <br><br>Qui sont les potentiels utilisateurs? Quelles sont leurs attentes?
+            </p>
+          </div>
+          <div class="column">
+            <a href=#section2 class="phase">Définir</a>
+            <p>
+              3 types d'utilisateur <br><br>Actuellement, quels sont leurs problèmes? Quelles solution apporter? <br><br>Comment navigueraient-ils sur l'application?
+            </p>
+          </div>
+          <div class="column">
+            <a href=#section3 class="phase">Développer</a>
+            <p>
+              Comment l'application est-elle organisée ? <br><br>Quels sont les design des différents écrans ? Comment ont-ils évolué ?
+            </p>
+          </div>
+          <div class="column">
+            <a href=#section4 class="phase">Délivrer</a>
+            <p>
+              Test d'ergonomie & Mise en application des feedbacks <br><br>Test de préférence test & Mise en application des feedbacks
+            </p>
+          </div>
+          <div class="column">
+            <a href=#section5 class="phase">Affiner</a>
+            <p>
+              Réflexions sur le UI Design <br><br>Style Guide <br><br>Design Final
+            </p>
+          </div>
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--DISCOVER-->
+    <div class="section" id="discover">
+      <div class="container">
+        <div class="anchor" id="section1">
+          <a name="target">&nbsp;</a>
+        </div>
+        <h3 class="center anchor-h">Pour mieux comprendre les attentes des potentiels utilisateurs, <b>j'ai analysé 2 entreprises concurrentes d'ExpertsNow et interviewé 4 utilisateurs potentiels</b>.</h3>
+        <div class="row">
+          <div class="column">
+            <h4>Analyse de la concurrence</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/expertsnow/competitive_analysis.png" media="(max-width:767px)">
+                <img src="../img/expertsnow/competitive_analysis@2x.png" alt="Doctolib_PagesJaunes">
+              </picture>
+            </div>
+            <p>
+              <b>Analyser la concurrence m'a permis de mieux comprendre le marché</b>. Aussi, j'ai pu <b>déterminer ce qu'ExpertsNow pouvait apporter de nouveau et donc, se différencier</b>.
+            </p>
+          </div>
+          <div class="column">
+            <h4>Interviews d'utilisateurs</h4>
+            <div class="img">
+              <div class="img">
+                <picture>
+                  <source srcset="../img/expertsnow/users_interviews.jpg" media="(max-width:767px)">
+                  <img src="../img/expertsnow/users_interviews@2x.jpg" alt="Affinity_Maps">
+                </picture>
+              </div>
+            </div>
+            <p>
+              Avec les résultats de l'analyse de la concurrence en tête, <b>j'ai préparé et mené des interviews avec de potentiels utilisateurs</b> dans le but d'empathiser avec eux et de mieux comprendre leurs besoins.
+            </p>
+          </div>
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--DEFINE-->
+    <div class="section" id="define">
+      <div class="container">
+        <div class="anchor" id="section2">
+          <a name="target">&nbsp;</a>
+        </div>
+        <h3 class="center anchor-h">Les résultats de la phase Découverte m'ont été très utiles pour <b>définir : des types d'utilisateur</b> qui pourraient se servir d'ExpertsNow, <b>de potentielles solutions pour répondre à leurs besoins</b> et <b>
+            différents cheminements qui faciliteraient leur navigation et donc leur expérience.</b>.
+        </h3>
+        <div class="row">
+          <div class="column">
+            <h4>Types d'utilisateur</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/expertsnow/personas.png" media="(max-width:767px)">
+                <img src="../img/expertsnow/personas@2x.png" alt="Personas">
+              </picture>
+            </div>
+            <p>
+              <b>Pour mieux faire preuve d'empathie envers les utilisateurs</b> tout au long du design process, <b> j'ai créé 3 personas</b>. Chacune définissant un type d'utilisateur.
+            </p>
+          </div>
+          <div class="column">
+            <h4>Trouver des solutions</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/expertsnow/pbmstatement_solutions.png" media="(max-width:767px)">
+                <img src="../img/expertsnow/pbmstatement_solutions@2x.png" alt="Problems_Solutions">
+              </picture>
+            </div>
+            <p>
+              Grâce à mes 3 personas, j'ai pu <b>définir les difficultés actuellement rencontrées par les utilisateurs</b>. Et donc, <b>réfléchir à de potentielles solutions</b> pour résoudre ces désagréments.
+            </p>
+          </div>
+          <div class="column">
+            <h4>Flows d'utilisateurs</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/expertsnow/user_flows.png" media="(max-width:767px)">
+                <img src="../img/expertsnow/user_flows@2x.png" alt="User_Flow">
+              </picture>
+            </div>
+            <p>
+              Afin de mettre en œuvre les solutions précédemment définies, <b>j'ai créé 3 user flows</b>. Pour chacun, je me suis concentrée sur les besoins d'une de mes personas.
+            </p>
+          </div>
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--DEVELOP-->
+    <div class="section" id="develop">
+      <div class="container">
+        <div class="anchor" id="section3">
+          <a name="target">&nbsp;</a>
+        </div>
+        <h3 class="center anchor-h">Avec les user flows à l'esprit, j'ai pu <b>créé le sitemap d'ExpertsNow</b> et <b>commencer à designer ses differents écrans</b>.</h3>
+        <div class="row">
+          <div class="column">
+            <h4>Architecture de l'Information </h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/expertsnow/sitemap.png" media="(max-width:767px)">
+                <img src="../img/expertsnow/sitemap@2x.png" alt="Sitemap_ExpertsNow">
+              </picture>
+            </div>
+            <p>
+              Grâce aux user flows, j'ai pu créé un système d'organisation pour ExpertsNow. <b>Ce sitemap m'a donné une vue d'ensemble sur la structure que l'application devrait avoir, et tout les différents écrans nécessaires</b>.
+            </p>
+          </div>
+          <div class="column">
+            <h4>Wireframing</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/expertsnow/wireframing.png" media="(max-width:767px)">
+                <img src="../img/expertsnow/wireframing@2x.png" alt="Evolution_Wireframes">
+              </picture>
+            </div>
+            <p>
+              En suivant ce sitemap, j'ai commencé à<b> designer, petit à petit, les différents écrans de 3 fonctionnalités majeures d'ExpertsNow</b>.
+            </p>
+          </div>
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--DELIVER-->
+    <div class="section" id="deliver">
+      <div class="container">
+        <div class="anchor" id="section4">
+          <a name="target">&nbsp;</a>
+        </div>
+        <h3 class="center anchor-h">Une fois les écrans de ces 3 fonctionnalités finis d'être designé en Hi-Fi (Haute-Fidélité), <b>j'ai mené un test d'Ergonomie et 3 tests de Préférence</b> pour vérifier si l'organisation et le système de navigation
+          d'ExpertsNow étaient assez intuitifs.</h3>
+        <div class="row">
+          <div class="column">
+            <h4>Test d'ergonomie</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/expertsnow/usability_test.png" media="(max-width:767px)">
+                <img src="../img/expertsnow/usability_test@2x.png" alt="Usability_Test_Marvel">
+              </picture>
+            </div>
+            <p>
+              <b>J'ai modéré un test d'Ergonomie pour étudier l'intuitivité d'ExpertsNow</b> (1 en-personne & 5 à distance). Pour bien saisir les différents désagréments rencontrés par les participants au test, <b>j'ai analysé leurs réponses via des
+                diagrammes d'affinité et</b> ensuite,
+              <b>via une rainbow spreadsheet</b>. Dans l'itération de mon design, je me suis concentrée sur la résolution des 5 problèmes les plus urgents.
+            </p>
+          </div>
+          <div class="column">
+            <h4>Tests de préférence</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/expertsnow/preference_test.png" media="(max-width:767px)">
+                <img src="../img/expertsnow/preference_test@2x.png" alt="Preference_Tests_Usahub">
+              </picture>
+            </div>
+            <p>
+              Les participants étaient principalement <b>confus sur la page d'Accueil, la page de Recherche et la page de Réservation</b>. Donc, <b>j'ai mené 3 test de préférence pour intégrer les meilleures solutions possibles dans le design
+                d'ExpertsNow, et éviter toute future confusion.</b>.
+            </p>
+          </div>
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--REFINE-->
+    <div class="section" id="refine">
+      <div class="container">
+        <div class="anchor" id="section5">
+          <a name="target">&nbsp;</a>
+        </div>
+        <h3 class="center anchor-h">Après avoir fait testé mon prototype et mis en application les différents feedback des participants aux tests, <b>je me suis focalisée sur l'aspect visuel d'ExpertsNow</b>.</h3>
+        <div class="row">
+          <div class="column">
+            <h4>Réflexions sur le UI Design</h4>
+            <div class="center">
+              <div class="img">
+                <picture class="img">
+                  <source srcset="../img/expertsnow/ui_strategy.png" media="(max-width:767px)">
+                  <img src="../img/expertsnow/ui_strategy@2x.png" alt="Colors">
+                </picture>
+              </div>
+            </div>
+            <p>
+              Pour le UI Design d'ExpertsNow, j'ai <b>déterminé ma propre stratégie de couleurs</b>. Ensuite, j'ai <b>affiné son design en suivant des lois de Gestalt, des Principes de Design et des recommandations de Material Design</b>.
+            </p>
+          </div>
+          <div class="column">
+            <h4>Style Guide</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/expertsnow/style_guide.png" media="(max-width:767px)">
+                <img src="../img/expertsnow/style_guide@2x.png" alt="Color_Palette">
+              </picture>
+            </div>
+            <p>
+              Après avoir déterminé ma stratégie de couleur et en suivant les différentes lois, principes et recommandations en design, <b>j'ai créé un UI kit pour ExpertsNow afin de faciliter ma nouvelle itération</b> mais aussi pour <b>préparer une
+                possible transmission auprès de développeurs</b>. <b>J'ai documenté ce UI kit dans un Style Guide</b> (inclus les mises en application des feedbacks reçus lors d'un Design Collaboratif & en suivant les règles pour l'accessibilité des
+              contenus Web).
+            </p>
+          </div>
+          <div class="column">
+            <h4>Design Final</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/expertsnow/final_design.jpg" media="(max-width:767px)">
+                <img src="../img/expertsnow/final_design@2x.jpg" alt="User_Flow">
+              </picture>
+            </div>
+            <p>
+              Lors de ma seconde itération, <b>j'ai demandé à trois camarades étudiants de CareerFoundry d'examiner ExpertsNow, et de me donner des conseils d'amélioration</b> d'un point de vue de UX Designers. <b>J'ai aussi donné un nouveau coup
+                d'oeil à l'application pour améliorer son accessibilité</b>.
+            </p>
+          </div>
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--CONCLUSION-->
+    <div class="section" id="conclusion">
+      <div class="container">
+        <h3 class="center">Après la seconde itération, <b>j'ai finalisé mon prototype</b>. J'ai par la suite réfléchi à <b>quelles pourraient être les prochaines étapes</b> pour continuer d'améliorer mon application, et à <b>ce que je pourrais
+            retenir de ce projet</b>, sur lequel j'ai travaillé dans le cadre de ma formation en UX Design.</h3>
+        <div class="center" id="prototype">
+          <a href="https://cline144015.invisionapp.com/console/share/JH34QHCU8N/821964497" class="button" target="_blank">Prototype</a>
+        </div>
+        <div class="row">
+          <h4>Prochaines étapes</h4>
+          <div class="conclusion">
+            <ol>
+              <li>Apporter de nouvelles améliorations à ExpertsNow, d'après les 14 autres "pain points" signalés par les participants aux différents tests.</li>
+              <li>Mener de nouveaux test de préférence pour avoir des résultats plus significatifs, afin de mettre en place les meilleurs solutions possibles.</li>
+              <li>Vérifier que l'application est bel et bien "accessible" en menant un nouveau test d'Ergonomie auprès de potentiels utilisateurs concernés.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="row">
+          <h4>Ce que j'en retiens</h4>
+          <div class="conclusion">
+            <p>
+              Pendant ce projet, <b>j'ai appris en détail ce qu'était le UX Design Process</b>. En travaillant sur les différentes - et très variées - étapes de design, je me suis <b>parfois sentie frustrée</b>, sûrement dû à mon manque d'expérience.
+              <b>Mais, à présent,
+                je connais les points sur lesquels m'améliorer afin d'être encore plus efficace</b> sur des tâches telles que : la préparation en amont d'un test d'Ergonomie, designer des maquettes Hi-Fi et déterminer quel UI design suivre. J'ai
+              aussi <b>appris à utiliser différents outils/logiciels</b>, tel qu'Adobe XD et, honnêtement, <b>c'était plutôt amusant</b>.
+              Enfin, ce dont je me souviendrai le plus par rapport à <b>ce projet</b>, c'est à quel point <b>je l'ai apprécié</b>. <b>Créer quelque chose en fonction des besoins et désirs d'utilisateurs a été tellement satisfaisant et
+                épanouissant</b>. <b>Je pouvais donner du sens à ce que j'étais en train de faire</b>, et je savais
+              que <b>toutes les modifications</b> que j'apportais à ExpertsNow<b>, étaient dans le meilleur intérêt de futurs potentiels utilisateurs</b>.
+            </p>
+          </div>
+        </div>
+        <div class="center" id="demo">
+          <iframe src="https://www.youtube.com/embed/TK3My-1fIqg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="row">
+        <h2 class="center">Contactez-moi</h2>
+        <p class="center">
+          Vous aimez mon travail et voulez discuter d'opportunités professionnelles?
+        </p>
+
+        <!--EMAIL-->
+        <div class="column contact">
+          <a href="mailto:c.cosneauampis@gmail.com" class="button contact"> Envoyez-moi un mail</a>
+        </div>
+        <!--EMAIL CLOSED-->
+
+        <!--SOCIAL MEDIAS-->
+        <div class="column social medias">
+          <a href="https://www.linkedin.com/in/ccosneauampis-070619/" target="_blank">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <!--SOCIAL MEDIAS CLOSED-->
+
+        <div class="column top">
+          <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <svg class="float" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+              <image id="icons8-Material_Rounded-99957-96-1481d1" data-name="icons8-Material Rounded-99957-96-1481d1" width="96" height="96"
+                xlink:href="data:image/png;base64,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" />
+            </svg>
+          </button>
+        </div>
+        <div class="column">
+          <p class="center">
+            &copy; Celine Cosneau-Ampis 2021
+          </p>
+        </div>
+      </div>
+      <!--ROW CLOSED-->
+    </div>
+    <!--CONTAINER CLOSED-->
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../js/scripts.js"></script>
+</body>
+
+</html>
