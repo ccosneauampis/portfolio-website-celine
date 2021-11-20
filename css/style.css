@@ -3,8 +3,10 @@ Colors palette:
 Primary color : (black) #000000 (grey) #757575
 Secondary color: (white) #FFFFFF
 Accent color: (blue) #1585D7
-              (hover) #1066A3
-              (active) #234157
+              (hover) #92CFEF
+              (active) #1066A3
+              #234157
+
 */
 /* FONT */
 body {
@@ -63,9 +65,9 @@ svg.icon {
 }
 
 svg.float {
-  width: 72px;
-  height: 72px;
-  opacity: 0.5;
+  width: 60px;
+  height: 60px;
+  opacity: 0.4;
 }
 
 /* LINKS */
@@ -89,22 +91,26 @@ a:active {
 
 /* Link FR EN*/
 
-a.language1 {
-  font-size: 0.8em;
-  font-weight: 500;
-  line-height: 1.4;
-  color: #1585D7;
-  text-decoration: underline;
-  padding-right: 10px;
-}
-
-a.language2 {
+#language1 {
   font-size: 0.8em;
   font-weight: 500;
   line-height: 1.4;
   color: #000000;
   text-decoration: none;
-  padding-left: 10px;
+  margin-right: 10px;
+}
+
+#language2 {
+  font-size: 0.8em;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.L-active {
+  border-bottom: 2px solid #1585D7;
 }
 
 /* Burger Menu */
@@ -145,7 +151,7 @@ a.phase {
   padding: 10px 16px;
   border-radius: 4px;
   border-bottom: 2px solid #1585D7;
-  transition: 0.2s opacity;
+  transition: 0.2s background;
 }
 
 .button:visited {
@@ -155,12 +161,12 @@ a.phase {
 
 .button:hover,
 .button:focus {
-  opacity: 0.8;
-  text-decoration: none;
+  background:  #92CFEF;
+  color: #FFFFFF;
 }
 
 .button:active {
-  background-color: #234157;
+  background-color: #1066A3;
   color: #FFFFFF;
 }
 
@@ -174,14 +180,13 @@ a.phase {
   border-radius: 4px;
   text-transform: uppercase;
   border: 2px solid #1585D7;
-  transition: 0.2s opacity;
+  transition: 0.2s background;
 }
 
 .button.contact:hover,
 .button.contact:focus {
-  background-color: #1585D7;
-  opacity: 0.8;
-  color: #FFFFFF;
+  background-color: #92CFEF;
+  color: #1585D7;
 }
 
 .button.contact:visited {
@@ -190,8 +195,8 @@ a.phase {
 }
 
 .button.contact:active {
-  background-color: transparent;
-  color: #234157;
+  background-color: #1066A3;
+  color: #FFFFFF;
 }
 
 /* Button outlined*/
@@ -206,13 +211,16 @@ a.phase {
   border-radius: 4px;
   text-transform: capitalize;
   border: 2px solid #1585D7;
-  transition: 0.2s opacity;
+  transition: 0.2s background;
 }
 
-.button.outlined:hover,
+.button.outlined:hover {
+  background-color: #92CFEF;
+  color: #FFFFFF;
+}
+
 .button.outlined:focus {
-  background-color: #1585D7;
-  opacity: 0.8;
+  background-color: #92CFEF;
   color: #FFFFFF;
 }
 
@@ -222,8 +230,8 @@ a.phase {
 }
 
 .button.outlined:active {
-  background-color: transparent;
-  color: #234157;
+  background-color: #1066A3;
+  color: #FFFFFF;
 }
 
 /* LAYOUT STYLING */
@@ -243,6 +251,20 @@ a.phase {
   text-align: center;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10px; /* Place the button at the bottom of the page */
+  right: 5px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  font-size: 0;
+  padding: 0;
+}
+
 /* Header */
 .language {
   display: flex;
@@ -254,7 +276,6 @@ a.phase {
 .logo {
   width: 48px;
   height: 48px;
-  text-align: center;
 }
 
 header {
@@ -366,10 +387,22 @@ span.blue {
   padding-bottom: 50px;
 }
 
+#hero p {
+  margin: 0;
+  font-size: 1.525em;
+  font-weight: 400;
+}
+
 #work {
   padding: 25px 0 25px 0;
   display: inline-block;
   width: 100%;
+}
+
+#work span {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 350;
 }
 
 #expertsnow {
@@ -379,60 +412,8 @@ span.blue {
 
 #myportfoliowebsite {
   padding-bottom: 25px;
-  border-bottom: 1px solid #75757575;
 }
 
-#myportfoliowebsite svg {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
 
 /* ExpertsNow */
 #intro {
@@ -490,6 +471,14 @@ span.white {
 #summary .column {
   text-align: center;
   padding: 10px 10px 10px 10px;
+}
+
+#expertsnowpage h3 {
+  background-color: #92CFEF;
+  padding: 25px 25px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #discover {
@@ -583,6 +572,15 @@ h3.anchor-h {
 
 #conclusion .row {
   padding-bottom: 25px;
+  width: 100%;
+}
+
+#conclusion .conclusion {
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* About */
@@ -596,9 +594,14 @@ h3.anchor-h {
   width: 100%;
 }
 
-#me img {
+#me .row:first-child {
+  display: flex;
+  justify-content: center;
   margin: 0;
-  padding: 0 0 10px 0;
+}
+
+#me img {
+  max-width: 800px;
 }
 
 #resume {
@@ -663,18 +666,6 @@ h3.anchor-h {
     padding: 0 25px;
   }
 
-  #navigation img {
-    float: left;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  header {
-    margin: 0;
-    padding: 10px 0;
-  }
-
   .navtoggle.responsive nav {
     padding: 60px 0 0;
   }
@@ -684,15 +675,16 @@ h3.anchor-h {
   }
 
   main {
-    padding-top: 68px;
+    padding-top: 87px;
   }
 
   body {
     font-size: 18px;
   }
 
-  #hero .column {
-    padding: 25px 0;
+  /* Index */
+  #hero img {
+    padding: 0 50px;
   }
 
   /* ExpertsNow */
@@ -718,12 +710,12 @@ h3.anchor-h {
   }
 
   .anchor {
-    margin-top: -70px;
+    margin-top: -87px;
     margin-bottom: 0;
   }
 
   h3.anchor-h {
-    margin-top: 70px;
+    margin-top: 87px;
   }
 
   .role.timeline {
@@ -782,14 +774,17 @@ h3.anchor-h {
     padding: 0 25px;
   }
 
-  #navigation img {
-    float: left;
-    margin-top: 9px;
+  svg.float {
+    width: 72px;
+    height: 72px;
+  }
+
+  #myBtn {
+    bottom: 20px;
+    right: 30px;
   }
 
   header {
-    margin: 0;
-    padding: 10px 0;
     text-align: unset;
   }
 
@@ -805,6 +800,31 @@ h3.anchor-h {
 
   nav>ul>li {
     display: inline-block;
+  }
+
+  nav>ul>li>a {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  nav>ul>li>a:visited {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  nav>ul>li>a:hover {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  nav>ul>li>a:focus {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  nav>ul>li>a:active {
+    padding-right: 0;
+    padding-left: 20px;
   }
 
   .navtoggle li:not(:last-child) {
@@ -828,7 +848,7 @@ h3.anchor-h {
   }
 
   main {
-    padding-top: 86px;
+    padding-top: 96px;
   }
 
   body {
@@ -836,33 +856,41 @@ h3.anchor-h {
   }
 
   .col-md-6 {
-    width: 50%;
+    width: 48%;
   }
+
+  /* Index */
 
   #hero .row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin: 50px 0 0 0;
   }
 
   #hero .column {
     margin: 0;
-    padding: 25px 0;
+    padding: 0;
   }
 
   #hero .col-md-6:first-child {
     width: 55%;
+    padding-bottom: 0;
   }
 
   #hero h1 {
-    margin: 0;
+    margin-top: 0;
     font-size: 1.9em;
   }
 
   #hero .column:last-child {
-    width: 30%;
-    padding-top: 35px;
+    width: 35%;
+  }
+
+  #hero img {
+    padding: 0 0;
+    margin-left: 35px;
   }
 
   .row::after {
@@ -874,10 +902,14 @@ h3.anchor-h {
   #work .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     margin: 50px 0;
     padding-bottom: 50px;
+  }
+
+  #work h2 {
+    margin: 0 0 25px 0;
   }
 
   #work h3 {
@@ -911,12 +943,12 @@ h3.anchor-h {
   }
 
   .anchor {
-    margin-top: -86px;
+    margin-top: -96px;
     margin-bottom: 0;
   }
 
   h3.anchor-h {
-    margin-top: 86px;
+    margin-top: 96px;
   }
 
   .role.timeline {
@@ -972,7 +1004,7 @@ h3.anchor-h {
 
 @media only screen and (min-width: 1024px) {
   .container {
-    padding: 0 25px;
+    padding: 0 50px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -1000,15 +1032,12 @@ h3.anchor-h {
   }
 
   /* Index */
-  #hero .container::after {
-    content: "";
-    clear: both;
-    display: table;
+  #hero .col-md-6:first-child {
+    width: 45%
   }
 
-  #hero .row {
-    display: flex;
-    align-items: center;
+  #hero img {
+    margin-left: 55px;
   }
 
   .row::after {
