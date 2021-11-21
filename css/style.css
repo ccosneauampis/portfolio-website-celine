@@ -216,12 +216,10 @@ a.phase {
 
 .button.outlined:hover {
   background-color: #92CFEF;
-  color: #FFFFFF;
 }
 
 .button.outlined:focus {
   background-color: #92CFEF;
-  color: #FFFFFF;
 }
 
 .button.outlined:visited {
