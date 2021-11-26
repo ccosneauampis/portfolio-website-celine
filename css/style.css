@@ -126,6 +126,7 @@ a.phase {
   font-weight: 500;
   padding: 10px 16px;
   border-radius: 4px;
+  border-bottom: 2px solid #1585D7;
   transition: 0.2s background;
 }
 
@@ -154,6 +155,7 @@ a.phase {
   padding: 10px 16px;
   border-radius: 4px;
   text-transform: uppercase;
+  border: 2px solid #1585D7;
   transition: 0.2s background;
 }
 
@@ -184,6 +186,7 @@ a.phase {
   padding: 10px 16px;
   border-radius: 4px;
   text-transform: capitalize;
+  border: 2px solid #1585D7;
   transition: 0.2s background;
 }
 
