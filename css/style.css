@@ -1,11 +1,11 @@
 /*
 Colors palette:
-Primary color : (black) #000000 (grey) #757575
-Secondary color: (white) #FFFFFF
-Accent color: (blue) #1585D7
-              (hover) #92CFEF
-              (active) #1066A3
-              #234157
+Primary color : (black) #181A18
+Secondary color: (white) #FFFDFA
+Accent color: (blue) #1866E1        (orange) #EC5800
+              (light) #5E92E6       (light) #F08648
+              (lighter) #C1D5F6     (lighter) #FDEBE1
+              (dark) #134EAD        (dark)  #BA4400
 
 */
 /* FONT */
@@ -14,7 +14,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.688;
-  color: #000000;
+  color: #181A18;
 }
 
 h1, h2, h3, h4 {
@@ -24,21 +24,21 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 1.725em;
   font-weight: 450;
-  color: #000000;
+  color: #181A18;
   line-height: 1.5;
 }
 
 h2 {
   font-size: 1.625em;
   font-weight: 500;
-  color: #000000;
+  color: #EC5800;
   line-height: 1.4;
 }
 
 h3 {
   font-size: 1.25em;
   font-weight: 400;
-  color: #000000;
+  color: #181A18;
   line-height: 1.4;
 }
 
@@ -46,7 +46,7 @@ h4 {
   font-size: 1em;
   font-weight: 500;
   text-transform: uppercase;
-  color: #1585D7;
+  color: #1866E1;
   line-height: 1.4;
 }
 
@@ -72,40 +72,40 @@ svg.float {
 
 /* LINKS */
 a {
-  color: #1585D7;
+  color: #1866E1;
   text-decoration: none;
 }
 
 a:visited {
-  color: #1585D7;
+  color: #1866E1;
 }
 
 a:hover,
 a:focus {
-  color: #1066A3;
+  color: #134EAD;
 }
 
 a:active {
-  color: #234157;
+  color: #5E92E6;
 }
 
 /* Burger Menu */
 a.menu {
-  color: #000000;
+  color: #181A18;
   text-decoration: none;
 }
 
 a.menu:visited {
-  color: #000000;
+  color: #181A18;
 }
 
 a.menu:hover,
 a.menu:focus {
-  color: #000000;
+  color: #181A18;
 }
 
 a.menu:active {
-  color: #000000;
+  color: #181A18;
 }
 
 /* Link Design Process Phases*/
@@ -113,15 +113,15 @@ a.phase {
   font-size: 1.625em;
   font-weight: 400;
   line-height: 1.615;
-  color: #1585D7;
+  color: #1866E1;
   text-decoration: underline;
 }
 
 /* BUTTONS */
 .button {
   display: inline-block;
-  background-color: #1585D7;
-  color: #FFFFFF;
+  background-color: #1866E1;
+  color: #FFFDFA;
   font-size: 14px;
   font-weight: 500;
   padding: 10px 16px;
@@ -130,47 +130,48 @@ a.phase {
 }
 
 .button:visited {
-  background-color: #1585D7;
-  color: #FFFFFF;
+  background-color: #1866E1;
+  color: #FFFDFA;
 }
 
 .button:hover,
 .button:focus {
-  background:  #92CFEF;
-  color: #FFFFFF;
+  background:  #134EAD;
+  color: #FFFDFA;
 }
 
 .button:active {
-  background-color: #1066A3;
-  color: #FFFFFF;
+  background-color: #5E92E6;
+  color: #FFFDFA;
 }
 
 /* Button Contact*/
 .button.contact {
   background-color: transparent;
-  color: #1585D7;
+  color: #1866E1;
   font-size: 14px;
   font-weight: 500;
   padding: 10px 16px;
   border-radius: 4px;
   text-transform: uppercase;
+  border: 2px solid #EC5800;
   transition: 0.2s background;
 }
 
 .button.contact:hover,
 .button.contact:focus {
-  background-color: #92CFEF;
-  color: #1585D7;
+  background-color: #C1D5F6;
+  color: #1866E1;
 }
 
 .button.contact:visited {
   background-color: transparent;
-  color: #1585D7;
+  color: #1866E1;
 }
 
 .button.contact:active {
-  background-color: #1066A3;
-  color: #FFFFFF;
+  background-color: #134EAD;
+  color: #FFFDFA;
 }
 
 /* Button outlined*/
@@ -178,31 +179,32 @@ a.phase {
   margin: auto;
   width: auto;
   background-color: transparent;
-  color: #1585D7;
+  color: #1866E1;
   font-size: 14px;
   font-weight: 500;
   padding: 10px 16px;
   border-radius: 4px;
   text-transform: capitalize;
+  border: 2px solid #EC5800;
   transition: 0.2s background;
 }
 
 .button.outlined:hover {
-  background-color: #92CFEF;
+  background-color: #C1D5F6;
 }
 
 .button.outlined:focus {
-  background-color: #92CFEF;
+  background-color: #C1D5F6;
 }
 
 .button.outlined:visited {
   background-color: transparent;
-  color: #1585D7;
+  color: #1866E1;
 }
 
 .button.outlined:active {
-  background-color: #1066A3;
-  color: #FFFFFF;
+  background-color: #134EAD;
+  color: #FFFDFA;
 }
 
 /* LAYOUT STYLING */
@@ -234,6 +236,7 @@ a.phase {
   cursor: pointer; /* Add a mouse pointer on hover */
   font-size: 0;
   padding: 0;
+  width: 72px;
 }
 
 /* Header */
@@ -270,7 +273,7 @@ a.phase {
 .language  a {
   font-size: 0.6em;
   font-weight: 500;
-  color: #000000;
+  color: #181A18;
   text-decoration: none;
   margin-left: 5px;
   display: flex;
@@ -278,7 +281,7 @@ a.phase {
 }
 
 .L-active {
-  border-bottom: 2px solid #1585D7;
+  border-bottom: 2px solid #1866E1;
 }
 
 .logo {
@@ -286,7 +289,7 @@ a.phase {
 }
 
 header {
-  background-color: #FFFFFF;
+  background-color: #FDEBE1;
   margin: 0;
   display: inline-block;
   box-shadow: 0px 1px 4px 0px rgba(75, 75, 75, 0.38);
@@ -334,39 +337,39 @@ nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #000000;
+  color: #BA4400;
 }
 
 nav>ul>li>a:visited {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #000000;
+  color: #BA4400;
 }
 
 nav>ul>li>a:hover {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #1585D7;
+  color: #1866E1;
 }
 
 nav>ul>li>a:focus {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #757575;
+  color: #1866E1;
 }
 
 nav>ul>li>a:active {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #1585D7;
+  color: #134EAD;
 }
 
 nav>ul>li>a.active {
-  color: #1585D7;
+  color: #1866E1;
 }
 
 /* Main */
@@ -375,12 +378,12 @@ main {
 }
 
 span.blue {
-  color: #1585D7;
+  color: #1866E1;
 }
 
 /* Index */
 #hero {
-  background-color: #FFFFFF;
+  background-color: #FDEBE1;
   padding: 25px 0 25px 0;
   display: inline-block;
   width: 100%;
@@ -388,6 +391,10 @@ span.blue {
 
 #hero .column:first-child {
   padding-bottom: 50px;
+}
+
+#hero h2 {
+  color: #181A18;
 }
 
 #hero p {
