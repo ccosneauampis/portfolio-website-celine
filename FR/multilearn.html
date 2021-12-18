@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213631165-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-213631165-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../img/favicon.ico" rel="shortcut icon">
+  <title>MultiLearn</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body id="myportfoliowebsite">
+  <header class="section" id="navigation">
+    <div class="container">
+      <div class="language">
+        <div id="french" class="L-active">
+          <div class="flag">
+            <img src="../img/french.svg" alt="Français">
+          </div>
+          <div class="french">
+            <a href="myportfoliowebsite.html"> Français </a>
+          </div>
+        </div>
+        <div id="english">
+          <div class="flag">
+            <img src="../img/english.svg" alt="Français">
+          </div>
+          <div class="english">
+            <a href="../myportfoliowebsite.html"> English </a>
+          </div>
+        </div>
+      </div>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+          <img src="../img/logo.svg" alt="Logo" class=logo>
+        </a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html" class="active">Portfolio</a></li>
+            <li><a href="about.html">À Propos de</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                  </path>
+                </svg>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--CONTAINER CLOSED-->
+  </header>
+
+  <main>
+    <picture>
+      <img src="../img/comingsoon.jpg" alt="Page under construction">
+    </picture>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="row">
+        <h2 class="center">Contactez-moi</h2>
+        <p class="center">
+          Vous aimez mon travail et voulez discuter d'opportunités professionnelles?
+        </p>
+
+        <!--EMAIL-->
+        <div class="column contact">
+          <a href="mailto:c.cosneauampis@gmail.com" class="button contact"> Envoyez-moi un mail </a>
+        </div>
+        <!--EMAIL CLOSED-->
+
+        <!--SOCIAL MEDIAS-->
+        <div class="column social medias">
+          <a href="https://www.linkedin.com/in/ccosneauampis-070619/" target="_blank">
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <!--SOCIAL MEDIAS CLOSED-->
+
+        <div class="column top">
+          <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="../img/top.svg" alt="Back to top button">
+          </button>
+        </div>
+        <div class="column">
+          <p class="center">
+            &copy; Celine Cosneau-Ampis 2021
+          </p>
+        </div>
+      </div>
+      <!--ROW CLOSED-->
+    </div>
+    <!--CONTAINER CLOSED-->
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../js/scripts.js"></script>
+</body>
+
+</html>
