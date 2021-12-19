@@ -1,13 +1,13 @@
 /*
 Colors palette:
-Primary color : (black) #181A18
-Secondary color: (white) #FFFDFA
-Accent color: (blue) #1866E1        (orange) #EC5800
-              (light) #5E92E6       (light) #F08648
-              (lighter) #C1D5F6     (lighter) #FDEBE1
-              (dark) #134EAD        (dark)  #BA4400
-
+Primary color :   (black) #181A18
+                  (white) #FFFDFA
+Secondary color:  (grey) #747674
+Accent color:     (bronze metallic) #B88C46
+                  (darker) #6E542A
+                  (lighter) #D4BA90
 */
+
 /* FONT */
 body {
   font-family: 'Roboto', sans-serif;
