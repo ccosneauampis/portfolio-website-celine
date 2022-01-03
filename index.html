@@ -18,6 +18,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.ico" rel="shortcut icon">
   <title>Céline Cosneau-Ampis - UX Designer - Paris</title>
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+  </style>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,8 +52,8 @@
         </div>
       </div>
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html">
-          <img src="img/logo.svg" alt="Logo" class=logo>
+        <a href="index.html" class="nodisplay">
+          <img src="img/logo.svg" alt="Logo" class="logo">
         </a>
         <nav>
           <ul class="navigation">
@@ -56,10 +61,9 @@
             <li><a href="about.html">About</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path fill="currentColor"
-                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-                  </path>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+                  <image id="icons8-Material_Rounded-83195-96-181a18" data-name="icons8-Material Rounded-83195-96-181a18" width="96" height="96"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAABIElEQVR4nO3asU3DUBSG0d+8ggqi1KZmBgaAIRglE2QcKioYgBnoU6IUri3TpKHJi5CNg3NO/WRd3du4+BIAAAAAAAAAlqo55VHbtvd9+m2GPCW5mXim/65Lk7eSstntdp+1x9UDtG173w/9R5L1KONdjn1pykPtCFe1r/Tpt7H831gfdndU9QAZ8jjKOJfohN3VD8Ck6gdo8v4HcyzTCburHqCkbJLsRxnosuwPuzuq1B50Xfe1ul29DM3QJrlLcj3GdAvWpclracrzKb+hAAAAAADA8umCxqcLOhO6oJnpgmanCzp/uqAp6YJmpQuaiS4IAAAAAAD4QRc0Pl3QmdAFzUwXNDtd0PnTBU1JFzQrXdBMdEEAAAAAAAAAJEm+AdFXgn6B3n4GAAAAAElFTkSuQmCC" />
                 </svg>
               </a></li>
           </ul>
@@ -74,19 +78,26 @@
     <div class="section" id="hero">
       <div class="container">
         <div class="row">
+          <h1><span class="gold">Céline</span> <br>Cosneau-Ampis</h1>
+        </div>
+        <div class="row" id="presentation">
           <div class="column col-md-6 col-lg-7">
-            <h1>Hi, I'm Céline!</h1>
-            <h2>I'm an <span class="blue">aspiring UX Designer</span> from Paris.</h2>
-            <p>
-              I enjoy using my empathy to understand users’ needs, and my pro-activity helps me create intuitive experiences.
-            </p>
-          </div>
-          <div class="column col-md-6 col-lg-5">
             <picture>
-              <source srcset="img/me@1.png" media="(max-width:767px)">
-              <img src="img/me@2.png" alt="Profile Picture">
+              <source srcset="img/me.jpg" media="(max-width:767px)">
+              <img src="img/me@2x.jpg" alt="Profile Picture">
             </picture>
           </div>
+          <div class="column col-md-6 col-lg-5">
+            <h3><span class="gold">UX Designer</span> from Paris suburbs.</h3>
+            <p>
+              <i>"I enjoy using my empathy to understand users’ needs, and my pro-activity helps me create intuitive experiences."</i>
+            </p>
+          </div>
+        </div>
+        <div class="prompt">
+          <a href="#work" class="section1">
+            <img src="img/prompt.svg" alt="Latest_Projects">
+          </a>
         </div>
       </div>
       <!--HERO CONTAINER CLOSED-->
@@ -96,7 +107,7 @@
     <!--WORK-->
     <div class="section" id="work">
       <div class="container">
-        <h2>My latest projects</h2>
+        <h2 class="section2">My latest projects</h2>
 
         <!--MY PORTFOLIO-WEBSITE-->
         <div class="row" id="myportfoliowebsite">
@@ -111,7 +122,7 @@
             <p>
               During my training with CareerFoundry, I developed my own portfolio website.<br>I was the sole UX/UI Designer & Front-end Developer of this 3 weeks project.
             </p>
-            <a href="myportfoliowebsite.html" class="button"> View my Portfolio-Website Case Study</a>
+            <p class="button">Coming soon</p>
           </div>
         </div>
         <!--MY PORTFOLIO-WEBSITE CLOSED-->
@@ -150,7 +161,7 @@
             <a href="multilearn.html" class="button"> View MultiLearn Case Study</a>
           </div>
         </div>
-        <!--EXPERTSNOW CLOSED-->
+        <!--MULTILEARN CLOSED-->
 
       </div>
       <!--WORK CONTAINER CLOSED-->

@@ -18,6 +18,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="../img/favicon.ico" rel="shortcut icon">
   <title>Céline Cosneau-Ampis - UX Designer - Paris</title>
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+  </style>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,10 +61,9 @@
             <li><a href="about.html">À Propos de</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path fill="currentColor"
-                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-                  </path>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+                  <image id="icons8-Material_Rounded-83195-96-181a18" data-name="icons8-Material Rounded-83195-96-181a18" width="96" height="96"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAABIElEQVR4nO3asU3DUBSG0d+8ggqi1KZmBgaAIRglE2QcKioYgBnoU6IUri3TpKHJi5CNg3NO/WRd3du4+BIAAAAAAAAAlqo55VHbtvd9+m2GPCW5mXim/65Lk7eSstntdp+1x9UDtG173w/9R5L1KONdjn1pykPtCFe1r/Tpt7H831gfdndU9QAZ8jjKOJfohN3VD8Ck6gdo8v4HcyzTCburHqCkbJLsRxnosuwPuzuq1B50Xfe1ul29DM3QJrlLcj3GdAvWpclracrzKb+hAAAAAADA8umCxqcLOhO6oJnpgmanCzp/uqAp6YJmpQuaiS4IAAAAAAD4QRc0Pl3QmdAFzUwXNDtd0PnTBU1JFzQrXdBMdEEAAAAAAAAAJEm+AdFXgn6B3n4GAAAAAElFTkSuQmCC" />
                 </svg>
               </a></li>
           </ul>
@@ -74,19 +78,26 @@
     <div class="section" id="hero">
       <div class="container">
         <div class="row">
+          <h1><span class="gold">Céline</span> <br>Cosneau-Ampis</h1>
+        </div>
+        <div class="row" id="presentation">
           <div class="column col-md-6 col-lg-7">
-            <h1>Bienvenue!</h1>
-            <h2>Moi, c'est Céline. Une <span class="blue">UX Designer en devenir</span>.</h2>
-            <p>
-              J'aime utiliser mon empathie pour comprendre les besoins des utilisateurs, et ma pro-activité m'aide à créer des expériences intuitives.
-            </p>
-          </div>
-          <div class="column col-md-6 col-lg-5">
             <picture>
-              <source srcset="../img/me@1.png" media="(max-width:767px)">
-              <img src="../img/me@2.png" alt="Profile Picture">
+              <source srcset="../img/me.jpg" media="(max-width:767px)">
+              <img src="../img/me@2x.jpg" alt="Profile Picture">
             </picture>
           </div>
+          <div class="column col-md-6 col-lg-5">
+            <h3><span class="gold">UX Designer</span> de Plaisir (78).</h3>
+            <p>
+              <i>"J'aime utiliser mon empathie pour comprendre les besoins des utilisateurs, et ma pro-activité m'aide à créer des expériences intuitives."</i>
+            </p>
+          </div>
+        </div>
+        <div class="prompt">
+          <a href="#work" class="section1">
+            <img src="../img/prompt.svg" alt="Latest_Projects">
+          </a>
         </div>
       </div>
       <!--HERO CONTAINER CLOSED-->
@@ -97,6 +108,24 @@
     <div class="section" id="work">
       <div class="container">
         <h2>Mes projects récents</h2>
+
+        <!--MY PORTFOLIO-WEBSITE-->
+        <div class="row" id="myportfoliowebsite">
+          <div class="column col-md-6 col-lg-7 col-xl-4">
+            <picture>
+              <source srcset="../img/celinecosneauampis.com@1.jpg" media="(max-width:767px)">
+              <img src="../img/celinecosneauampis.com@2.jpg" alt="My Portfolio-Website">
+            </picture>
+          </div>
+          <div class="column col-md-6 col-lg-5">
+            <h3>Mon site web-portfolio <br><span>(Nov 2021)</span></h3>
+            <p>
+              Pendant ma formation avec CareerFoundry, j'ai dévelopé mon propre site web-portfolio.<br>J'ai été la seule UX/UI Designer & développeuse Front-end Developer sur ce projet de 3 semaines.
+            </p>
+            <p class="button">Coming soon</p>
+          </div>
+        </div>
+        <!--MY PORTFOLIO-WEBSITE CLOSED-->
 
         <!--EXPERTSNOW-->
         <div class="row" id="expertsnow">
@@ -111,28 +140,28 @@
             <p>
               J'ai travaillé sur ExpertsNow - une application web "responsive", pendant ma formation en UX Design avec CareerFoundry (2021). <br>J'ai été l'unique UX/UI designer sur ce projet de 6 mois.
             </p>
-            <a href="expertsnow.html" class="button"> Voir l'étude de cas d'ExpertsNow</a>
+            <a href="expertsnow.html" class="button"> Voir étude de cas ExpertsNow</a>
           </div>
         </div>
         <!--EXPERTSNOW CLOSED-->
 
-        <!--MY PORTFOLIO-WEBSITE-->
-        <div class="row" id="myportfoliowebsite">
-          <div class="column col-md-6 col-lg-7 col-xl-4">
+        <!--MULTILEARN-->
+        <div class="row" id="multilearn">
+          <div class="column col-md-6 col-lg-7">
             <picture>
-              <source srcset="../img/celinecosneauampis.com@1.jpg" media="(max-width:767px)">
-              <img src="../img/celinecosneauampis.com@2.jpg" alt="My Portfolio-Website">
+              <source srcset="../img/multilearn/multilearn.jpg" media="(max-width:767px)">
+              <img src="../img//multilearn/multilearn@2.jpg" alt="MultiLearn">
             </picture>
           </div>
           <div class="column col-md-6 col-lg-5">
-            <h3>Mon Site Web-Portfolio <br><span>(Nov 2021)</span></h3>
+            <h3>MultiLearn <br><span>(Oct 2020 > Nov 2020)</span></h3>
             <p>
-              Pendant ma formation avec CareerFoundry, j'ai dévelopé mon propre site web-portfolio.<br>J'ai été la seule UX/UI Designer & développeuse Front-end Developer sur ce projet de 3 semaines.
+              J'ai travaillé sur MultiLearn, une application "native" d'apprentissage de vocabulaire, pendant ma formation en UX Design avec CareerFoundry. <br>J'ai été l'unique UX designer sur ce projet de 2 mois.
             </p>
-            <a href="../myportfoliowebsite.html" class="button"> Voir l'étude de cas de Mon Site Web-Portfolio</a>
+            <a href="multilearn.html" class="button"> Voir étude de cas MultiLearn</a>
           </div>
         </div>
-        <!--MY PORTFOLIO-WEBSITE CLOSED-->
+        <!--MULTILEARN CLOSED-->
 
       </div>
       <!--WORK CONTAINER CLOSED-->

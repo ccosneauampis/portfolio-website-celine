@@ -1,0 +1,559 @@
+/*
+Colors palette:
+Primary color :   (yellow) #F4B500
+                  (darker) #926D00
+                  (lighter) #F8D366
+                  (white) #FFFDFA
+Secondary color:  (black) #181A18
+Accent color:     (grey) #454848
+                  (darker) #292B2B
+                  (lighter) #8F9191
+*/
+/* FONT */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.688;
+  color: #181A18;
+}
+
+h1 {
+  font-family: "Lobster", serif;
+}
+
+h2, h3, h4 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 1.725em;
+  font-weight: 450;
+  color: #181A18;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 1.625em;
+  font-weight: 500;
+  color: #EC5800;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+  color: #181A18;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1866E1;
+  line-height: 1.4;
+}
+
+/* IMG - VIDEOS - SVG */
+img {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+}
+
+svg.icon {
+  width: 24px;
+  height: 24px;
+}
+
+svg.float {
+  width: 60px;
+  height: 60px;
+  opacity: 0.4;
+}
+
+/* LINKS */
+a {
+  color: #1866E1;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1866E1;
+}
+
+a:hover,
+a:focus {
+  color: #134EAD;
+}
+
+a:active {
+  color: #5E92E6;
+}
+
+/* Burger Menu */
+a.menu {
+  color: #181A18;
+  text-decoration: none;
+}
+
+a.menu:visited {
+  color: #181A18;
+}
+
+a.menu:hover,
+a.menu:focus {
+  color: #181A18;
+}
+
+a.menu:active {
+  color: #181A18;
+}
+
+/* Link Design Process Phases*/
+a.phase {
+  font-size: 1.625em;
+  font-weight: 400;
+  line-height: 1.615;
+  color: #1866E1;
+  text-decoration: underline;
+}
+
+/* BUTTONS */
+.button {
+  display: inline-block;
+  background-color: #1866E1;
+  color: #FFFDFA;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 4px;
+  transition: 0.2s background;
+}
+
+.button:visited {
+  background-color: #1866E1;
+  color: #FFFDFA;
+}
+
+.button:hover,
+.button:focus {
+  background: #134EAD;
+  color: #FFFDFA;
+}
+
+.button:active {
+  background-color: #5E92E6;
+  color: #FFFDFA;
+}
+
+/* Button Contact*/
+.button.contact {
+  background-color: transparent;
+  color: #1866E1;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: 2px solid #EC5800;
+  transition: 0.2s background;
+}
+
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #C1D5F6;
+  color: #1866E1;
+}
+
+.button.contact:visited {
+  background-color: transparent;
+  color: #1866E1;
+}
+
+.button.contact:active {
+  background-color: #134EAD;
+  color: #FFFDFA;
+}
+
+/* Button outlined*/
+.button.outlined {
+  margin: auto;
+  width: auto;
+  background-color: transparent;
+  color: #1866E1;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  border: 2px solid #EC5800;
+  transition: 0.2s background;
+}
+
+.button.outlined:hover {
+  background-color: #C1D5F6;
+}
+
+.button.outlined:focus {
+  background-color: #C1D5F6;
+}
+
+.button.outlined:visited {
+  background-color: transparent;
+  color: #1866E1;
+}
+
+.button.outlined:active {
+  background-color: #134EAD;
+  color: #FFFDFA;
+}
+
+/* LAYOUT STYLING */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 10px;
+  /* Place the button at the bottom of the page */
+  right: 5px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: transparent;
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  font-size: 0;
+  padding: 0;
+  width: 72px;
+}
+
+/* Header */
+.language {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: 1.4;
+}
+
+#french, #english {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+#english {
+  margin-left: 15px;
+}
+
+.flag {
+  width: 18px;
+  height: auto;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+
+.language a {
+  font-size: 0.6em;
+  font-weight: 500;
+  color: #181A18;
+  text-decoration: none;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.L-active {
+  border-bottom: 2px solid #1866E1;
+}
+
+.logo {
+  width: 48px;
+}
+
+header {
+  background-color: #FDEBE1;
+  margin: 0;
+  display: inline-block;
+  box-shadow: 0px 1px 4px 0px rgba(75, 75, 75, 0.38);
+  position: fixed;
+  width: 100%;
+}
+
+/* Nav Bar */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .menu {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav>ul>li>a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #BA4400;
+}
+
+nav>ul>li>a:visited {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #BA4400;
+}
+
+nav>ul>li>a:hover {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #1866E1;
+}
+
+nav>ul>li>a:focus {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #1866E1;
+}
+
+nav>ul>li>a:active {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #134EAD;
+}
+
+nav>ul>li>a.active {
+  color: #1866E1;
+}
+
+/* Main */
+main {
+  padding-top: 83px;
+}
+
+span.blue {
+  color: #1866E1;
+}
+
+/* Footer */
+#contact {
+  display: block;
+  border-top: 2px solid #75757575;
+  padding: 25px 0 25px 0;
+}
+
+.column.contact {
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+.column.social.medias {
+  padding: 40px 0 25px 0;
+  text-align: center;
+}
+
+.column.top {
+  text-align: right;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 640px) {
+  .container {
+    padding: 0 25px;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 60px 0 0;
+  }
+
+  h1 {
+    font-size: 2.10em;
+  }
+
+  main {
+    padding-top: 87px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 25px;
+  }
+
+  svg.float {
+    width: 72px;
+    height: 72px;
+  }
+
+  #myBtn {
+    bottom: 20px;
+    right: 30px;
+  }
+
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    display: inline-block;
+    width: auto;
+    float: right;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav>ul>li>a {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  nav>ul>li>a:visited {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  nav>ul>li>a:hover {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  nav>ul>li>a:focus {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  nav>ul>li>a:active {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0 0 0;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2.10em;
+  }
+
+  main {
+    padding-top: 96px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 0 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-size: 2.10em;
+  }
+
+  h2 {
+    padding-bottom: 20px;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 25px;
+  }
+}

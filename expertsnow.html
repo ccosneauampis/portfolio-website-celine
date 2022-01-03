@@ -16,10 +16,15 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="img/favicon.ico" rel="shortcut icon">
+  <link href="img/expertsnow/favicon.ico" rel="shortcut icon">
   <title>ExpertsNow</title>
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+  </style>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/expertsnow.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -27,7 +32,7 @@
 
 <body id="expertsnowpage">
   <header class="section" id="navigation">
-    <div class="container">
+    <div class="container" id="navbar">
       <div class="language">
         <div id="french">
           <div class="flag">
@@ -48,7 +53,7 @@
       </div>
       <div class="navtoggle" id="myNavtoggle">
         <a href="index.html">
-          <img src="img/logo.svg" alt="Logo" class=logo>
+          <img src="img/expertsnow/logo.svg" alt="Logo" class="logo">
         </a>
         <nav>
           <ul class="navigation">
@@ -56,10 +61,9 @@
             <li><a href="about.html">About</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path fill="currentColor"
-                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-                  </path>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+                  <image id="icons8-Material_Rounded-83195-96-8736aa" data-name="icons8-Material Rounded-83195-96-8736aa" width="96" height="96"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAABGklEQVR4nO3asXHCQBBA0T3lDmiCEhgKsHugFSgAWiGiAbsADyXQhALlOickTjiNR/Ih9F58o9nZTRT8CAAAAAAAAABeVRry6Lg5r5vUnHKOj4h4m3imuetSis8+9/vDdXcrPS4e4Lg5r1M03xGxGmW85Whz9NvSEZrSV5rUnMLy/2J1391DxQPkHO/jzLM8Q3ZXPADTKh4gpfj6j0Fe0ZDdFQ/Q534fEe0oEy1Le9/dQ8UDHK67W45+m1JcIqIbZbTX1qUUlyF/QAAAAAAAwDLogsanC3oSuqDKdEG16YJmQBc0IV1QXbqgSnRBAAAAAADAL7qg8emCnoQuqDJdUG26oBnQBU1IF1SXLqgSXRAAAAAAAAAAERHxA7mEkf+nwzbWAAAAAElFTkSuQmCC" />
                 </svg>
               </a></li>
           </ul>
@@ -73,9 +77,9 @@
     <!--INTRO-->
     <div class="section" id="intro">
       <div class="container">
-        <h1 class="center">A responsive web app: <span class="blue">ExpertsNow</span></h1>
+        <h1 class="center">A responsive web app: <span class="yellow">ExpertsNow</span></h1>
         <div class="center" id="casestudy">
-          <a href="files/casestudy_expertsnow.pdf" class="button outlined" target="_blank">Detailed Case Study</a>
+          <a href="files/casestudy_expertsnow.pdf" class="button" target="_blank">Detailed Case Study</a>
         </div>
         <div class="row" id="logo_expertsnow">
           <div class="column">
@@ -242,11 +246,13 @@
 
     <!--DISCOVER-->
     <div class="section" id="discover">
+      <div class="anchor" id="section1">
+        <a>&nbsp;</a>
+      </div>
+      <div class="title">
+        <h3 class="anchor-h">To better understand what would be the potential users’ expectations, <b>I analyzed some of ExpertsNow competitors and interviewed 4 potential users</b>.</h3>
+      </div>
       <div class="container">
-        <div class="anchor" id="section1">
-          <a>&nbsp;</a>
-        </div>
-        <h3 class="center anchor-h">To better understand what would be the potential users’ expectations, <b>I analyzed some of ExpertsNow competitors and interviewed 4 potential users</b>.</h3>
         <div class="row">
           <div class="column">
             <h4>Competitive analysis</h4>
@@ -283,14 +289,16 @@
 
     <!--DEFINE-->
     <div class="section" id="define">
-      <div class="container">
-        <div class="anchor" id="section2">
-          <a>&nbsp;</a>
-        </div>
-        <h3 class="center anchor-h">The results from the Discover phase were very useful in <b>defining types of user</b> who would be using ExpertsNow, <b>potential solutions to answer their needs</b> and a <b>navigation flow that would facilitate
+      <div class="anchor" id="section2">
+        <a>&nbsp;</a>
+      </div>
+      <div class="title">
+        <h3 class="anchor-h">The results from the Discover phase were very useful in <b>defining types of user</b> who would be using ExpertsNow, <b>potential solutions to answer their needs</b> and a <b>navigation flow that would facilitate
             their
             experience</b>.
         </h3>
+      </div>
+      <div class="container">
         <div class="row">
           <div class="column">
             <h4>Types of user</h4>
@@ -337,11 +345,13 @@
 
     <!--DEVELOP-->
     <div class="section" id="develop">
+      <div class="anchor" id="section3">
+        <a>&nbsp;</a>
+      </div>
+      <div class="title">
+        <h3 class="anchor-h">With the previous user flows in mind, I was able to <b>map out ExpertsNow</b> and <b>start designing its different screens</b>.</h3>
+      </div>
       <div class="container">
-        <div class="anchor" id="section3">
-          <a>&nbsp;</a>
-        </div>
-        <h3 class="center anchor-h">With the previous user flows in mind, I was able to <b>map out ExpertsNow</b> and <b>start designing its different screens</b>.</h3>
         <div class="row">
           <div class="column">
             <h4>Information Architecture</h4>
@@ -376,11 +386,13 @@
 
     <!--DELIVER-->
     <div class="section" id="deliver">
+      <div class="anchor" id="section4">
+        <a>&nbsp;</a>
+      </div>
+      <div class="title">
+        <h3 class="anchor-h">Once I finished designing all the screens from the 3 key features, <b>I performed a Usability and a Preference test</b> to check if the organization and navigation flow of ExpertsNow were intuitive enough.</h3>
+      </div>
       <div class="container">
-        <div class="anchor" id="section4">
-          <a>&nbsp;</a>
-        </div>
-        <h3 class="center anchor-h">Once I finished designing all the screens from the 3 key features, <b>I performed a Usability and a Preference test</b> to check if the organization and navigation flow of ExpertsNow were intuitive enough.</h3>
         <div class="row">
           <div class="column">
             <h4>Usability Test</h4>
@@ -416,11 +428,13 @@
 
     <!--REFINE-->
     <div class="section" id="refine">
+      <div class="anchor" id="section5">
+        <a>&nbsp;</a>
+      </div>
+      <div class="title">
+        <h3 class="anchor-h">After testing my prototype and implementing the different tests participants’ feedback, <b>I focused on the visual aspect of ExpertsNow</b>.</h3>
+      </div>
       <div class="container">
-        <div class="anchor" id="section5">
-          <a>&nbsp;</a>
-        </div>
-        <h3 class="center anchor-h">After testing my prototype and implementing the different tests participants’ feedback, <b>I focused on the visual aspect of ExpertsNow</b>.</h3>
         <div class="row">
           <div class="column">
             <h4>Reflexions on UI Design</h4>
@@ -470,9 +484,11 @@
 
     <!--CONCLUSION-->
     <div class="section" id="conclusion">
-      <div class="container">
-        <h3 class="center">After the second iteration process, <b>I finalized updating my prototype</b>. I then reflected on <b>what could the next steps be</b> to further improve the app and <b>what outcomes could I take from this training
+      <div class="title">
+        <h3>After the second iteration process, <b>I finalized updating my prototype</b>. I then reflected on <b>what could the next steps be</b> to further improve the app and <b>what outcomes could I take from this training
             project</b>.</h3>
+      </div>
+      <div class="container">
         <div class="center" id="prototype">
           <a href="https://cline144015.invisionapp.com/console/share/JH34QHCU8N/821964497" class="button" target="_blank">Prototype</a>
         </div>
@@ -536,7 +552,7 @@
 
         <div class="column top">
           <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <img src="img/top.svg" alt="Back to top button">
+            <img src="img/expertsnow/top.svg" alt="Back to top button">
           </button>
         </div>
         <div class="column">
