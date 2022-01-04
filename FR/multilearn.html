@@ -16,16 +16,21 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../img/favicon.ico" rel="shortcut icon">
+  <link href="../img/multilearn/favicon.ico" rel="shortcut icon">
   <title>MultiLearn</title>
+  <style>
+    *{
+      scroll-behavior: smooth;
+    }
+  </style>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/multilearn.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body id="myportfoliowebsite">
+<body id="multilearnpage">
   <header class="section" id="navigation">
     <div class="container">
       <div class="language">
@@ -34,7 +39,7 @@
             <img src="../img/french.svg" alt="Français">
           </div>
           <div class="french">
-            <a href="myportfoliowebsite.html"> Français </a>
+            <a href="multilearn.html"> Français </a>
           </div>
         </div>
         <div id="english">
@@ -42,13 +47,13 @@
             <img src="../img/english.svg" alt="Français">
           </div>
           <div class="english">
-            <a href="../myportfoliowebsite.html"> English </a>
+            <a href="../multilearn.html"> English </a>
           </div>
         </div>
       </div>
       <div class="navtoggle" id="myNavtoggle">
         <a href="index.html">
-          <img src="../img/logo.svg" alt="Logo" class=logo>
+          <img src="../img/multilearn/logo.svg" alt="Logo" class=logo>
         </a>
         <nav>
           <ul class="navigation">
@@ -69,10 +74,312 @@
     <!--CONTAINER CLOSED-->
   </header>
 
-  <main>
-    <picture>
-      <img src="../img/comingsoon.jpg" alt="Page under construction">
-    </picture>
+  <main id="main_multilearn">
+    <!--INTRO-->
+    <div class="section" id="intro_multilearn">
+      <div class="container">
+        <h1 class="center">Une application d'apprentissage de vocabulaire : <span class="yellow">MultiLearn</span></h1>
+        <div class="center" id="casestudy_multilearn">
+          <a href="../files/casestudy_multilearn.pdf" class="button" target="_blank">Étude de cas détaillée (EN)</a>
+        </div>
+        <div class="row" id="logo_multilearn">
+          <div class="column">
+            <div class="row">
+              <picture>
+                <source srcset="../img/multilearn/logo_multilearn.png" media="(max-width:767px)">
+                <img src="../img/multilearn/logo_multilearn@2x.png" alt="Logo_MultiLearn">
+              </picture>
+            </div>
+            <div class="row description">
+              <p>
+                <span class="white">MultiLearn est une application d'apprentissage de vocabulaire donnant les moyens à ses utilisateurs de mieux apprendre.<br><br>C'est une application 4-en-1 avec laquelle ses utilisateurs peuvent créer leurs propres flashcards, apprendre une nouvelle langue, discuter avec d'autres utilisateurs et même traduire.</span>
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <picture>
+              <source srcset="../img/multilearn/intro_picture.png" media="(max-width:767px)">
+              <img src="../img/multilearn/intro_picture@2x.png" alt="ExpertsNow">
+            </picture>
+          </div>
+        </div>
+        <div class="row" id="overview_multilearn">
+          <div class="column overview" id="context_multilearn">
+            <h4>Contexte</h4>
+            <p>
+              J'ai travaillé sur ce projet lors de ma formation pour devenir une UX Designer, avec CareerFoundry.
+            </p>
+          </div>
+          <div class="role timeline" id="roletimeline_multilearn">
+            <div class="column overview" id="role_multilearn">
+              <h4>Mon rôle</h4>
+              <p>
+                Unique UX designer
+              </p>
+            </div>
+            <div class="column overview" id="timeline_multilearn">
+              <h4>Période</h4>
+              <p>
+                2 mois
+              </p>
+            </div>
+          </div>
+          <div class="column overview" id="tools_multilearn">
+            <h4>Outils</h4>
+            <div class="row">
+              <!--Google Draw-->
+              <div class="column">
+                <img src="../img/tools/googledraw.svg" alt="Google_Draw">
+                <p style="font-size:60%;">
+                  Google Draw
+                </p>
+              </div>
+              <!--end Google Draw-->
+              <!--Marvel-->
+              <div class="column">
+                <img src="../img/tools/marvel.svg" alt="Marvel">
+                <p style="font-size:60%;">
+                  Marvel
+                </p>
+              </div>
+              <!--end Marvel-->
+              <!--Google Meet-->
+              <div class="column">
+                <img src="../img/tools/googlemeet.svg" alt="Google_Meet">
+                <p style="font-size:60%;">
+                  Google Meet
+                </p>
+              </div>
+              <!--end Google Meet-->
+            </div>
+            <!--TOOLS ROW CLOSED-->
+          </div>
+          <!-- TOOLS COLUMN CLOSED-->
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--SUMMARY-->
+    <div class="section" id="summary_multilearn">
+      <div class="container">
+        <h2 class="center">Quel a été mon processus de design ?</h2>
+        <div class="img">
+          <picture>
+            <source srcset="../img/multilearn/design_process.png" media="(max-width:767px)">
+            <img src="../img/multilearn/design_process@2x.png" alt="Design_Process">
+          </picture>
+        </div>
+        <div class="row">
+          <div class="column">
+            <a href=#section1_multilearn class="phase">Découvrir</a>
+            <p>
+              Quelles sont les autres application d'apprentissage de vocabulaire sur le marché ?<br><br> Qui sont les potentiels utilisateurs ? Quelles sont leurs habitudes ? Leurs attentes ?
+            </p>
+          </div>
+          <div class="column">
+            <a href=#section2_multilearn class="phase">Définir</a>
+            <p>
+              1 type d'utilisateurs<br><br>Comment navigueraient-ils sur l'application?
+            </p>
+          </div>
+          <div class="column">
+            <a href=#section3_multilearn class="phase">Développer</a>
+            <p>
+              Quels sont les design des différents écrans ?
+            </p>
+          </div>
+          <div class="column">
+            <a href=#section4_multilearn class="phase">Délivrer</a>
+            <p>
+              Test d'ergonomie & Mise en application des feedbacks
+            </p>
+          </div>
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--DISCOVER-->
+    <div class="section" id="discover_multilearn">
+      <div class="anchor" id="section1_multilearn">
+        <a>&nbsp;</a>
+      </div>
+      <div class="title">
+        <h3 class="anchor-h">Afin de mieux comprendre les utilisateurs et leurs attentes, j'ai <b>analysé et comparé 3 applications d'apprentissage de vocabulaire</b>. J'ai aussi <b>réalisé 5 interviews</b> avec de potentiels utilisateurs.</h3>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h4>Analyse de la Compétition</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/multilearn/competitive_analysis.png" media="(max-width:767px)">
+                <img src="../img/multilearn/competitive_analysis@2x.png" alt="Quizlet_WordUp_FluentU">
+              </picture>
+            </div>
+            <p>
+              Pour mieux comprendre les attentes des utilisateurs, J'ai <b>commencé par analyser 3 applications similaires à MultiLearn</b>.
+            </p>
+          </div>
+          <div class="column">
+            <h4>Interviews d'Utilisateurs</h4>
+            <div class="img">
+              <div class="img">
+                <picture>
+                  <source srcset="../img/multilearn/users_interviews.png" media="(max-width:767px)">
+                  <img src="../img/multilearn/users_interviews@2x.png" alt="Thinking_Doing_Feeling">
+                </picture>
+              </div>
+            </div>
+            <p>
+              Avec les résultats de l'analyse de la compétition en tête, J'ai <b>interviewé 5 utilisateurs potentiels</b> afin d'empathiser avec eux et mieux comprendre leurs besoins et attentes.<br>J'ai <b>analysé les résultas</b> des précédentes interviews <b>via ce que les participants « Faisaient », « Ressentaient » and « Pensaient »</b>.
+            </p>
+          </div>
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--DEFINE-->
+    <div class="section" id="define_multilearn">
+      <div class="anchor" id="section2_multilearn">
+        <a>&nbsp;</a>
+      </div>
+      <div class="title">
+        <h3 class="anchor-h">Grâce aux résultats des interviews de la phase Découvrir, J'ai pu <b>définir un type d'utilisateurs</b> faisant partis de la cible de MultiLearn. Puis, j'ai <b>travaillé sur l'Architecture d'Information via des user flows</b>.
+        </h3>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h4>Persona</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/multilearn/persona.png" media="(max-width:767px)">
+                <img src="../img/multilearn/persona@2x.png" alt="Personas">
+              </picture>
+            </div>
+            <p>
+              Grâce à l'analyse des résultats, j'ai pu <b>définir un type d'utilisateurs</b> qui pourraient potentiellement utiliser MultiLearn, sous la proto-persona d'Ellis.
+            </p>
+          </div>
+          <div class="column">
+            <h4>User's flows</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/multilearn/user_flows.jpg" media="(max-width:767px)">
+                <img src="../img/multilearn/user_flows@2x.jpg" alt="User_Flow">
+              </picture>
+            </div>
+            <p>
+              En ayant défini les besoins et buts principaux ainsi que les comportments des utilisateurs potentiels via la persona d'Ailin, <b>j'ai pu travaillé sur</b> comment organiser MultiLearn par <b>la création de user flows</b>.
+            </p>
+          </div>
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--DEVELOP-->
+    <div class="section" id="develop_multilearn">
+      <div class="anchor" id="section3_multilearn">
+        <a>&nbsp;</a>
+      </div>
+      <div class="title">
+        <h3 class="anchor-h">Avec les précédents user flows à l'esprit, J'ai <b>commencé à créer les différents écrans de MultiLearn</b>.</h3>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h4>Wireframing & Prototyping</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/multilearn/wireframing.jpg" media="(max-width:767px)">
+                <img src="../img/multilearn/wireframing@2x.jpg" alt="Evolution_Wireframes">
+              </picture>
+            </div>
+            <p>
+              Grâce aux user flows, j'ai <b>designé les différents écrans de 3 fonctionnalités clés de MultiLearn</b>: S'enregistrer / Se connecter - Flashcards - Cours. Puis, j'ai <b>lié les écrans pour en faire un prototype intéractif</b>.
+            </p>
+          </div>
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--DELIVER-->
+    <div class="section" id="deliver_multilearn">
+      <div class="anchor" id="section4_multilearn">
+        <a>&nbsp;</a>
+      </div>
+      <div class="title">
+        <h3 class="anchor-h">J'ai <b>fait tester mon prototype intéractif</b> afin de <b>vérifier si des problèmes d'ergonomie étaient présents</b>. J'ai ensuite <b>mis en application les feedbacks</b> reçus.</h3>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h4>Test d'Ergonomie et Mise en Application des Feedback</h4>
+            <div class="img">
+              <picture class="img">
+                <source srcset="../img/multilearn/usability_test.jpg" media="(max-width:767px)">
+                <img src="../img/multilearn/usability_test@2x.jpg" alt="Usability_Test_Multilearn">
+              </picture>
+            </div>
+            <p>
+              J'ai <b>animé 3 tests d'ergonomie </b> à distance <b>pour évaluer l'intuitivité de MultiLearn</b>. J'ai ensuite <b>analysé les résultats</b> en classant mes observations <b>en fonction des degrés de sévérité de Jacob Nielsen</b>.
+            </p>
+          </div>
+        </div>
+        <!--ROW CLOSED-->
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
+
+    <!--CONCLUSION-->
+    <div class="section" id="conclusion_multilearn">
+      <div class="title">
+        <h3>Après avoir mis en oeuvre les feedbacks du Test d'Ergonomie, <b>j'ai mis à jour mon prototype</b>. J'ai ensuite <b>réfléchi aux possibles étapes suivantes</b> pour continuer d'améliorer MultiLearn. Enfin, j'ai <b>fait le bilan sur ce que j'ai appris</b> pendant ce projet <b>et ce sur quoi je dois m'améliorer</b> en tant que designer.</h3>
+      </div>
+      <div class="container">
+        <div class="center" id="prototype_multilearn">
+          <a href="https://marvelapp.com/prototype/7e51iji/screen/73967214" class="button" target="_blank">Prototype</a>
+        </div>
+        <div class="row">
+          <h4>Étapes Suivantes</h4>
+          <div class="conclusion">
+            <ol>
+              <li>Les participants au test ont montré un certain intérêt pour la fonctionnalité « Community » qui permet de communiquer avec d'autres utilisateurs y compris des natifs de langue qu'ils ont choisi d'apprendre. Donc, pour continuer d'améliorer MultiLearn, Je dois ajouter des wireframes en ce qui concerne ses autres fonctionnalités.</li>
+              <li>Après avoir complété les autres fonctionnalités clés, un deuxième tour de Test d'Ergonomie serait utile pour vérifier, à nouveau, la bonne intuitivité de MultiLearn.</li>
+              <li>Suite au second Test d'Ergonomie, je mettrais en application les feedbacks reçus avant d'ajouter du UI design.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="row">
+          <h4>Ce qui s'est bien passé et ce qui peut être amélioré</h4>
+          <div class="conclusion">
+            <p>
+              Pendant ce projet <b>j'ai été satisfaite de l'importance que j'ai donnée à chaque étape</b>, parce que ça m'a permis d'être bien préparée pour les étapes suivantes. <b>Rassembler les feedbacks d'utilisateurs</b>potentiels grâce à des interviews et tests d'ergonomie <b>a été très intéressant et a vraiment donné du sens à ce projet</b>. J'ai <b>aimé travailler</b> à la fois <b>sur l'Architecture d'Information et l'étape de Wireframing/Prototyping</b> car <b>c'était amusant et épanouissant</b> de voir mes idées et concepts devenir tangible.<br>
+              Pour mes prochains projets, Je sais maintenant que je vais <b>devoir améliorer mes capacités en « wireframing-papier » pour les rendre plus propre</b>. Qu'il est <b>mieux de prendre des notes pendant les interviews/tests d'ergonomie</b> puisque transcrire prend beaucoup trop de temps. Et je vais aussi <b>devoir améliorer sur la formulation des tâches d'un test d'ergonomie pour éviter toutes confusions</b>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--CONTAINER CLOSED-->
+    </div>
+    <!--SECTION CLOSED-->
   </main>
 
   <footer id="contact">
@@ -103,7 +410,7 @@
 
         <div class="column top">
           <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <img src="../img/top.svg" alt="Back to top button">
+            <img src="../img/multilearn/top.svg" alt="Back to top button">
           </button>
         </div>
         <div class="column">
