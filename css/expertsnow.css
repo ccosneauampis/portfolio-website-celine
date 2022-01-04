@@ -844,6 +844,10 @@ h3.anchor-h {
     margin-right: auto;
   }
 
+  #main img {
+    width: 100%;
+  }
+
   #discover .row {
     display: flex;
     flex-direction: row;

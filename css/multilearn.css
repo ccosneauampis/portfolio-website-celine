@@ -823,6 +823,10 @@ span.yellow {
     width: 20%;
   }
 
+  #main_multilearn img {
+    width: 100%;
+  }
+
   .img {
     width: 250px;
     height: auto;
