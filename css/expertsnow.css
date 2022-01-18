@@ -120,6 +120,8 @@ a.phase {
   line-height: 1.615;
   color: #4B016E;
   text-decoration: underline;
+  display: flex;
+  justify-content: center;
 }
 
 /* BUTTONS */
@@ -134,15 +136,14 @@ a.phase {
   transition: 0.2s background;
 }
 
-
 .button:visited {
   background-color: #8736AA;
   color: #FFFDFA;
 }
 
 .button:hover {
-    background: #512066;
-    color: #FFFDFA;
+  background: #512066;
+  color: #FFFDFA;
 }
 
 .button:focus {
@@ -167,7 +168,6 @@ a.phase {
   border: 2px solid #F3AE18;
   transition: 0.2s background;
 }
-
 
 .button.contact:visited {
   background-color: #FFFDFA;
@@ -281,7 +281,7 @@ header {
   display: inline-block;
   box-shadow: 0px 1px 4px 0px rgba(243, 174, 24, 0.38);
   position: fixed;
-  top:0;
+  top: 0;
   width: 100%;
   transition: top 0.3s;
 }
@@ -378,21 +378,25 @@ span.yellow {
   width: 100%;
 }
 
+#main img {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #casestudy {
   padding: 30px 0;
 }
 
 #logo_expertsnow {
-  background-color: #4A016D;
-  display: inline-block;
-  padding-bottom: 25px;
   margin: 40px auto 0px auto;
-  border-radius: 4px;
 }
 
-#logo_expertsnow .column {
-  padding: 10px 20px 10px 20px;
-  text-align: center;
+#logo_expertsnow img {
+  width: 100%;
+  border-radius: 4px;
 }
 
 span.white {
@@ -407,6 +411,7 @@ span.white {
 #overview .column.overview {
   padding: 10px 0px 10px 0px;
 }
+
 #tools img {
   width: 48px;
   height: 48px;
@@ -435,8 +440,11 @@ span.white {
 }
 
 #summary .column {
-  text-align: center;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
+}
+
+#summary p {
+  text-align: left;
 }
 
 #expertsnowpage h3 {
@@ -504,21 +512,12 @@ h3.anchor-h {
   padding: 10px 0px 10px 0px;
 }
 
-#main img {
-  display: flex;
-  justify-content: center;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #prototype {
   padding: 50px 0;
 }
 
 #demo {
   margin-bottom: 75px;
-
 }
 
 #conclusion .row {
@@ -669,13 +668,6 @@ h3.anchor-h {
   }
 
   /* ExpertsNow */
-  .img {
-    width: 400px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   #logo_expertsnow .row {
     margin: 0;
     padding: 20px 0;
@@ -683,11 +675,6 @@ h3.anchor-h {
 
   #logo_expertsnow .row.description {
     margin: 0 40px;
-  }
-
-  #logo_expertsnow .column {
-    padding: 20px 100px;
-    text-align: center;
   }
 
   .anchor {
@@ -710,13 +697,22 @@ h3.anchor-h {
     width: 50%;
   }
 
-  #summary .img {
+  #discover img, #define img, #develop img, #deliver img, #refine img {
+    margin: 40px auto;
+  }
+
+  #summary img {
     width: 100%;
     padding: 20px 0;
   }
 
   #summary .column {
     padding: 20px 140px;
+  }
+
+  .usersneeds {
+    width: 60%;
+    margin: 0 auto;
   }
 
   iframe {
@@ -763,29 +759,10 @@ h3.anchor-h {
     width: 50%;
   }
 
-  #logo_expertsnow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 40px 0 0 0;
-    padding: 20px 0;
-  }
-
   #logo_expertsnow .row.description {
     margin: 0 40px;
     padding: 0
   }
-
-  #logo_expertsnow .column {
-    padding: 20px 40px;
-    text-align: center;
-    width: 50%;
-  }
-
-    #logo_expertsnow .column:last-child img{
-      width: 100%;
-    }
 
   #overview {
     display: flex;
@@ -834,81 +811,31 @@ h3.anchor-h {
   }
 
   #summary .column {
-    padding: 10px 15px;
+    padding: 10px 20px;
     width: 20%;
   }
 
-  .img {
-    width: 250px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #main img {
+  #summary img {
+    padding-top: 0;
     width: 100%;
+    max-width: 1200px;
   }
 
-  #discover .row {
+  #discover .row, #define .row, #develop .row, #deliver .row, #refine .row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
   }
 
-  #discover .column {
-    width: 45%;
-    text-align: center;
+  #discover .column, #define .column, #develop .column, #deliver .column, #refine .column {
+    width: 100%;
+    max-width: 1200px;
+    text-align: left;
   }
 
-  #define .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-
-  #define .column {
-    width: 32%;
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  #develop .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-
-  #develop .column {
-    width: 45%;
-    text-align: center;
-  }
-
-  #deliver .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-
-  #deliver .column {
-    width: 45%;
-    text-align: center;
-  }
-
-  #refine .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-
-  #refine .column {
-    width: 32%;
-    text-align: center;
-    padding: 0 10px;
+  #discover img, #define img, #develop img, #deliver img, #refine img {
+    width: 60%;
   }
 
   iframe {
