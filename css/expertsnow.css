@@ -525,7 +525,7 @@ h3.anchor-h {
   width: 100%;
 }
 
-#conclusion .conclusion {
+.conclusion {
   display: flex;
   justify-content: center;
   max-width: 700px;
@@ -696,6 +696,7 @@ h3.anchor-h {
   #roletimeline .column.overview {
     width: 50%;
   }
+
 
   #discover img, #define img, #develop img, #deliver img, #refine img {
     margin: 40px auto;
