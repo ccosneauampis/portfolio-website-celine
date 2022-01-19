@@ -254,7 +254,9 @@ a.menu:active {
 }
 
 .logo {
-  width: 48px;
+  width: 50px;
+  margin-top: -20px;
+  margin-bottom: 5px;
 }
 
 .navtoggle a:first-child {
@@ -282,7 +284,7 @@ header {
 .navtoggle li .menu {
   position: absolute;
   right: 0;
-  top: 17px;
+  top: 10px;
   padding-right: 0;
 }
 
@@ -663,6 +665,12 @@ span.gold {
     text-align: unset;
   }
 
+  .logo {
+    width: 60px;
+    margin-top: -15px;
+    margin-bottom: 0px;
+  }
+  
   nav {
     display: inline-block;
     width: auto;

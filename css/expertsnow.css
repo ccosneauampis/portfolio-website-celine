@@ -53,6 +53,7 @@ h4 {
   text-transform: uppercase;
   color: #F3AE18;
   line-height: 1.4;
+  text-align: center;
 }
 
 /* IMG - VIDEOS - SVG */
@@ -272,7 +273,9 @@ a.phase {
 }
 
 .logo {
-  width: 48px;
+  width: 50px;
+  margin-top: -20px;
+  margin-bottom: 5px;
 }
 
 header {
@@ -298,7 +301,7 @@ header {
 .navtoggle li .menu {
   position: absolute;
   right: 0;
-  top: 17px;
+  top: 10px;
   padding-right: 0;
 }
 
@@ -412,6 +415,10 @@ span.white {
   padding: 10px 0px 10px 0px;
 }
 
+#overview h4 {
+  text-align: left;
+}
+
 #tools img {
   width: 48px;
   height: 48px;
@@ -437,6 +444,7 @@ span.white {
 
 #summary img {
   padding-top: 15px;
+  width: 100%;
 }
 
 #summary .column {
@@ -448,7 +456,7 @@ span.white {
 }
 
 #expertsnowpage h3 {
-  padding: 50px 25px;
+  padding: 75px 25px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -465,50 +473,14 @@ h3.anchor-h {
 
 .title {
   background-color: #8736AA;
-}
+  }
 
-#discover {
+#discover, #define, #develop, #deliver, #refine {
   display: inline-block;
   width: 100%;
 }
 
-#discover .column {
-  padding: 10px 0px 10px 0px;
-}
-
-#define {
-  display: inline-block;
-  width: 100%;
-}
-
-#define .column {
-  padding: 10px 0px 10px 0px;
-}
-
-#develop {
-  display: inline-block;
-  width: 100%;
-}
-
-#develop .column {
-  padding: 10px 0px 10px 0px;
-}
-
-#deliver {
-  display: inline-block;
-  width: 100%;
-}
-
-#deliver .column {
-  padding: 10px 0px 10px 0px;
-}
-
-#refine {
-  display: inline-block;
-  width: 100%;
-}
-
-#refine .column {
+#discover .column, #define .column, #develop .column, #deliver .column, #refine .column {
   padding: 10px 0px 10px 0px;
 }
 
@@ -594,6 +566,12 @@ h3.anchor-h {
 
   header {
     text-align: unset;
+  }
+
+  .logo {
+    width: 60px;
+    margin-top: -15px;
+    margin-bottom: 0px;
   }
 
   nav {
@@ -697,7 +675,6 @@ h3.anchor-h {
     width: 50%;
   }
 
-
   #discover img, #define img, #develop img, #deliver img, #refine img {
     margin: 40px auto;
   }
@@ -714,6 +691,31 @@ h3.anchor-h {
   .usersneeds {
     width: 60%;
     margin: 0 auto;
+  }
+
+  #discover .title {
+    background-position: 0px -70px, 525px 157px;
+    background-size: 100%, 20%;
+  }
+
+  #define .title {
+    background-position: 0px -100px, 525px 265px;
+    background-size: 100%, 20%;
+  }
+
+  #develop .title {
+    background-position: 0px -75px, 525px 180px;
+    background-size: 100%, 20%;
+  }
+
+  #deliver .title {
+    background-position: 0px -85px, 525px 230px;
+    background-size: 100%, 20%;
+  }
+
+  #refine .title {
+    background-position: 0px -100px, 525px 170px;
+    background-size: 100%, 20%;
   }
 
   iframe {

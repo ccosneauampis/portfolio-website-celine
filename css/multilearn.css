@@ -53,6 +53,7 @@ h4 {
   text-transform: uppercase;
   color: #454848;
   line-height: 1.4;
+  text-align: center;
 }
 
 /* IMG - VIDEOS - SVG */
@@ -116,6 +117,8 @@ a.phase {
   line-height: 1.615;
   color: #181A18;
   text-decoration: underline;
+  display: flex;
+  justify-content: center;
 }
 
 /* BUTTONS */
@@ -273,7 +276,9 @@ a.phase {
 }
 
 .logo {
-  width: 48px;
+  width: 50px;
+  margin-top: -20px;
+  margin-bottom: 5px;
 }
 
 header {
@@ -299,7 +304,7 @@ header {
 .navtoggle li .menu {
   position: absolute;
   right: 0;
-  top: 17px;
+  top: 10px;
   padding-right: 0;
 }
 
@@ -379,30 +384,34 @@ span.yellow {
   width: 100%;
 }
 
+#main_multilearn img {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #casestudy_multilearn {
   padding: 30px 0;
 }
 
 #logo_multilearn {
-  background-color: #F4B500;
-  display: inline-block;
-  padding-bottom: 25px;
   margin: 40px auto 0px auto;
+}
+
+#logo_multilearn img {
+  width: 100%;
   border-radius: 4px;
-}
-
-#logo_multilearn .column {
-  padding: 10px 20px 10px 20px;
-  text-align: center;
-}
-
-#logo_multilearn img{
-  width: 50%;
 }
 
 #overview_multilearn {
   display: inline-block;
   width: 100%;
+}
+
+#overview_multilearn h4 {
+  text-align: left;
 }
 
 #overview_multilearn .column.overview {
@@ -430,6 +439,7 @@ span.yellow {
 
 #summary_multilearn img {
   padding-top: 15px;
+  width: 100%;
 }
 
 #summary_multilearn .column {
@@ -437,8 +447,12 @@ span.yellow {
   padding: 10px 10px 10px 10px;
 }
 
+#summary_multilearn p {
+  text-align: left;
+}
+
 #multilearnpage h3 {
-  padding: 50px 25px;
+  padding: 75px 25px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -457,48 +471,13 @@ h3.anchor-h {
   background-color: #454848;
 }
 
-#discover_multilearn {
+#discover_multilearn, #define_multilearn, #develop_multilearn, #deliver_multilearn {
   display: inline-block;
   width: 100%;
 }
 
-#discover_multilearn .column {
+#discover_multilearn .column, #define_multilearn .column, #develop_multilearn .column, #deliver_multilearn .column {
   padding: 10px 0px 10px 0px;
-}
-
-#define_multilearn {
-  display: inline-block;
-  width: 100%;
-}
-
-#define_multilearn .column {
-  padding: 10px 0px 10px 0px;
-}
-
-#develop_multilearn {
-  display: inline-block;
-  width: 100%;
-}
-
-#develop_multilearn .column {
-  padding: 10px 0px 10px 0px;
-}
-
-#deliver_multilearn {
-  display: inline-block;
-  width: 100%;
-}
-
-#deliver_multilearn .column {
-  padding: 10px 0px 10px 0px;
-}
-
-#main_multilearn img {
-  display: flex;
-  justify-content: center;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #prototype_multilearn {
@@ -510,7 +489,7 @@ h3.anchor-h {
   width: 100%;
 }
 
-#conclusion_multilearn .conclusion {
+.conclusion {
   display: flex;
   justify-content: center;
   max-width: 700px;
@@ -561,10 +540,6 @@ h3.anchor-h {
     font-size: 18px;
   }
 
-  #logo_multilearn img{
-    width: 30%;
-  }
-
   #tools_multilearn .row{
     width: 60%;
   }
@@ -587,6 +562,12 @@ h3.anchor-h {
 
   header {
     text-align: unset;
+  }
+
+  .logo {
+    width: 60px;
+    margin-top: -15px;
+    margin-bottom: 0px;
   }
 
   nav {
@@ -661,12 +642,6 @@ h3.anchor-h {
   }
 
   /* MultiLearn */
-  .img {
-    width: 400px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   #logo_multilearn .row {
     margin: 0;
@@ -681,10 +656,6 @@ h3.anchor-h {
     padding: 20px 100px;
     text-align: center;
   }
-
-    #logo_multilearn img{
-      width: 35%;
-    }
 
   .anchor {
     margin-top: -96px;
@@ -713,6 +684,10 @@ h3.anchor-h {
 
   #summary_multilearn .column {
     padding: 20px 140px;
+  }
+
+  #discover_multilearn img, #define_multilearn img, #develop_multilearn img, #deliver_multilearn img {
+    margin: 40px auto;
   }
 }
 
@@ -837,59 +812,20 @@ h3.anchor-h {
     width: 100%;
   }
 
-  .img {
-    width: 250px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #discover_multilearn .row {
+  #discover_multilearn .row, #define_multilearn .row, #develop_multilearn .row, #deliver_multilearn .row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
   }
 
-  #discover_multilearn .column {
-    width: 45%;
-    text-align: center;
+  #discover_multilearn .column, #define_multilearn .column, #develop_multilearn .column, #deliver_multilearn .column {
+    width: 100%;
+    max-width: 1200px;
+    text-align: left;
   }
 
-  #define_multilearn .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-
-  #define_multilearn .column {
-    width: 32%;
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  #develop_multilearn .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-
-  #develop_multilearn .column {
-    width: 45%;
-    text-align: center;
-  }
-
-  #deliver_multilearn .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
-
-  #deliver_multilearn .column {
-    width: 45%;
-    text-align: center;
+  #discover_multilearn img, #define_multilearn img, #develop_multilearn img, #deliver_multilearn img {
+    width: 60%;
   }
 }
