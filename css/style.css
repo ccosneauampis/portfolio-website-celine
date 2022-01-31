@@ -460,6 +460,14 @@ span.gold {
   max-width: 800px;
 }
 
+#triptyque {
+  display: none;
+}
+
+#triptyque2 {
+  display: none;
+}
+
 #resume {
   padding: 25px 0;
 }
@@ -477,6 +485,7 @@ span.gold {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 0;
 }
 
 #skillstools .column.col-md-6 {
@@ -625,6 +634,23 @@ span.gold {
   }
 
   /* About */
+
+  #single_img {
+    display: none;
+  }
+
+  #triptyque {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #triptyque2 {
+    display: none;
+  }
+
   #skillstools .row {
     display: flex;
     flex-direction: row;
@@ -670,7 +696,7 @@ span.gold {
     margin-top: -15px;
     margin-bottom: 0px;
   }
-  
+
   nav {
     display: inline-block;
     width: auto;
@@ -923,6 +949,22 @@ span.gold {
     flex-direction: row;
     align-items: flex-start;
     padding-top: 25px;
+  }
+
+  #single_img {
+    display: none;
+  }
+
+  #triptyque {
+    display: none;
+  }
+
+  #triptyque2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
 
   #skillstools {
