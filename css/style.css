@@ -110,7 +110,7 @@ a.menu:active {
   font-size: 14px;
   font-weight: 500;
   padding: 10px 16px;
-  border-radius: 4px;
+  border-radius: 11px;
   transition: 0.2s background;
 }
 
@@ -141,7 +141,7 @@ a.menu:active {
   font-size: 14px;
   font-weight: 500;
   padding: 10px 16px;
-  border-radius: 4px;
+  border-radius: 11px;
   text-transform: uppercase;
   border: 2px solid #B88C46;
   transition: 0.2s background;
@@ -426,6 +426,10 @@ span.gold {
   margin-bottom: 25px;
 }
 
+#myportfoliowebsite img, #expertsnow img, #multilearn img {
+  border-radius: 11px;
+}
+
 #myportfoliowebsite, #expertsnow {
   padding-bottom: 50px;
   border-bottom: 1px solid #B88C46;
@@ -634,6 +638,11 @@ span.gold {
   }
 
   /* About */
+  #me img {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+  }
 
   #single_img {
     display: none;
