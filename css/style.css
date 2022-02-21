@@ -357,10 +357,19 @@ span.gold {
 }
 
 /* Index */
-#hero_en, #hero_fr {
+#hero_en {
   display: flex;
   width: 100%;
-  height: 87vh;
+  height: 85vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero_fr {
+  display: flex;
+  width: 100%;
+  height: 90vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -380,6 +389,10 @@ span.gold {
 
 #presentation .column:first-child {
   width: 100%;
+}
+
+#portfolio_pdf_1024px {
+  display: none;
 }
 
 .prompt {
@@ -571,6 +584,14 @@ span.gold {
 
   #presentation {
     margin-bottom: 25px;
+  }
+
+  #portfolio_pdf {
+    margin-top: 20px;
+  }
+
+  .prompt {
+    margin-top: 20px;
   }
 
   .prompt img {
@@ -804,6 +825,10 @@ span.gold {
     width: 72px;
   }
 
+  .prompt {
+    margin-top: 30px;
+  }
+
   .row::after {
     content: "";
     clear: both;
@@ -900,7 +925,6 @@ span.gold {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
   }
 
   #presentation .column {
@@ -919,10 +943,26 @@ span.gold {
     width: 40%;
   }
 
+  #presentation h3 {
+    margin-top: 0;
+  }
+
+  #presentation p {
+    margin-top: 0;
+  }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
+  }
+
+  #portfolio_pdf {
+    display: none;
+  }
+
+  #portfolio_pdf_1024px {
+    display: flex;
   }
 
   .prompt {
