@@ -303,7 +303,7 @@ a.phase:active {
   position: fixed;
   top: 0;
   width: 100%;
-  transition: top 0.3s;
+  transition: 0.3s;
 }
 
 /* Add a black background color to the top navigation */
