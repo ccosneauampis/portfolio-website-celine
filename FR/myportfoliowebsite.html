@@ -17,17 +17,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="../img/favicon.ico" rel="shortcut icon">
-  <title>ExpertsNow</title>
+  <title>Mon Portfolio-Website</title>
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+  </style>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/myportfoliowebsite.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body id="myportfoliowebsite">
   <header class="section" id="navigation">
-    <div class="container">
+    <div class="container" id="navbar">
       <div class="language">
         <div id="french" class="L-active">
           <div class="flag">
@@ -46,33 +54,33 @@
           </div>
         </div>
       </div>
-      <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html">
-          <img src="../img/logo.svg" alt="Logo" class=logo>
+      <div>
+        <a href="index.html" class="nodisplay">
+          <img src="../img/logo.svg" alt="Logo" class="logo">
         </a>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html" class="active">Portfolio</a></li>
-            <li><a href="about.html">À Propos de</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()">
-                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path fill="currentColor"
-                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-                  </path>
-                </svg>
-              </a></li>
-          </ul>
-        </nav>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Accueil</a>
+        <div class="dropdown">
+          <button class="dropbtn active">Projets
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="myportfoliowebsite.html">Mon Portfolio-Website</a>
+            <a href="expertsnow.html">ExpertsNow</a>
+            <a href="multilearn.html">MultiLearn</a>
+          </div>
+        </div>
+        <a href="about.html">À Propos de</a>
+        <a href="#contact">Contacts</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
     </div>
     <!--CONTAINER CLOSED-->
   </header>
 
   <main>
-    <picture>
-      <img src="../img/comingsoon.jpg" alt="Page under construction">
-    </picture>
+
   </main>
 
   <footer id="contact">
@@ -108,7 +116,7 @@
         </div>
         <div class="column">
           <p class="center">
-            &copy; Celine Cosneau-Ampis 2021
+            &copy; Développé par Celine Cosneau-Ampis 2021
           </p>
         </div>
       </div>

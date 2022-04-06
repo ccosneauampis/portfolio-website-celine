@@ -30,6 +30,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body id="about-page">
@@ -53,24 +54,26 @@
           </div>
         </div>
       </div>
-      <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html">
-          <img src="img/logo.svg" alt="Logo" class=logo>
-        </a>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
-                  <image id="icons8-Material_Rounded-83195-96-181a18" data-name="icons8-Material Rounded-83195-96-181a18" width="96" height="96"
-                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAABIElEQVR4nO3asU3DUBSG0d+8ggqi1KZmBgaAIRglE2QcKioYgBnoU6IUri3TpKHJi5CNg3NO/WRd3du4+BIAAAAAAAAAlqo55VHbtvd9+m2GPCW5mXim/65Lk7eSstntdp+1x9UDtG173w/9R5L1KONdjn1pykPtCFe1r/Tpt7H831gfdndU9QAZ8jjKOJfohN3VD8Ck6gdo8v4HcyzTCburHqCkbJLsRxnosuwPuzuq1B50Xfe1ul29DM3QJrlLcj3GdAvWpclracrzKb+hAAAAAADA8umCxqcLOhO6oJnpgmanCzp/uqAp6YJmpQuaiS4IAAAAAAD4QRc0Pl3QmdAFzUwXNDtd0PnTBU1JFzQrXdBMdEEAAAAAAAAAJEm+AdFXgn6B3n4GAAAAAElFTkSuQmCC" />
-                </svg>
-              </a></li>
-          </ul>
-        </nav>
-      </div>
+      <div>
+  <a href="index.html" class="nodisplay">
+    <img src="img/logo.svg" alt="Logo" class="logo">
+  </a>
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Projects
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="expertsnow.html">ExpertsNow</a>
+      <a href="multilearn.html">MultiLearn</a>
+    </div>
+  </div>
+  <a href="about.html" class="active">About</a>
+  <a href="#contact">Contacts</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
     </div>
     <!--CONTAINER CLOSED-->
   </header>
@@ -176,6 +179,14 @@
                     </p>
                   </div>
                   <!--end Adobe XD-->
+                  <!--Figma-->
+                  <div class="column skillstools">
+                    <img src="img/tools/figma.svg" alt="Figma">
+                    <p style="font-size:60%;">
+                      Figma
+                    </p>
+                  </div>
+                  <!--end Figma-->
                   <!--Balsamiq-->
                   <div class="column skillstools">
                     <img src="img/tools/balsamiq.svg" alt="Balsamiq">
@@ -184,14 +195,11 @@
                     </p>
                   </div>
                   <!--end Balsamiq-->
-                  <!--Lucidchart-->
-                  <div class="column skillstools">
-                    <img src="img/tools/lucidchart.svg" alt="Lucidchart">
-                    <p style="font-size:60%;">
-                      Lucidchart
-                    </p>
-                  </div>
-                  <!--end Lucidchart-->
+                </div>
+                <!--ROW 1 FOR TOOLS CLOSED-->
+
+                <!--ROW 2 FOR TOOLS-->
+                <div class="row skillstools">
                   <!--Marvel-->
                   <div class="column skillstools">
                     <img src="img/tools/marvel.svg" alt="Marvel">
@@ -200,18 +208,14 @@
                     </p>
                   </div>
                   <!--end Marvel-->
-                </div>
-                <!--ROW 1 FOR TOOLS CLOSED-->
-                <!--ROW 2 FOR TOOLS-->
-                <div class="row skillstools">
-                  <!--Zoom-->
+                  <!--InVision-->
                   <div class="column skillstools">
-                    <img src="img/tools/zoom.svg" alt="Zoom">
+                    <img src="img/tools/invision.svg" alt="InVision">
                     <p style="font-size:60%;">
-                      Zoom
+                      InVision
                     </p>
                   </div>
-                  <!--end Zoom-->
+                  <!--end InVision-->
                   <!--Usability Hub-->
                   <div class="column skillstools">
                     <img src="img/tools/usahub.svg" alt="Usability Hub">
@@ -220,24 +224,37 @@
                     </p>
                   </div>
                   <!--end Usability Hub-->
-                  <!--Atom-->
-                  <div class="column skillstools">
-                    <img src="img/tools/atom.svg" alt="Atom">
-                    <p style="font-size:60%;">
-                      Atom
-                    </p>
-                  </div>
-                  <!--end Atom-->
-                  <!--Github-->
-                  <div class="column skillstools">
-                    <img src="img/tools/github.svg" alt="Github">
-                    <p style="font-size:60%;">
-                      Github
-                    </p>
-                  </div>
-                  <!--end Github-->
                 </div>
                 <!--ROW 2 FOR TOOLS CLOSED-->
+
+                <!--ROW 3 FOR TOOLS-->
+                <div class="row skillstools">
+                  <!--Zeplin-->
+                  <div class="column skillstools">
+                    <img src="img/tools/zeplin.svg" alt="Zeplin">
+                    <p style="font-size:60%;">
+                      Zeplin
+                    </p>
+                  </div>
+                  <!--end Zeplin-->
+                  <!--Atom-->
+                <div class="column skillstools">
+                  <img src="img/tools/atom.svg" alt="Atom">
+                  <p style="font-size:60%;">
+                    Atom
+                  </p>
+                </div>
+                <!--end Atom-->
+                <!--Github-->
+                <div class="column skillstools">
+                  <img src="img/tools/github.svg" alt="Github">
+                  <p style="font-size:60%;">
+                    Github
+                  </p>
+                </div>
+                <!--end Github-->
+              </div>
+              <!--ROW 3 FOR TOOLS CLOSED-->
               </div>
               <!--TOOLS CLOSED-->
             </div>
@@ -305,7 +322,7 @@
         </div>
         <div class="column">
           <p class="center">
-            &copy; Celine Cosneau-Ampis 2021
+            &copy; Developped by Celine Cosneau-Ampis 2021
           </p>
         </div>
       </div>

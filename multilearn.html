@@ -16,7 +16,7 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="img/multilearn/favicon.ico" rel="shortcut icon">
+  <link href="img/favicon.ico" rel="shortcut icon">
   <title>MultiLearn</title>
   <style>
     * {
@@ -30,6 +30,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body id="multilearnpage">
@@ -53,23 +54,25 @@
           </div>
         </div>
       </div>
-      <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html">
-          <img src="img/multilearn/logo.svg" alt="Logo" class=logo>
+      <div>
+        <a href="index.html" class="nodisplay">
+          <img src="img/logo.svg" alt="Logo" class="logo">
         </a>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html" class="active">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
-                  <image id="icons8-Material_Rounded-83195-96-454848" data-name="icons8-Material Rounded-83195-96-454848" width="96" height="96"
-                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAABIUlEQVR4nO3aIVLEQBBA0c4gUIjVYDA5Ax4wewOOsifY46BYA3jOwApOQEXgJ5hgEDspKqmE5D09lerqNhE/AgAAAAAAAIClqvo8ut1u65Tzvo24ryIuxh7qP2sjvqqI55zS7vVweC+9Lx6gW/5bRGwGmXA9mpzSTekIqfSVlPM+LP8vNt3uTioeICLuBhhmrYq763MARtTnAC+jT7Fcxd0VD5BT2kVEM8g469J0uzvprPTg43j8vK7rx6ptL9uIqyrifJj5lqn7DX3KKT30+Q0FAAAAAACWTxc0MF3QfOiCJqYLmgFd0NzpgsalC5qQLmgKuiAAAAAAAOA3XdDAdEHzoQuamC5oBnRBc6cLGpcuaEK6oCnoggAAAAAAAAD48Q2OY4/ROc89pAAAAABJRU5ErkJggg==" />
-                </svg>
-              </a></li>
-          </ul>
-        </nav>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn active">Projects
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="expertsnow.html">ExpertsNow</a>
+            <a href="multilearn.html">MultiLearn</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="#contact">Contacts</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
     </div>
     <!--CONTAINER CLOSED-->
@@ -217,25 +220,25 @@
               </picture>
             </div>
             <div class="conclusion">
-            <p>
-              To better understand the users expectations, I <b>started by analyzing 3 similar apps to MultiLearn</b>.
-            </p>
-          </div>
+              <p>
+                To better understand the users expectations, I <b>started by analyzing 3 similar apps to MultiLearn</b>.
+              </p>
+            </div>
           </div>
           <div class="column">
             <h4>Users' interviews</h4>
             <div class="img">
-                <picture class="img">
-                  <source srcset="img/multilearn/users_interviews.png" media="(max-width:767px)">
-                  <img src="img/multilearn/users_interviews@2x.png" alt="Thinking_Doing_Feeling">
-                </picture>
+              <picture class="img">
+                <source srcset="img/multilearn/users_interviews.png" media="(max-width:767px)">
+                <img src="img/multilearn/users_interviews@2x.png" alt="Thinking_Doing_Feeling">
+              </picture>
             </div>
             <div class="conclusion">
-            <p>
-              With the results from the Competitive Analysis in mind, I <b>conducted interviews with 5 potential users</b> in order to empathize with them and better understand their needs and expectations.<br>I <b>analyzed the results</b> from the
-              previous interviews <b>through what the participants were « Doing », « Feeling » and « Thinking »</b>.
-            </p>
-          </div>
+              <p>
+                With the results from the Competitive Analysis in mind, I <b>conducted interviews with 5 potential users</b> in order to empathize with them and better understand their needs and expectations.<br>I <b>analyzed the results</b> from the
+                previous interviews <b>through what the participants were « Doing », « Feeling » and « Thinking »</b>.
+              </p>
+            </div>
           </div>
         </div>
         <!--ROW CLOSED-->
@@ -264,10 +267,10 @@
               </picture>
             </div>
             <div class="conclusion">
-            <p>
-              Thanks to the analysis of the interviews results, I was able to <b>define a type of users</b> that would potentially use MultiLearn under the proto-persona of Ellis.
-            </p>
-          </div>
+              <p>
+                Thanks to the analysis of the interviews results, I was able to <b>define a type of users</b> that would potentially use MultiLearn under the proto-persona of Ellis.
+              </p>
+            </div>
           </div>
           <div class="column">
             <h4>User's flows</h4>
@@ -278,10 +281,10 @@
               </picture>
             </div>
             <div class="conclusion">
-            <p>
-              Having defined the general needs & goals as well as behaviors from potential users through the persona of Ailin, <b>I was able to work on</b> how to organize Multilearn by <b>creating user flows</b>.
-            </p>
-          </div>
+              <p>
+                Having defined the general needs & goals as well as behaviors from potential users through the persona of Ailin, <b>I was able to work on</b> how to organize Multilearn by <b>creating user flows</b>.
+              </p>
+            </div>
           </div>
         </div>
         <!--ROW CLOSED-->
@@ -309,10 +312,10 @@
               </picture>
             </div>
             <div class="conclusion">
-            <p>
-              Thanks to the user flows, I <b>designed the different screens of 3 key features of MultiLearn</b>: Sign up / Log in - Flashcards - Courses. Then, I <b>linked the screens into an interactive prototype</b>.
-            </p>
-          </div>
+              <p>
+                Thanks to the user flows, I <b>designed the different screens of 3 key features of MultiLearn</b>: Sign up / Log in - Flashcards - Courses. Then, I <b>linked the screens into an interactive prototype</b>.
+              </p>
+            </div>
           </div>
         </div>
         <!--ROW CLOSED-->
@@ -340,10 +343,10 @@
               </picture>
             </div>
             <div class="conclusion">
-            <p>
-              I <b>carried out 3</b> moderated-remote <b>usability tests to assess the intuitiveness of MultiLearn</b>. I then <b>analyzed its results</b> by rating my observations <b>according to Jacob Nielsen’s severity ratings</b>.
-            </p>
-          </div>
+              <p>
+                I <b>carried out 3</b> moderated-remote <b>usability tests to assess the intuitiveness of MultiLearn</b>. I then <b>analyzed its results</b> by rating my observations <b>according to Jacob Nielsen’s severity ratings</b>.
+              </p>
+            </div>
           </div>
         </div>
         <!--ROW CLOSED-->
@@ -420,12 +423,12 @@
 
         <div class="column top">
           <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <img src="img/multilearn/top.svg" alt="Back to top button">
+            <img src="img/top.svg" alt="Back to top button">
           </button>
         </div>
         <div class="column">
           <p class="center">
-            &copy; Celine Cosneau-Ampis 2021
+            &copy; Developped by Celine Cosneau-Ampis 2021
           </p>
         </div>
       </div>

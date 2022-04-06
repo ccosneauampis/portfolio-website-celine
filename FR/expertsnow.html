@@ -16,7 +16,7 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../img/expertsnow/favicon.ico" rel="shortcut icon">
+  <link href="../img/favicon.ico" rel="shortcut icon">
   <title>ExpertsNow</title>
   <style>
     * {
@@ -27,7 +27,11 @@
   <link rel="stylesheet" type="text/css" href="../css/expertsnow.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body id="expertsnowpage">
@@ -51,23 +55,25 @@
           </div>
         </div>
       </div>
-      <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html">
-          <img src="../img/expertsnow/logo.svg" alt="Logo" class="logo">
+      <div>
+        <a href="index.html" class="nodisplay">
+          <img src="../img/logo.svg" alt="Logo" class="logo">
         </a>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html" class="active">Portfolio</a></li>
-            <li><a href="about.html">À Propos de</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
-                  <image id="icons8-Material_Rounded-83195-96-8736aa" data-name="icons8-Material Rounded-83195-96-8736aa" width="96" height="96"
-                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAABGklEQVR4nO3asXHCQBBA0T3lDmiCEhgKsHugFSgAWiGiAbsADyXQhALlOickTjiNR/Ih9F58o9nZTRT8CAAAAAAAAABeVRry6Lg5r5vUnHKOj4h4m3imuetSis8+9/vDdXcrPS4e4Lg5r1M03xGxGmW85Whz9NvSEZrSV5rUnMLy/2J1391DxQPkHO/jzLM8Q3ZXPADTKh4gpfj6j0Fe0ZDdFQ/Q534fEe0oEy1Le9/dQ8UDHK67W45+m1JcIqIbZbTX1qUUlyF/QAAAAAAAwDLogsanC3oSuqDKdEG16YJmQBc0IV1QXbqgSnRBAAAAAADAL7qg8emCnoQuqDJdUG26oBnQBU1IF1SXLqgSXRAAAAAAAAAAERHxA7mEkf+nwzbWAAAAAElFTkSuQmCC" />
-                </svg>
-              </a></li>
-          </ul>
-        </nav>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Accueil</a>
+        <div class="dropdown">
+          <button class="dropbtn active">Projets
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="expertsnow.html">ExpertsNow</a>
+            <a href="multilearn.html">MultiLearn</a>
+          </div>
+        </div>
+        <a href="about.html">À Propos de</a>
+        <a href="#contact">Contacts</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
     </div>
     <!--CONTAINER CLOSED-->
@@ -82,10 +88,10 @@
           <a href="../files/casestudy_expertsnow.pdf" class="button outlined" target="_blank">Étude de cas détaillée (EN)</a>
         </div>
         <div class="row" id="logo_expertsnow">
-            <picture>
-              <source srcset="../img/expertsnow/expertsnow_S_FR.jpg" media="(max-width:767px)">
-              <img src="../img/expertsnow/expertsnow_L_FR.jpg" alt="ExpertsNow">
-            </picture>
+          <picture>
+            <source srcset="../img/expertsnow/expertsnow_S_FR.jpg" media="(max-width:767px)">
+            <img src="../img/expertsnow/expertsnow_L_FR.jpg" alt="ExpertsNow">
+          </picture>
         </div>
         <div class="row" id="overview">
           <div class="column overview" id="context">
@@ -572,12 +578,12 @@
 
         <div class="column top">
           <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <img src="../img/expertsnow/top.svg" alt="Back to top button">
+            <img src="../img/top.svg" alt="Back to top button">
           </button>
         </div>
         <div class="column">
           <p class="center">
-            &copy; Celine Cosneau-Ampis 2021
+            &copy; Développé par Celine Cosneau-Ampis 2021
           </p>
         </div>
       </div>

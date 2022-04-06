@@ -78,21 +78,21 @@ svg.float {
 
 /* LINKS */
 a {
-  color: #8736AA;
+  color: #181A18;
   text-decoration: none;
 }
 
 a:visited {
-  color: #8736AA;
+  color: #181A18;
 }
 
 a:hover,
 a:focus {
-  color: #92680E;
+  color: #B88C46;
 }
 
 a:active {
-  color: #F8CE74;
+  color: #6E542A;
 }
 
 /* Burger Menu */
@@ -123,6 +123,19 @@ a.phase {
   text-decoration: underline;
   display: flex;
   justify-content: center;
+}
+
+a.phase:visited {
+  color: #4B016E;
+}
+
+a.phase:hover,
+a.phase:focus {
+  color: #B786CC;
+}
+
+a.phase:active {
+  color: #B786CC;
 }
 
 /* BUTTONS */
@@ -160,32 +173,36 @@ a.phase {
 /* Button Contact*/
 .button.contact {
   background-color: #FFFDFA;
-  color: #4B016E;
+  color: #181A18;
   font-size: 14px;
   font-weight: 500;
   padding: 10px 16px;
-  border-radius: 4px;
+  border-radius: 11px;
   text-transform: uppercase;
-  border: 2px solid #F3AE18;
+  border: 2px solid #B88C46;
   transition: 0.2s background;
 }
 
 .button.contact:visited {
   background-color: #FFFDFA;
-  color: #4B016E;
+  color: #181A18;
 }
 
-.button.contact:hover,
+.button.contact:hover {
+  background-color: #B88C46;
+  border: 2px solid #6E542A;
+  color: #181A18;
+}
+
 .button.contact:focus {
-  background-color: #F3AE18;
-  border: 2px solid #92680E;
-  color: #4B016E;
+  background-color: #FFFDFA;
+  color: #181A18;
 }
 
 .button.contact:active {
-  background-color: #F8CE74;
-  border: 2px solid #92680E;
-  color: #4B016E;
+  background-color: #D4BA90;
+  border: 2px solid #6E542A;
+  color: #181A18;
 }
 
 /* LAYOUT STYLING */
@@ -261,7 +278,7 @@ a.phase {
 .language a {
   font-size: 0.6em;
   font-weight: 500;
-  color: #4B016E;
+  color: #181A18;
   text-decoration: none;
   margin-left: 5px;
   display: flex;
@@ -269,7 +286,7 @@ a.phase {
 }
 
 .L-active {
-  border-bottom: 2px solid #F3AE18;
+  border-bottom: 2px solid #B88C46;
 }
 
 .logo {
@@ -278,90 +295,104 @@ a.phase {
   margin-bottom: 5px;
 }
 
-header {
+#navigation {
   background-color: #FFFDFA;
   margin: 0;
   display: inline-block;
-  box-shadow: 0px 1px 4px 0px rgba(243, 174, 24, 0.38);
+  box-shadow: 0px 1px 4px 0px rgba(184, 140, 70, 0.38);
   position: fixed;
   top: 0;
   width: 100%;
   transition: top 0.3s;
 }
 
-/* Nav Bar */
-.navtoggle li:not(:last-child) {
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #FFFDFA;
+  overflow: hidden;
+  margin-top: -50px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #181A18;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+#myTopnav .active {
+  background-color: #FFFDFA;
+  color: #B88C46;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
-  position: relative;
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-.navtoggle li .menu {
-  position: absolute;
-  right: 0;
-  top: 10px;
-  padding-right: 0;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-
-.navtoggle.responsive li {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
-}
-
-nav>ul {
-  list-style-type: none;
-  padding: 0;
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  color: #181A18;
+  background-color: inherit;
+  font-family: inherit;
   margin: 0;
+  padding: 18px 16px 14px 16px;
 }
 
-nav>ul>li>a {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #8736AA;
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFDFA;
+  min-width: 160px;
+  box-shadow: 0px 1px 4px 0px rgba(184, 140, 70, 0.38);
+  z-index: 1;
 }
 
-nav>ul>li>a:visited {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #8736AA;
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #181A18;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
+  display: block;
+  text-align: left;
 }
 
-nav>ul>li>a:hover {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #F3AE18;
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: #B88C46;
 }
 
-nav>ul>li>a:focus {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #F3AE18;
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #D4BA90;
+  color: #181A18;
 }
 
-nav>ul>li>a:active {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #F8CE74;
-}
-
-nav>ul>li>a.active {
-  color: #F3AE18;
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Main */
@@ -473,7 +504,7 @@ h3.anchor-h {
 
 .title {
   background-color: #8736AA;
-  }
+}
 
 #discover, #define, #develop, #deliver, #refine {
   display: inline-block;
@@ -508,8 +539,12 @@ h3.anchor-h {
 /* Footer */
 #contact {
   display: block;
-  border-top: 2px solid #F3AE18;
+  border-top: 2px solid #B88C46;
   padding: 25px 0 25px 0;
+}
+
+#contact h2, #contact p {
+  color: #181A18;
 }
 
 .column.contact {
@@ -532,10 +567,6 @@ h3.anchor-h {
     padding: 0 25px;
   }
 
-  .navtoggle.responsive nav {
-    padding: 60px 0 0;
-  }
-
   h1 {
     font-size: 2.10em;
   }
@@ -546,6 +577,47 @@ h3.anchor-h {
 
   body {
     font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topnav a, .dropdown .dropbtn {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -572,61 +644,6 @@ h3.anchor-h {
     width: 60px;
     margin-top: -15px;
     margin-bottom: 0px;
-  }
-
-  nav {
-    display: inline-block;
-    width: auto;
-    float: right;
-  }
-
-  nav>ul {
-    margin: 1em 0;
-  }
-
-  nav>ul>li {
-    display: inline-block;
-  }
-
-  nav>ul>li>a {
-    padding-right: 0;
-    padding-left: 20px;
-  }
-
-  nav>ul>li>a:visited {
-    padding-right: 0;
-    padding-left: 20px;
-  }
-
-  nav>ul>li>a:hover {
-    padding-right: 0;
-    padding-left: 20px;
-  }
-
-  nav>ul>li>a:focus {
-    padding-right: 0;
-    padding-left: 20px;
-  }
-
-  nav>ul>li>a:active {
-    padding-right: 0;
-    padding-left: 20px;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
-  .navtoggle.responsive nav {
-    padding: 0 0 0;
-  }
-
-  .navtoggle.responsive li {
-    padding: 0;
   }
 
   h1 {
@@ -730,6 +747,10 @@ h3.anchor-h {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .topnav {
+    float: right;
   }
 
   h1 {

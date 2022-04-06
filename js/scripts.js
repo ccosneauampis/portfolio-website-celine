@@ -1,31 +1,34 @@
-//Burger menu > < Navigation Menu
-function menuToggle() {
-  var x = document.getElementById("myNavtoggle");
-  if (x.className === "navtoggle") {
+// Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
     x.className += " responsive";
   } else {
-    x.className = "navtoggle";
+    x.className = "topnav";
   }
 }
 
-//Hiding nav bar
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("myNavtoggle").style.top = "0";
+// When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var lastScrollTop;
+navbar = document.getElementById("navigation");
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    navbar.style.top = '-93px';
   } else {
-    document.getElementById("myNavtoggle").style.top = "-50px";
+    navbar.style.top = '0';
   }
-  prevScrollpos = currentScrollPos;
-}
+  lastScrollTop = scrollTop;
+});
 
 //Back-to-top Arrow
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down n px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  scrollFunction()
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 625 || document.documentElement.scrollTop > 625) {

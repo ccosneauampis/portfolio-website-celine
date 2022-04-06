@@ -27,7 +27,11 @@
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -51,23 +55,25 @@
           </div>
         </div>
       </div>
-      <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html">
-          <img src="../img/logo.svg" alt="Logo" class=logo>
+      <div>
+        <a href="index.html" class="nodisplay">
+          <img src="../img/logo.svg" alt="Logo" class="logo">
         </a>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html" class="active">Portfolio</a></li>
-            <li><a href="about.html">À Propos de</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="menu" onclick="menuToggle()">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
-                  <image id="icons8-Material_Rounded-83195-96-181a18" data-name="icons8-Material Rounded-83195-96-181a18" width="96" height="96"
-                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAABIElEQVR4nO3asU3DUBSG0d+8ggqi1KZmBgaAIRglE2QcKioYgBnoU6IUri3TpKHJi5CNg3NO/WRd3du4+BIAAAAAAAAAlqo55VHbtvd9+m2GPCW5mXim/65Lk7eSstntdp+1x9UDtG173w/9R5L1KONdjn1pykPtCFe1r/Tpt7H831gfdndU9QAZ8jjKOJfohN3VD8Ck6gdo8v4HcyzTCburHqCkbJLsRxnosuwPuzuq1B50Xfe1ul29DM3QJrlLcj3GdAvWpclracrzKb+hAAAAAADA8umCxqcLOhO6oJnpgmanCzp/uqAp6YJmpQuaiS4IAAAAAAD4QRc0Pl3QmdAFzUwXNDtd0PnTBU1JFzQrXdBMdEEAAAAAAAAAJEm+AdFXgn6B3n4GAAAAAElFTkSuQmCC" />
-                </svg>
-              </a></li>
-          </ul>
-        </nav>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Accueil</a>
+        <div class="dropdown">
+          <button class="dropbtn">Projets
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="expertsnow.html">ExpertsNow</a>
+            <a href="multilearn.html">MultiLearn</a>
+          </div>
+        </div>
+        <a href="about.html">À Propos de</a>
+        <a href="#contact">Contacts</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
     </div>
     <!--CONTAINER CLOSED-->
@@ -78,8 +84,14 @@
     <div class="section" id="hero_fr">
       <div class="container">
         <div class="row">
-          <h1><span class="gold">Céline</span> <br>Cosneau-Ampis</h1>
+          <div class="name">
+            <h1>C</h1><h1>é</h1><h1>l</h1><h1>i</h1><h1>n</h1><h1>e</h1>
+          </div>
+          <div class="name">
+            <h1>C</h1><h1>o</h1><h1>s</h1><h1>n</h1><h1>e</h1><h1>a</h1><h1>u</h1><h1>-</h1><h1>A</h1><h1>m</h1><h1>p</h1><h1>i</h1><h1>s</h1>
+          </div>
         </div>
+
         <div class="row" id="presentation">
           <div class="column col-md-6 col-lg-7">
             <picture>
@@ -123,8 +135,8 @@
         <div class="row" id="myportfoliowebsite">
           <div class="column col-md-6 col-lg-7 col-xl-4">
             <picture>
-              <source srcset="../img/myportfoliowebsite/myportfoliowebsite.jpg" media="(max-width:767px)">
-              <img src="../img/myportfoliowebsite/myportfoliowebsite@2x.jpg" alt="My Portfolio-Website">
+              <source srcset="../img/myportfoliowebsite.jpg" media="(max-width:767px)">
+              <img src="../img/myportfoliowebsite@2x.jpg" alt="My Portfolio-Website">
             </picture>
           </div>
           <div class="column col-md-6 col-lg-5">
@@ -141,8 +153,8 @@
         <div class="row" id="expertsnow">
           <div class="column col-md-6 col-lg-7">
             <picture>
-              <source srcset="../img/expertsnow/expertsnow.jpg" media="(max-width:767px)">
-              <img src="../img/expertsnow/expertsnow@2x.jpg" alt="ExpertsNow">
+              <source srcset="../img/expertsnow.jpg" media="(max-width:767px)">
+              <img src="../img/expertsnow@2x.jpg" alt="ExpertsNow">
             </picture>
           </div>
           <div class="column col-md-6 col-lg-5">
@@ -159,8 +171,8 @@
         <div class="row" id="multilearn">
           <div class="column col-md-6 col-lg-7">
             <picture>
-              <source srcset="../img/multilearn/multilearn.jpg" media="(max-width:767px)">
-              <img src="../img//multilearn/multilearn@2x.jpg" alt="MultiLearn">
+              <source srcset="../img/multilearn.jpg" media="(max-width:767px)">
+              <img src="../img/multilearn@2x.jpg" alt="MultiLearn">
             </picture>
           </div>
           <div class="column col-md-6 col-lg-5">
@@ -212,7 +224,7 @@
         </div>
         <div class="column">
           <p class="center">
-            &copy; Celine Cosneau-Ampis 2021
+            &copy; Développé par Celine Cosneau-Ampis 2021
           </p>
         </div>
       </div>

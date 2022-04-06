@@ -11,44 +11,49 @@ Accent color:     (orange) #EC5800
 */
 /* FONT */
 body {
-  font-family: 'Roboto', sans-serif;
+  background-color: #FFFDFA;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.688;
-  color: #181A18;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Roboto', sans-serif;
+  color: #4B016E;
 }
 
 h1 {
-  font-size: 1.725em;
-  font-weight: 450;
-  color: #181A18;
-  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #8736AA;
+  line-height: 1.2;
+  text-align: center;
+}
+
+h2, h3 {
+  font-family: "Roboto", sans-serif;
 }
 
 h2 {
   font-size: 1.625em;
   font-weight: 500;
-  color: #EC5800;
+  color: #8736AA;
   line-height: 1.4;
 }
 
 h3 {
   font-size: 1.25em;
   font-weight: 400;
-  color: #181A18;
-  line-height: 1.4;
+  color: #FFFDFA;
+  line-height: 1.6;
 }
 
 h4 {
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 500;
   text-transform: uppercase;
-  color: #1866E1;
+  color: #F3AE18;
   line-height: 1.4;
+  text-align: center;
 }
 
 /* IMG - VIDEOS - SVG */
@@ -57,7 +62,7 @@ img {
 }
 
 iframe {
-  width: 100%;
+  display: none;
 }
 
 svg.icon {
@@ -73,21 +78,21 @@ svg.float {
 
 /* LINKS */
 a {
-  color: #1866E1;
+  color: #181A18;
   text-decoration: none;
 }
 
 a:visited {
-  color: #1866E1;
+  color: #181A18;
 }
 
 a:hover,
 a:focus {
-  color: #134EAD;
+  color: #B88C46;
 }
 
 a:active {
-  color: #5E92E6;
+  color: #6E542A;
 }
 
 /* Burger Menu */
@@ -106,22 +111,37 @@ a.menu:focus {
 }
 
 a.menu:active {
-  color: #181A18;
+  color: #D4BA90;
 }
 
 /* Link Design Process Phases*/
 a.phase {
-  font-size: 1.625em;
-  font-weight: 400;
+  font-size: 1.25em;
+  font-weight: 500;
   line-height: 1.615;
-  color: #1866E1;
+  color: #4B016E;
   text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+
+a.phase:visited {
+  color: #4B016E;
+}
+
+a.phase:hover,
+a.phase:focus {
+  color: #B786CC;
+}
+
+a.phase:active {
+  color: #B786CC;
 }
 
 /* BUTTONS */
 .button {
   display: inline-block;
-  background-color: #1866E1;
+  background-color: #8736AA;
   color: #FFFDFA;
   font-size: 14px;
   font-weight: 500;
@@ -131,81 +151,58 @@ a.phase {
 }
 
 .button:visited {
-  background-color: #1866E1;
+  background-color: #8736AA;
   color: #FFFDFA;
 }
 
-.button:hover,
+.button:hover {
+  background: #512066;
+  color: #FFFDFA;
+}
+
 .button:focus {
-  background: #134EAD;
+  background: #8736AA;
   color: #FFFDFA;
 }
 
 .button:active {
-  background-color: #5E92E6;
+  background-color: #B786CC;
   color: #FFFDFA;
 }
 
 /* Button Contact*/
 .button.contact {
-  background-color: transparent;
-  color: #1866E1;
+  background-color: #FFFDFA;
+  color: #181A18;
   font-size: 14px;
   font-weight: 500;
   padding: 10px 16px;
-  border-radius: 4px;
+  border-radius: 11px;
   text-transform: uppercase;
-  border: 2px solid #EC5800;
+  border: 2px solid #B88C46;
   transition: 0.2s background;
-}
-
-.button.contact:hover,
-.button.contact:focus {
-  background-color: #C1D5F6;
-  color: #1866E1;
 }
 
 .button.contact:visited {
-  background-color: transparent;
-  color: #1866E1;
+  background-color: #FFFDFA;
+  color: #181A18;
+}
+
+.button.contact:hover {
+  background-color: #B88C46;
+  border: 2px solid #6E542A;
+  color: #181A18;
+}
+
+.button.contact:focus {
+  background-color: #FFFDFA;
+  color: #181A18;
 }
 
 .button.contact:active {
-  background-color: #134EAD;
-  color: #FFFDFA;
-}
-
-/* Button outlined*/
-.button.outlined {
-  margin: auto;
-  width: auto;
-  background-color: transparent;
-  color: #1866E1;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 10px 16px;
-  border-radius: 4px;
-  text-transform: capitalize;
-  border: 2px solid #EC5800;
-  transition: 0.2s background;
-}
-
-.button.outlined:hover {
-  background-color: #C1D5F6;
-}
-
-.button.outlined:focus {
-  background-color: #C1D5F6;
-}
-
-.button.outlined:visited {
-  background-color: transparent;
-  color: #1866E1;
-}
-
-.button.outlined:active {
-  background-color: #134EAD;
-  color: #FFFDFA;
+  background-color: #D4BA90;
+  border: 2px solid #6E542A;
+  color: #181A18;
 }
 
 /* LAYOUT STYLING */
@@ -245,7 +242,7 @@ a.phase {
   /* Add a mouse pointer on hover */
   font-size: 0;
   padding: 0;
-  width: 72px;
+  width: 50px;
 }
 
 /* Header */
@@ -289,111 +286,130 @@ a.phase {
 }
 
 .L-active {
-  border-bottom: 2px solid #1866E1;
+  border-bottom: 2px solid #B88C46;
 }
 
 .logo {
-  width: 48px;
+  width: 50px;
+  margin-top: -20px;
+  margin-bottom: 5px;
 }
 
-header {
-  background-color: #FDEBE1;
+#navigation {
+  background-color: #FFFDFA;
   margin: 0;
   display: inline-block;
-  box-shadow: 0px 1px 4px 0px rgba(75, 75, 75, 0.38);
+  box-shadow: 0px 1px 4px 0px rgba(184, 140, 70, 0.38);
   position: fixed;
+  top: 0;
   width: 100%;
+  transition: top 0.3s;
 }
 
-/* Nav Bar */
-.navtoggle li:not(:last-child) {
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #FFFDFA;
+  overflow: hidden;
+  margin-top: -50px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #181A18;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+#myTopnav .active {
+  background-color: #FFFDFA;
+  color: #B88C46;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
-  position: relative;
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-.navtoggle li .menu {
-  position: absolute;
-  right: 0;
-  top: 12px;
-  padding-right: 0;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-
-.navtoggle.responsive li {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
-}
-
-nav>ul {
-  list-style-type: none;
-  padding: 0;
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  color: #181A18;
+  background-color: inherit;
+  font-family: inherit;
   margin: 0;
+  padding: 18px 16px 14px 16px;
 }
 
-nav>ul>li>a {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #BA4400;
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFDFA;
+  min-width: 160px;
+  box-shadow: 0px 1px 4px 0px rgba(184, 140, 70, 0.38);
+  z-index: 1;
 }
 
-nav>ul>li>a:visited {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #BA4400;
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #181A18;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
+  display: block;
+  text-align: left;
 }
 
-nav>ul>li>a:hover {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #1866E1;
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: #B88C46;
 }
 
-nav>ul>li>a:focus {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #1866E1;
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #D4BA90;
+  color: #181A18;
 }
 
-nav>ul>li>a:active {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #134EAD;
-}
-
-nav>ul>li>a.active {
-  color: #1866E1;
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Main */
-main {
-  padding-top: 83px;
-}
 
-span.blue {
-  color: #1866E1;
-}
+
+/* MyPortfolioWebsite */
+
 
 /* Footer */
 #contact {
   display: block;
-  border-top: 2px solid #75757575;
+  border-top: 2px solid #B88C46;
   padding: 25px 0 25px 0;
+}
+
+#contact h2, #contact p {
+  color: #181A18;
 }
 
 .column.contact {
@@ -416,10 +432,6 @@ span.blue {
     padding: 0 25px;
   }
 
-  .navtoggle.responsive nav {
-    padding: 60px 0 0;
-  }
-
   h1 {
     font-size: 2.10em;
   }
@@ -430,6 +442,47 @@ span.blue {
 
   body {
     font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topnav a, .dropdown .dropbtn {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -452,59 +505,10 @@ span.blue {
     text-align: unset;
   }
 
-  nav {
-    display: inline-block;
-    width: auto;
-    float: right;
-  }
-
-  nav>ul {
-    margin: 1em 0;
-  }
-
-  nav>ul>li {
-    display: inline-block;
-  }
-
-  nav>ul>li>a {
-    padding-right: 0;
-    padding-left: 20px;
-  }
-
-  nav>ul>li>a:visited {
-    padding-right: 0;
-    padding-left: 20px;
-  }
-
-  nav>ul>li>a:hover {
-    padding-right: 0;
-    padding-left: 20px;
-  }
-
-  nav>ul>li>a:focus {
-    padding-right: 0;
-    padding-left: 20px;
-  }
-
-  nav>ul>li>a:active {
-    padding-right: 0;
-    padding-left: 20px;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
-  .navtoggle.responsive nav {
-    padding: 0 0 0;
-  }
-
-  .navtoggle.responsive li {
-    padding: 0;
+  .logo {
+    width: 60px;
+    margin-top: -15px;
+    margin-bottom: 0px;
   }
 
   h1 {
@@ -522,34 +526,40 @@ span.blue {
   .col-md-6 {
     width: 48%;
   }
-}
 
-@media only screen and (min-width: 1024px) {
-  .container {
-    padding: 0 50px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  @media only screen and (min-width: 1024px) {
+    .container {
+      padding: 0 50px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  h1 {
-    font-size: 2.10em;
-  }
+    .topnav {
+      float: right;
+    }
 
-  h2 {
-    padding-bottom: 20px;
-  }
+    h1 {
+      font-size: 2.10em;
+    }
 
-  .col-lg-7 {
-    width: 60%;
-  }
+    h2 {
+      padding-bottom: 20px;
+    }
 
-  .col-lg-5 {
-    width: 40%;
-  }
+    .col-lg-7 {
+      width: 60%;
+    }
 
-  [class*="col-"] {
-    float: left;
-    padding: 0 25px;
-  }
-}
+    .col-lg-5 {
+      width: 40%;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 0 25px;
+    }
+
+    #myBtn {
+      width: 72px;
+    }
