@@ -491,6 +491,10 @@ a.phase:active {
     padding: 0 25px;
   }
 
+  .topnav {
+    float: right;
+  }
+
   svg.float {
     width: 72px;
     height: 72px;
@@ -533,10 +537,6 @@ a.phase:active {
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
-    }
-
-    .topnav {
-      float: right;
     }
 
     h1 {

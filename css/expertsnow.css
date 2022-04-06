@@ -626,6 +626,10 @@ h3.anchor-h {
     padding: 0 25px;
   }
 
+  .topnav {
+    float: right;
+  }
+
   svg.float {
     width: 72px;
     height: 72px;
@@ -747,10 +751,6 @@ h3.anchor-h {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .topnav {
-    float: right;
   }
 
   h1 {
