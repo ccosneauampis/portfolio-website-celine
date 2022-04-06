@@ -708,7 +708,7 @@ span.gold {
   }
 
   /* About */
-  #me img {
+  #me .row:first-child img, #triptyque img, #triptyque2 img {
     width: 75%;
     display: flex;
     margin: 0 auto;
