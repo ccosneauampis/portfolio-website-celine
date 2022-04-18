@@ -16,14 +16,14 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.688;
-  color: #4B016E;
+  color: #181A18;
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 700;
-  color: #8736AA;
+  color: #181A18;
   line-height: 1.2;
   text-align: center;
 }
@@ -35,14 +35,14 @@ h2, h3 {
 h2 {
   font-size: 1.625em;
   font-weight: 500;
-  color: #8736AA;
+  color: #181A18;
   line-height: 1.4;
 }
 
 h3 {
   font-size: 1.25em;
   font-weight: 400;
-  color: #FFFDFA;
+  color: #181A18;
   line-height: 1.6;
 }
 
@@ -51,7 +51,7 @@ h4 {
   font-size: 1em;
   font-weight: 500;
   text-transform: uppercase;
-  color: #F3AE18;
+  color: #181A18;
   line-height: 1.4;
   text-align: center;
 }
@@ -141,8 +141,8 @@ a.phase:active {
 /* BUTTONS */
 .button {
   display: inline-block;
-  background-color: #8736AA;
-  color: #FFFDFA;
+  background-color: #B88C46;
+  color: #181A18;
   font-size: 14px;
   font-weight: 500;
   padding: 10px 16px;
@@ -151,23 +151,23 @@ a.phase:active {
 }
 
 .button:visited {
-  background-color: #8736AA;
-  color: #FFFDFA;
+  background-color: #B88C46;
+  color: #181A18;
 }
 
 .button:hover {
-  background: #512066;
-  color: #FFFDFA;
+  background: #D4BA90;
+  color: #181A18;
 }
 
 .button:focus {
-  background: #8736AA;
-  color: #FFFDFA;
+  background: #B88C46;
+  color: #181A18;
 }
 
 .button:active {
-  background-color: #B786CC;
-  color: #FFFDFA;
+  background-color: #6E542A;
+  color: #181A18;
 }
 
 /* Button Contact*/
@@ -211,7 +211,7 @@ a.phase:active {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 30px 15px;
 }
 
 .row {
@@ -306,6 +306,10 @@ a.phase:active {
   transition: 0.3s;
 }
 
+#navbar {
+  padding: 0 15px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #FFFDFA;
@@ -396,10 +400,203 @@ a.phase:active {
 }
 
 /* Main */
-
-
 /* MyPortfolioWebsite */
+.cover {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  background-color: #1866E1;
+  width: 100%;
+  height: 200px;
+}
 
+.cover img {
+  width: 85%;
+}
+
+#casestudy_myportfoliowebsite {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#role_tools .column {
+  padding-top: 5px;
+}
+
+#tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#tools .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+}
+
+#tools img {
+  width: 48px;
+  height: 48px;
+}
+
+#con_col_obj {
+  background-color: #74A3ED;
+}
+
+#con_col_obj .column {
+  padding-top: 5px;
+}
+
+.doublediamond {
+  padding: 10px 0;
+}
+
+/* Create a sticky/fixed navbar */
+/* Style the navbar */
+#dp_navbar {
+  background-color: #FFFDFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Navbar links */
+#dp_navbar a {
+  float: left;
+  display: block;
+  background-color: #FFFDFA;
+  color: #181A18;
+  font-family: Montserrat;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: 2px solid #B88C46;
+  transition: 0.2s background;
+  margin: 20px;
+}
+
+#dp_navbar a:visited {
+  background-color: #FFFDFA;
+  color: #181A18;
+}
+
+#dp_navbar a:hover {
+  background-color: #B88C46;
+  color: #181A18;
+}
+
+#dp_navbar a:focus {
+  background-color: #FFFDFA;
+  color: #181A18;
+}
+
+#dp_navbar a:active {
+  background-color: #B88C46;
+  color: #181A18;
+}
+
+#develop, #iterate {
+  background-color: #74A3ED;
+}
+
+#develop h3, #deliver h3, #iterate h3 {
+  background-color: #B88C46;
+  font-family: Montserrat;
+  font-weight: 500;
+  text-align: center;
+  padding: 14px;
+  border-radius: 30px;
+  margin: 20px;
+  box-shadow: 0px 8px 15px 0px rgba(184, 140, 70, 0.38);
+}
+
+#develop .column, #deliver .column, #iterate .column {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#develop h4, #iterate h4 {
+  text-align: left;
+}
+
+.languages_selectors, .wireframes, .html_css {
+  padding: 10px 0;
+}
+
+.affmap2 {
+  display: none;
+}
+
+.takeaways {
+  margin-top: -30px;
+  position: relative;
+}
+
+.takeaways img {
+  filter: blur(2px);
+}
+
+.boxed_txt1 {
+  position: absolute;
+  bottom: -30px;
+  left: 30px;
+  background-color: #FFFDFA;
+  color: #181A18;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 8px 15px 0px rgba(184, 140, 70, 0.38);
+}
+
+.boxed_txt2 {
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+  background-color: #FFFDFA;
+  color: #181A18;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 8px 15px 0px rgba(184, 140, 70, 0.38);
+}
+
+#iterate {
+  margin-top: 90px;
+}
+
+.design_system {
+  position: relative;
+  background-color: #74A3ED;
+  margin-top: -30px;
+  padding-bottom: 90px;
+}
+
+.design_system img {
+  filter: none;
+}
+
+.mockup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #1866E1;
+  width: 100%;
+  height: 500px;
+}
+
+.mockup img {
+  width: 50%;
+  box-shadow: 0px 8px 15px 0px rgba(24, 26, 24, 0.38);
+}
 
 /* Footer */
 #contact {
@@ -429,7 +626,7 @@ a.phase:active {
 /* MEDIA QUERIES */
 @media only screen and (min-width: 640px) {
   .container {
-    padding: 0 25px;
+    padding: 30px 25px;
   }
 
   h1 {
@@ -437,11 +634,96 @@ a.phase:active {
   }
 
   main {
-    padding-top: 87px;
+    padding-top: 83px;
   }
 
   body {
     font-size: 18px;
+  }
+
+  #navbar {
+    padding: 0 15px;
+  }
+
+  #navigation {
+    top: 0;
+  }
+
+  .cover {
+    height: 350px;
+    margin-top: 0;
+  }
+
+  #role_tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #role_tools .rt {
+    width: 45%;
+  }
+
+  .doublediamond {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #dp_navbar {
+    flex-direction: row;
+  }
+
+  #dp_navbar a {
+    margin: 20px 0;
+    padding: 14px 34px;
+  }
+
+  #develop h3, #deliver h3, #iterate h3 {
+    margin: 20px 150px;
+  }
+
+  #develop img, #deliver img, #iterate img {
+    width: 75%;
+  }
+
+  .ctr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .affmap1 {
+    display: none;
+  }
+
+  .affmap2 {
+    display: block;
+  }
+
+  .boxed_txt1 {
+    bottom: -70px;
+    left: 150px;
+    right: 20px;
+  }
+
+  #iterate {
+    margin-top: 120px;
+  }
+
+  .boxed_txt2 {
+    bottom: 60px;
+    left: 150px;
+    right: 20px;
+  }
+
+  .design_system {
+    padding-bottom: 130px;
+  }
+
+  .mockup img {
+    width: 30%;
   }
 }
 
@@ -487,14 +769,6 @@ a.phase:active {
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    padding: 0 25px;
-  }
-
-  .topnav {
-    float: right;
-  }
-
   svg.float {
     width: 72px;
     height: 72px;
@@ -520,7 +794,7 @@ a.phase:active {
   }
 
   main {
-    padding-top: 96px;
+    padding-top: 92px;
   }
 
   body {
@@ -531,35 +805,71 @@ a.phase:active {
     width: 48%;
   }
 
-  @media only screen and (min-width: 1024px) {
-    .container {
-      padding: 0 50px;
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .cover {
+    height: 500px;
+  }
 
-    h1 {
-      font-size: 2.10em;
-    }
+  .mockup {
+    height: 600px;
+  }
+}
 
-    h2 {
-      padding-bottom: 20px;
-    }
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 30px 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .col-lg-7 {
-      width: 60%;
-    }
+  .topnav {
+    float: right;
+  }
 
-    .col-lg-5 {
-      width: 40%;
-    }
+  h1 {
+    font-size: 2.10em;
+  }
 
-    [class*="col-"] {
-      float: left;
-      padding: 0 25px;
-    }
+  h2 {
+    padding-bottom: 20px;
+  }
 
-    #myBtn {
-      width: 72px;
-    }
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 25px;
+  }
+
+  #myBtn {
+    width: 72px;
+  }
+
+  .cover {
+    height: 250px;
+  }
+
+  .cover img {
+    width: 45%;
+  }
+
+  .doublediamond {
+    width: 60%;
+  }
+
+  #dp_navbar a {
+    padding: 14px 84px;
+  }
+
+  #develop h3, #deliver h3, #iterate h3 {
+    margin: 20px 280px;
+  }
+
+
+}
