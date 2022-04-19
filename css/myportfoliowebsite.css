@@ -531,7 +531,7 @@ a.phase:active {
   padding: 10px 0;
 }
 
-.affmap2 {
+.showhide2, .affmap2, .affmap3 {
   display: none;
 }
 
@@ -809,21 +809,35 @@ a.phase:active {
     height: 500px;
   }
 
-  .mockup {
-    height: 600px;
+  .showhide1 {
+    display: none;
   }
+
+  .showhide2 {
+    display: flex;
+  }
+
+  .mockup {
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+
+    .topnav {
+      float: right;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
   .container {
     padding: 30px 50px;
+  }
+
+  .row {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .topnav {
-    float: right;
   }
 
   h1 {
@@ -852,7 +866,7 @@ a.phase:active {
   }
 
   .cover {
-    height: 250px;
+    height: 45vh;
   }
 
   .cover img {
@@ -871,5 +885,41 @@ a.phase:active {
     margin: 20px 280px;
   }
 
+  .examples {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  #develop .html_css img {
+    width: 90%;
+  }
+
+  #deliver img {
+    width: 50%;
+  }
+
+  .affmap2 {
+    display: none;
+  }
+
+  .affmap3 {
+    display: flex;
+  }
+
+  .boxed_txt1, .boxed_txt2 {
+    left: 400px;
+  }
+
+  .mockup {
+    height: 100vh;
+  }
+
+  .mockup img {
+    width: 20%;
+  }
 
 }
+
+@media only screen and (min-width: 1280px) {}

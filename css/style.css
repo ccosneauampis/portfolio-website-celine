@@ -19,7 +19,7 @@ body {
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 700;
   color: #181A18;
   line-height: 1.3;
@@ -106,7 +106,7 @@ a.menu:active {
 .button {
   display: inline-block;
   background-color: #B88C46;
-  color: #FFFDFA;
+  color: #181A18;
   font-size: 14px;
   font-weight: 500;
   padding: 10px 16px;
@@ -116,22 +116,22 @@ a.menu:active {
 
 .button:visited {
   background-color: #B88C46;
-  color: #FFFDFA;
+  color: #181A18;
 }
 
 .button:hover {
   background: #6E542A;
-  color: #FFFDFA;
+  color: #181A18;
 }
 
 .button:focus {
   background: #B88C46;
-  color: #FFFDFA;
+  color: #181A18;
 }
 
 .button:active {
   background-color: #D4BA90;
-  color: #FFFDFA;
+  color: #181A18;
 }
 
 /* Button Contact*/
@@ -250,7 +250,7 @@ a.menu:active {
 }
 
 .L-active {
-  border-bottom: 2px solid #B88C46;
+  border-bottom: 2px solid #181A18;
 }
 
 .logo {
@@ -364,10 +364,6 @@ main {
   padding-top: 83px;
 }
 
-span.gold {
-  color: #B88C46;
-}
-
 /* Index */
 #hero_en {
   display: flex;
@@ -388,7 +384,6 @@ span.gold {
 }
 
 #hero_en h1, #hero_fr h1 {
-  font-size: 35px;
   text-align: left;
   margin: 0;
 }
@@ -479,10 +474,6 @@ span.gold {
 #myportfoliowebsite, #expertsnow {
   padding-bottom: 50px;
   border-bottom: 1px solid #B88C46;
-}
-
-#myportfoliowebsite .button {
-  background-color: #6E542A;
 }
 
 #multilearn {
@@ -628,7 +619,7 @@ span.gold {
   }
 
   #hero_en p, #hero_fr p {
-  font-size: 1em;
+    font-size: 1em;
   }
 
   #presentation {
@@ -797,10 +788,6 @@ span.gold {
     padding: 0 25px;
   }
 
-  .topnav {
-    float: right;
-  }
-
   svg.float {
     width: 72px;
     height: 72px;
@@ -919,6 +906,13 @@ span.gold {
     width: 45%;
     padding: 0;
   }
+}
+
+@media only screen and (min-width: 769px) {
+
+    .topnav {
+      float: right;
+    }
 }
 
 @media only screen and (min-width: 1024px) {

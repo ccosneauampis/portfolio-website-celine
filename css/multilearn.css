@@ -615,10 +615,6 @@ h3.anchor-h {
     padding: 0 25px;
   }
 
-  .topnav {
-    float: right;
-  }
-
   svg.float {
     width: 72px;
     height: 72px;
@@ -702,6 +698,13 @@ h3.anchor-h {
   #discover_multilearn img, #define_multilearn img, #develop_multilearn img, #deliver_multilearn img {
     margin: 40px auto;
   }
+}
+
+@media only screen and (min-width: 769px) {
+
+    .topnav {
+      float: right;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
