@@ -642,7 +642,7 @@ a.phase:active {
   }
 
   #navbar {
-    padding: 0 15px;
+    padding: 0 25px;
   }
 
   #navigation {
@@ -846,6 +846,13 @@ a.phase:active {
 
   h2 {
     padding-bottom: 20px;
+  }
+
+  #navbar {
+    padding: 0 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .col-lg-7 {
