@@ -36,7 +36,7 @@
 
 <body id="expertsnowpage">
   <header class="section" id="navigation">
-    <div class="container">
+    <div class="container" id="navbar">
       <div class="language">
         <div id="french" class="L-active">
           <div class="flag">
@@ -72,7 +72,16 @@
             <a href="multilearn.html">MultiLearn</a>
           </div>
         </div>
-        <a href="about.html">À Propos de</a>
+        <a href="about.html">Plus sur moi</a>
+        <div class="dropdown">
+          <button class="dropbtn">À Télécharger
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../files/portfolio_pdf_FR.pdf" target="_blank">Mon Portfolio</a>
+            <a href="../files/celine_cosneau-ampis_resume_FR.pdf" target="_blank">Mon CV</a>
+          </div>
+        </div>
         <a href="#contact">Contacts</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
@@ -82,110 +91,111 @@
 
   <main id="main">
     <!--INTRO-->
-    <div class="section" id="intro">
-      <div class="container">
-        <h1 class="center">Une application web "responsive" : <span class="yellow">ExpertsNow</span></h1>
-        <div class="center" id="casestudy">
-          <a href="../files/casestudy_expertsnow.pdf" class="button outlined" target="_blank">Étude de cas détaillée (EN)</a>
-        </div>
-        <div class="row" id="logo_expertsnow">
-          <picture>
-            <source srcset="../img/expertsnow/expertsnow_S_FR.jpg" media="(max-width:767px)">
-            <img src="../img/expertsnow/expertsnow_L_FR.jpg" alt="ExpertsNow">
-          </picture>
-        </div>
-        <div class="row" id="overview">
-          <div class="column overview" id="context">
-            <h4>Contexte</h4>
-            <p>
-              J'ai travaillé sur ce projet fictif lors de ma formation pour devenir une UX Designer, avec CareerFoundry.
-            </p>
-          </div>
-          <div class="role timeline" id="roletimeline">
-            <div class="column overview" id="role">
-              <h4>Mon rôle</h4>
-              <p>
-                Unique UX/UI designer
-              </p>
-            </div>
-            <div class="column overview" id="timeline">
-              <h4>Période</h4>
-              <p>
-                6 mois
-              </p>
-            </div>
-          </div>
-          <div class="column overview" id="tools">
-            <h4>Outils</h4>
-            <div class="row">
-              <!--Google Draw-->
-              <div class="column">
-                <img src="../img/tools/googledraw.svg" alt="Google_Draw">
-                <p style="font-size:60%;">
-                  Google Draw
-                </p>
-              </div>
-              <!--end Google Draw-->
-              <!--Lucidchart-->
-              <div class="column">
-                <img src="../img/tools/lucidchart.svg" alt="Lucidchart">
-                <p style="font-size:60%;">
-                  Lucidchart
-                </p>
-              </div>
-              <!--end Lucidchart-->
-              <!--Adobe XD-->
-              <div class="column">
-                <img src="../img/tools/adobexd.svg" alt="Adobe XD">
-                <p style="font-size:60%;">
-                  Adobe XD
-                </p>
-              </div>
-              <!--end Adobe XD-->
-              <!--Marvel-->
-              <div class="column">
-                <img src="../img/tools/marvel.svg" alt="Marvel">
-                <p style="font-size:60%;">
-                  Marvel
-                </p>
-              </div>
-              <!--end Marvel-->
-            </div>
-            <div class="row">
-              <!--Zoom-->
-              <div class="column">
-                <img src="../img/tools/zoom.svg" alt="Zoom">
-                <p style="font-size:60%;">
-                  Zoom
-                </p>
-              </div>
-              <!--end Zoom-->
-              <!--Usability Hub-->
-              <div class="column">
-                <img src="../img/tools/usahub.svg" alt="Usability Hub">
-                <p style="font-size:60%;">
-                  Usability Hub
-                </p>
-              </div>
-              <!--end Usability Hub-->
-              <!--Invision-->
-              <div class="column">
-                <img src="../img/tools/invision.svg" alt="Invision">
-                <p style="font-size:60%;">
-                  Invision
-                </p>
-              </div>
-              <!--end Invision-->
-            </div>
-            <!--TOOLS ROW CLOSED-->
-          </div>
-          <!-- TOOLS COLUMN CLOSED-->
-        </div>
-        <!--ROW CLOSED-->
-      </div>
-      <!--CONTAINER CLOSED-->
+    <div class="cover">
+      <source srcset="../img/expertsnow/cover.png" media="(max-width:767px)">
+      <img src="../img/expertsnow/cover@2x.png" alt="ExpertsNow">
     </div>
-    <!--SECTION CLOSED-->
+        <div class="section" id="overview_expertsnow">
+          <div class="container">
+            <h1 class="row">ExpertsNow</h1>
+            <p class="center">
+              Une application web responsive qui connecte ses utilisateurs avec les experts dont ils ont besoin.
+            </p>
+            <div class="row" id="prototype_expertsnow">
+              <a href="https://cline144015.invisionapp.com/console/share/JH34QHCU8N/821964497" class="button" target="_blank">Prototype ExpertsNow <br>(non codé et en Anglais)</a>
+            </div>
+            <div class="row" id="context">
+              <h3>Contexte</h3>
+              <p>
+                J'ai travaillé sur ce projet fictif lors de ma formation pour devenir une UX Designer, avec CareerFoundry.
+              </p>
+            </div>
+            <div class="row" id="role_timeline">
+              <div class="column rt" id="role">
+                <h3>Rôle</h3>
+                <p>
+                  J'étais l'unique UX/UI Designer.
+                </p>
+              </div>
+              <div class="column rt" id="timeline">
+                <h3>Période</h3>
+                <p>
+                  6 mois
+                </p>
+              </div>
+            </div>
+            <div class="column rt" id="tools_used">
+              <h3>Outils utilisés</h3>
+              <div class="row" id="tools">
+                <div class="row">
+                  <!--Google Draw-->
+                  <div class="column">
+                    <img src="../img/tools/googledraw.svg" alt="Google_Draw">
+                    <p style="font-size:60%;">
+                      Google Draw
+                    </p>
+                  </div>
+                  <!--end Google Draw-->
+                  <!--Lucidchart-->
+                  <div class="column">
+                    <img src="../img/tools/lucidchart.svg" alt="Lucidchart">
+                    <p style="font-size:60%;">
+                      Lucidchart
+                    </p>
+                  </div>
+                  <!--end Lucidchart-->
+                  <!--Adobe XD-->
+                  <div class="column">
+                    <img src="../img/tools/adobexd.svg" alt="Adobe XD">
+                    <p style="font-size:60%;">
+                      Adobe XD
+                    </p>
+                  </div>
+                  <!--end Adobe XD-->
+                  <!--Marvel-->
+                  <div class="column">
+                    <img src="../img/tools/marvel.svg" alt="Marvel">
+                    <p style="font-size:60%;">
+                      Marvel
+                    </p>
+                  </div>
+                  <!--end Marvel-->
+                </div>
+                <div class="row">
+                  <!--Zoom-->
+                  <div class="column">
+                    <img src="../img/tools/zoom.svg" alt="Zoom">
+                    <p style="font-size:60%;">
+                      Zoom
+                    </p>
+                  </div>
+                  <!--end Zoom-->
+                  <!--Usability Hub-->
+                  <div class="column">
+                    <img src="../img/tools/usahub.svg" alt="Usability Hub">
+                    <p style="font-size:60%;">
+                      Usability Hub
+                    </p>
+                  </div>
+                  <!--end Usability Hub-->
+                  <!--Invision-->
+                  <div class="column">
+                    <img src="../img/tools/invision.svg" alt="Invision">
+                    <p style="font-size:60%;">
+                      Invision
+                    </p>
+                  </div>
+                  <!--end Invision-->
+                </div>
+                <!--Close Row Tools-->
+              </div>
+              <!--Close Column Tools-->
+            </div>
+            <!--Close Row Role_Tools-->
+          </div>
+          <!--CONTAINER CLOSED-->
+        </div>
+        <!--SECTION CLOSED-->
 
     <!--SUMMARY-->
     <div class="section" id="summary">
@@ -247,7 +257,7 @@
         <div class="row">
           <div class="column">
             <h4>Analyse de la concurrence</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/expertsnow/competitive_analysis.png" media="(max-width:767px)">
                 <img src="../img/expertsnow/competitive_analysis@2x.png" alt="Doctolib_PagesJaunes">
@@ -261,7 +271,7 @@
           </div>
           <div class="column">
             <h4>Interviews d'utilisateurs</h4>
-            <div class="img">
+            <div class="center">
               <div class="img">
                 <picture>
                   <source srcset="../img/expertsnow/users_interviews.png" media="(max-width:767px)">
@@ -296,7 +306,7 @@
         <div class="row">
           <div class="column">
             <h4>Types d'utilisateur</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/expertsnow/personas.jpg" media="(max-width:767px)">
                 <img src="../img/expertsnow/personas@2x.jpg" alt="Personas">
@@ -310,7 +320,7 @@
           </div>
           <div class="column">
             <h4>Trouver des solutions</h4>
-            <div class="usersneeds">
+            <div class="usersneeds center">
               <picture class="img">
                 <source srcset="../img/expertsnow/pbmstatement_solutions.png" media="(max-width:767px)">
                 <img src="../img/expertsnow/pbmstatement_solutions@2x.png" alt="Problems_Solutions">
@@ -324,7 +334,7 @@
           </div>
           <div class="column">
             <h4>Flows d'utilisateurs</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/expertsnow/user_flows.png" media="(max-width:767px)">
                 <img src="../img/expertsnow/user_flows@2x.png" alt="User_Flow">
@@ -355,7 +365,7 @@
         <div class="row">
           <div class="column">
             <h4>Architecture de l'Information </h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/expertsnow/sitemap.png" media="(max-width:767px)">
                 <img src="../img/expertsnow/sitemap@2x.png" alt="Sitemap_ExpertsNow">
@@ -369,7 +379,7 @@
           </div>
           <div class="column">
             <h4>Wireframing</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/expertsnow/wireframing.png" media="(max-width:767px)">
                 <img src="../img/expertsnow/wireframing@2x.png" alt="Evolution_Wireframes">
@@ -401,7 +411,7 @@
         <div class="row">
           <div class="column">
             <h4>Test d'ergonomie</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/expertsnow/usability_test.jpg" media="(max-width:767px)">
                 <img src="../img/expertsnow/usability_test@2x.jpg" alt="Usability_Test_Marvel">
@@ -418,7 +428,7 @@
           </div>
           <div class="column">
             <h4>Tests de préférence</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/expertsnow/preference_test.jpg" media="(max-width:767px)">
                 <img src="../img/expertsnow/preference_test@2x.jpg" alt="Preference_Tests_Usahub">
@@ -451,7 +461,7 @@
           <div class="column">
             <h4>Réflexions sur le UI Design</h4>
             <div class="center">
-              <div class="img">
+              <div class="center">
                 <picture class="img">
                   <source srcset="../img/expertsnow/ui_strategy.jpg" media="(max-width:767px)">
                   <img src="../img/expertsnow/ui_strategy@2x.jpg" alt="Colors">
@@ -468,7 +478,7 @@
           </div>
           <div class="column">
             <h4>Style Guide</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/expertsnow/style_guide.png" media="(max-width:767px)">
                 <img src="../img/expertsnow/style_guide@2x.png" alt="Color_Palette">
@@ -486,7 +496,7 @@
           </div>
           <div class="column">
             <h4>Design Final</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/expertsnow/final_design.png" media="(max-width:767px)">
                 <img src="../img/expertsnow/final_design@2x.png" alt="User_Flow">
@@ -513,9 +523,6 @@
             retenir de ce projet</b>, sur lequel j'ai travaillé dans le cadre de ma formation en UX Design.</h3>
       </div>
       <div class="container">
-        <div class="center" id="prototype">
-          <a href="https://cline144015.invisionapp.com/console/share/JH34QHCU8N/821964497" class="button" target="_blank">Prototype (EN)</a>
-        </div>
         <div class="row">
           <h4>Prochaines étapes</h4>
           <div class="conclusion">

@@ -35,7 +35,7 @@
 
 <body id="multilearnpage">
   <header class="section" id="navigation">
-    <div class="container">
+    <div class="container" id="navbar">
       <div class="language">
         <div id="french">
           <div class="flag">
@@ -72,6 +72,15 @@
           </div>
         </div>
         <a href="about.html">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">To Download
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../files/portfolio_pdf_EN.pdf" target="_blank">My Portfolio</a>
+            <a href="../files/celine_cosneau-ampis_resume_EN.pdf" target="_blank">My Resume</a>
+          </div>
+        </div>
         <a href="#contact">Contacts</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
@@ -81,83 +90,84 @@
 
   <main id="main_multilearn">
     <!--INTRO-->
-    <div class="section" id="intro_multilearn">
-      <div class="container">
-        <h1 class="center">A vocabulary learning app: <span class="yellow">MultiLearn</span></h1>
-        <div class="center" id="casestudy_multilearn">
-          <a href="files/casestudy_multilearn.pdf" class="button" target="_blank">Detailed Case Study</a>
-        </div>
-        <div class="row" id="logo_multilearn">
-          <picture>
-            <source srcset="img/multilearn/multilearn_S.jpg" media="(max-width:767px)">
-            <img src="img/multilearn/multilearn_L.jpg" alt="MultiLearn">
-          </picture>
-        </div>
-        <div class="row" id="overview_multilearn">
-          <div class="column overview" id="context_multilearn">
-            <h4>Context</h4>
-            <p>
-              This fictitious project came to me during my online UX Design training with CareerFoundry.
-            </p>
-          </div>
-          <div class="role timeline" id="roletimeline_multilearn">
-            <div class="column overview" id="role_multilearn">
-              <h4>My role</h4>
-              <p>
-                Sole UX designer
-              </p>
-            </div>
-            <div class="column overview" id="timeline_multilearn">
-              <h4>Timeline</h4>
-              <p>
-                2 months
-              </p>
-            </div>
-          </div>
-          <div class="column overview" id="tools_multilearn">
-            <h4>Tools</h4>
-            <div class="row">
-              <!--Google Draw-->
-              <div class="column">
-                <img src="img/tools/googledraw.svg" alt="Google_Draw">
-                <p style="font-size:60%;">
-                  Google Draw
-                </p>
-              </div>
-              <!--end Google Draw-->
-              <!--Marvel-->
-              <div class="column">
-                <img src="img/tools/marvel.svg" alt="Marvel">
-                <p style="font-size:60%;">
-                  Marvel
-                </p>
-              </div>
-              <!--end Marvel-->
-              <!--Google Meet-->
-              <div class="column">
-                <img src="img/tools/googlemeet.svg" alt="Google_Meet">
-                <p style="font-size:60%;">
-                  Google Meet
-                </p>
-              </div>
-              <!--end Google Meet-->
-            </div>
-            <!--TOOLS ROW CLOSED-->
-          </div>
-          <!-- TOOLS COLUMN CLOSED-->
-        </div>
-        <!--ROW CLOSED-->
-      </div>
-      <!--CONTAINER CLOSED-->
+    <div class="cover">
+      <source srcset="img/multilearn/cover.png" media="(max-width:767px)">
+      <img src="img/multilearn/cover@2x.png" alt="ExpertsNow">
     </div>
-    <!--SECTION CLOSED-->
+        <div class="section" id="overview_multilearn">
+          <div class="container">
+            <h1 class="row">MultiLearn</h1>
+            <p class="center">
+              A vocabulary learning app which aims to empower people to learn.
+            </p>
+            <div class="row" id="prototype_multilearn">
+              <a href="https://marvelapp.com/prototype/7e51iji/screen/73967214" class="button" target="_blank">Prototype MultiLearn <br>(not coded)</a>
+            </div>
+            <div class="row" id="context">
+              <h3>Context</h3>
+              <p>
+                This fictitious project came to me during my online UX Design training with CareerFoundry.
+              </p>
+            </div>
+            <div class="row" id="role_timeline">
+              <div class="column rt" id="role">
+                <h3>Role</h3>
+                <p>
+                  I was the sole UX Designer.
+                </p>
+              </div>
+              <div class="column rt" id="timeline">
+                <h3>Timeline</h3>
+                <p>
+                  2 months
+                </p>
+              </div>
+            </div>
+            <div class="column rt" id="tools_used">
+              <h3>Tools I used</h3>
+              <div class="row" id="tools">
+                <div class="row">
+                  <!--Google Draw-->
+                  <div class="column">
+                    <img src="img/tools/googledraw.svg" alt="Google_Draw">
+                    <p style="font-size:60%;">
+                      Google Draw
+                    </p>
+                  </div>
+                  <!--end Google Draw-->
+                  <!--Marvel-->
+                  <div class="column">
+                    <img src="img/tools/marvel.svg" alt="Marvel">
+                    <p style="font-size:60%;">
+                      Marvel
+                    </p>
+                  </div>
+                  <!--end Marvel-->
+                  <!--Google Meet-->
+                  <div class="column">
+                    <img src="img/tools/googlemeet.svg" alt="Google_Meet">
+                    <p style="font-size:60%;">
+                      Google Meet
+                    </p>
+                  </div>
+                  <!--end Google Meet-->
+                </div>
+                <!--Close Row Tools-->
+              </div>
+              <!--Close Column Tools-->
+            </div>
+            <!--Close Row Role_Tools-->
+          </div>
+          <!--CONTAINER CLOSED-->
+        </div>
+        <!--SECTION CLOSED-->
 
     <!--SUMMARY-->
     <div class="section" id="summary_multilearn">
       <div class="container">
         <h2 class="center">What was my design process?</h2>
-        <div class="img">
-          <picture>
+        <div class="center">
+          <picture class="img">
             <source srcset="img/multilearn/design_process.png" media="(max-width:767px)">
             <img src="img/multilearn/design_process@2x.png" alt="Design_Process">
           </picture>
@@ -214,7 +224,7 @@
         <div class="row">
           <div class="column">
             <h4>Competitive analysis</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="img/multilearn/competitive_analysis.png" media="(max-width:767px)">
                 <img src="img/multilearn/competitive_analysis@2x.png" alt="Quizlet_WordUp_FluentU">
@@ -228,7 +238,7 @@
           </div>
           <div class="column">
             <h4>Users' interviews</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="img/multilearn/users_interviews.png" media="(max-width:767px)">
                 <img src="img/multilearn/users_interviews@2x.png" alt="Thinking_Doing_Feeling">
@@ -261,7 +271,7 @@
         <div class="row">
           <div class="column">
             <h4>Persona</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="img/multilearn/persona.jpg" media="(max-width:767px)">
                 <img src="img/multilearn/persona@2x.jpg" alt="Personas">
@@ -275,7 +285,7 @@
           </div>
           <div class="column">
             <h4>User's flows</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="img/multilearn/user_flows.jpg" media="(max-width:767px)">
                 <img src="img/multilearn/user_flows@2x.jpg" alt="User_Flow">
@@ -306,7 +316,7 @@
         <div class="row">
           <div class="column">
             <h4>Wireframing & Prototyping</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="img/multilearn/wireframing.png" media="(max-width:767px)">
                 <img src="img/multilearn/wireframing@2x.png" alt="Evolution_Wireframes">
@@ -337,7 +347,7 @@
         <div class="row">
           <div class="column">
             <h4>Usability Test & Implementing Feedback</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="img/multilearn/usability_test.png" media="(max-width:767px)">
                 <img src="img/multilearn/usability_test@2x.png" alt="Usability_Test_Multilearn">
@@ -363,9 +373,6 @@
           I then <b>reflected on the possible next steps</b> to further improve MultiLearn. Finally, I <b>assessed my learnings</b> during this project <b>and on what I should improve</b> as a designer.</h3>
       </div>
       <div class="container">
-        <div class="center" id="prototype_multilearn">
-          <a href="https://marvelapp.com/prototype/7e51iji/screen/73967214" class="button" target="_blank">Prototype (EN)</a>
-        </div>
         <div class="row">
           <h4>Next Steps</h4>
           <div class="conclusion">

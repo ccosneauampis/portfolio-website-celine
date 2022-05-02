@@ -589,8 +589,7 @@ a.phase:active {
   justify-content: center;
   align-items: center;
   background-color: #1866E1;
-  width: 100%;
-  height: 500px;
+  height: 65vh;
 }
 
 .mockup img {
@@ -722,6 +721,10 @@ a.phase:active {
     padding-bottom: 130px;
   }
 
+  .mockup {
+    height: 60vh;
+  }
+
   .mockup img {
     width: 30%;
   }
@@ -818,7 +821,7 @@ a.phase:active {
   }
 
   .mockup {
-    height: 60vh;
+    height: 45vh;
   }
 }
 
@@ -919,14 +922,16 @@ a.phase:active {
     left: 400px;
   }
 
+  .container.mockup {
+    padding: none;
+  }
+
   .mockup {
-    height: 100vh;
+    height: 75vh;
   }
 
   .mockup img {
-    width: 20%;
+    width: 30%;
   }
 
 }
-
-@media only screen and (min-width: 1280px) {}

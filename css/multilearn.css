@@ -42,7 +42,7 @@ h2 {
 h3 {
   font-size: 1.25em;
   font-weight: 400;
-  color: #F4B500;
+  color: #181A18;
   line-height: 1.6;
 }
 
@@ -51,14 +51,14 @@ h4 {
   font-size: 1em;
   font-weight: 500;
   text-transform: uppercase;
-  color: #454848;
+  color: #F4B500;
   line-height: 1.4;
   text-align: center;
 }
 
 /* IMG - VIDEOS - SVG */
 img {
-  width: 100%;
+  width: 80%;
 }
 
 svg.icon {
@@ -93,21 +93,21 @@ a:active {
 
 /* Burger Menu */
 a.menu {
-  color: #454848;
+  color: #181A18;
   text-decoration: none;
 }
 
 a.menu:visited {
-  color: #454848;
+  color: #181A18;
 }
 
 a.menu:hover,
 a.menu:focus {
-  color: #F4B500;
+  color: #181A18;
 }
 
 a.menu:active {
-  color: #F8D366;
+  color: #D4BA90;
 }
 
 /* Link Design Process Phases*/
@@ -115,30 +115,30 @@ a.phase {
   font-size: 1.25em;
   font-weight: 500;
   line-height: 1.615;
-  color: #454848;
+  color: #181A18;
   text-decoration: underline;
   display: flex;
   justify-content: center;
 }
 
 a.phase:visited {
-  color: #454848;
+  color: #181A18;
 }
 
 a.phase:hover,
 a.phase:focus {
-  color: #8F9191;
+  color: #181A18;
 }
 
 a.phase:active {
-  color: #8F9191;
+  color: #181A18;
 }
 
 /* BUTTONS */
 .button {
   display: inline-block;
-  background-color: #454848;
-  color: #FFFDFA;
+  background-color: #B88C46;
+  color: #181A18;
   font-size: 14px;
   font-weight: 500;
   padding: 10px 16px;
@@ -147,23 +147,23 @@ a.phase:active {
 }
 
 .button:visited {
-  background-color: #454848;
-  color: #FFFDFA;
+  background-color: #B88C46;
+  color: #181A18;
 }
 
 .button:hover {
-  background: #292B2B;
-  color: #FFFDFA;
+  background: #D4BA90;
+  color: #181A18;
 }
 
 .button:focus {
-  background: #454848;
-  color: #FFFDFA;
+  background: #B88C46;
+  color: #181A18;
 }
 
 .button:active {
-  background-color: #8F9191;
-  color: #FFFDFA;
+  background-color: #6E542A;
+  color: #181A18;
 }
 
 /* Button Contact*/
@@ -393,72 +393,75 @@ a.phase:active {
 
 /* Main */
 main {
-  padding-top: 83px;
+  padding-top: 80px;
 }
 
-span.yellow {
-  color: #F4B500;
-}
-
-/* ExpertsNow */
-#intro_multilearn {
-  background-color: #FFFDFA;
-  padding: 25px 0 25px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-#main_multilearn img {
+/* MultiLearn */
+.cover {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  width: 75%;
+  align-items: center;
+  background-color: #F4B500;
+  width: 100%;
+  height: 40vh;
+}
+
+.cover img {
+  width: 30%;
+}
+
+#overview_multilearn .container {
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#casestudy_multilearn {
-  padding: 30px 0;
+#prototype_multilearn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
 }
 
-#logo_multilearn {
-  margin: 40px auto 0px auto;
+#context {
+  padding-top: 20px;
 }
 
-#logo_multilearn img {
-  width: 100%;
-  border-radius: 4px;
+#role, #timeline, #tools_used {
+  padding-top: 10px;
 }
 
-#overview_multilearn {
-  display: inline-block;
-  width: 100%;
+#context h3, #role_timeline h3, #tools_used h3 {
+  color: #181A18;
+  padding: 0;
 }
 
-#overview_multilearn h4 {
-  text-align: left;
-}
-
-#overview_multilearn .column.overview {
-  padding: 10px 0px 10px 0px;
-}
-
-#tools_multilearn img {
+#tools img {
   width: 48px;
   height: 48px;
 }
 
-#tools_multilearn .row {
+#tools .row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-#tools_multilearn .column {
+#tools .row:last-child {
+  width: 70%;
+}
+
+#tools .column {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#summary_multilearn {
+  padding-top: 30px;
 }
 
 #summary_multilearn img {
@@ -467,15 +470,14 @@ span.yellow {
 }
 
 #summary_multilearn .column {
-  text-align: center;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
 }
 
 #summary_multilearn p {
   text-align: left;
 }
 
-#multilearnpage h3 {
+#summary_multilearn h3, #discover_multilearn h3, #define_multilearn h3, #develop_multilearn h3, #deliver_multilearn h3, #conclusion_multilearn h3 {
   padding: 75px 25px;
   max-width: 700px;
   margin-left: auto;
@@ -492,7 +494,7 @@ h3.anchor-h {
 }
 
 .title {
-  background-color: #454848;
+  background-color: #F4B500;
 }
 
 #discover_multilearn, #define_multilearn, #develop_multilearn, #deliver_multilearn {
@@ -502,10 +504,6 @@ h3.anchor-h {
 
 #discover_multilearn .column, #define_multilearn .column, #develop_multilearn .column, #deliver_multilearn .column {
   padding: 10px 0px 10px 0px;
-}
-
-#prototype_multilearn {
-  padding: 50px 0;
 }
 
 #conclusion_multilearn .row {
@@ -549,7 +547,15 @@ h3.anchor-h {
 /* MEDIA QUERIES */
 @media only screen and (min-width: 640px) {
   .container {
+    padding: 30px 25px;
+  }
+
+  #navbar {
     padding: 0 25px;
+  }
+
+  .cover {
+    height: 50vh;
   }
 
   h1 {
@@ -557,15 +563,22 @@ h3.anchor-h {
   }
 
   main {
-    padding-top: 87px;
+    padding-top: 83px;
   }
 
   body {
     font-size: 18px;
   }
 
-  #tools_multilearn .row {
-    width: 60%;
+  #role_timeline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #role, #timeline {
+    width: 50%;
   }
 }
 
@@ -611,10 +624,6 @@ h3.anchor-h {
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    padding: 0 25px;
-  }
-
   svg.float {
     width: 72px;
     height: 72px;
@@ -640,16 +649,17 @@ h3.anchor-h {
   }
 
   main {
-    padding-top: 96px;
+    padding-top: 93px;
   }
 
   body {
     font-size: 18px;
   }
 
-  .col-md-6 {
-    width: 48%;
+  .cover img {
+    width: 25%;
   }
+
 
   /* MultiLearn */
   #logo_multilearn .row {
@@ -701,10 +711,9 @@ h3.anchor-h {
 }
 
 @media only screen and (min-width: 769px) {
-
-    .topnav {
-      float: right;
-    }
+  .topnav {
+    float: right;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -713,6 +722,14 @@ h3.anchor-h {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .cover {
+    height: 45vh;
+  }
+
+  .cover img {
+    width: 10%;
   }
 
   h1 {
@@ -741,68 +758,19 @@ h3.anchor-h {
   }
 
   /* MultiLearn */
-  #logo_multilearn {
+  #tools {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 40px 0 0 0;
-    padding: 20px 0;
   }
 
-  #logo_multilearn .row.description {
-    margin: 0 40px;
-    padding: 0
+  #tools .row:first-child {
+    justify-content: space-around;
+    width: 50%
   }
 
-  #logo_multilearn .column {
-    padding: 20px 40px;
-    text-align: center;
-    width: 50%;
-  }
-
-  #logo_multilearn .column:first-child img {
-    width: 30%;
-  }
-
-  #logo_multilearn .column:last-child img {
-    width: 45%;
-  }
-
-  #tools_multilearn .row {
-    width: 100%;
-  }
-
-  #overview_multilearn {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0;
-  }
-
-  #overview_multilearn .column.overview {
-    padding: 10px;
-  }
-
-  #context_multilearn, #tools_multilearn {
-    width: 30%;
-  }
-
-  #roletimeline_multilearn {
+  #tools .row:last-child {
+    justify-content: space-around;
     width: 40%;
-  }
-
-  #tools_multilearn .row.tools2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  #tools_multilearn .column {
-    padding-left: 0;
-    padding-right: 10px;
   }
 
   #summary_multilearn .img {
@@ -819,12 +787,14 @@ h3.anchor-h {
   }
 
   #summary_multilearn .column {
-    padding: 10px 15px;
+    padding: 10px 20px;
     width: 20%;
   }
 
-  #main_multilearn img {
-    width: 100%;
+  #summary_multilearn img {
+    padding-top: 0;
+    width: 90%;
+    max-width: 1200px;
   }
 
   #discover_multilearn .row, #define_multilearn .row, #develop_multilearn .row, #deliver_multilearn .row {
@@ -842,5 +812,27 @@ h3.anchor-h {
 
   #discover_multilearn img, #define_multilearn img, #develop_multilearn img, #deliver_multilearn img {
     width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .cover {
+    height: 50vh;
+  }
+
+  #overview_multilearn .container {
+    max-width: 1200px;
+  }
+
+  .conclusion {
+    max-width: 1200px;
+  }
+
+  #tools {
+    width: 75%;
+  }
+
+  #summary_multilearn h3, #discover_multilearn h3, #define_multilearn h3, #develop_multilearn h3, #deliver_multilearn h3, #conclusion_multilearn h3 {
+    max-width: 1200px;
   }
 }

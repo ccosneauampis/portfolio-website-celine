@@ -35,7 +35,7 @@
 
 <body id="multilearnpage">
   <header class="section" id="navigation">
-    <div class="container">
+    <div class="container" id="navbar">
       <div class="language">
         <div id="french" class="L-active">
           <div class="flag">
@@ -71,7 +71,16 @@
             <a href="multilearn.html">MultiLearn</a>
           </div>
         </div>
-        <a href="about.html">À Propos de</a>
+        <a href="about.html">Plus sur moi</a>
+        <div class="dropdown">
+          <button class="dropbtn">À Télécharger
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../files/portfolio_pdf_FR.pdf" target="_blank">Mon Portfolio</a>
+            <a href="../files/celine_cosneau-ampis_resume_FR.pdf" target="_blank">Mon CV</a>
+          </div>
+        </div>
         <a href="#contact">Contacts</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
@@ -81,41 +90,42 @@
 
   <main id="main_multilearn">
     <!--INTRO-->
-    <div class="section" id="intro_multilearn">
+    <div class="cover">
+      <source srcset="../img/multilearn/cover.png" media="(max-width:767px)">
+      <img src="../img/multilearn/cover@2x.png" alt="ExpertsNow">
+    </div>
+    <div class="section" id="overview_multilearn">
       <div class="container">
-        <h1 class="center">Une application d'apprentissage de vocabulaire : <span class="yellow">MultiLearn</span></h1>
-        <div class="center" id="casestudy_multilearn">
-          <a href="../files/casestudy_multilearn.pdf" class="button" target="_blank">Étude de cas détaillée (EN)</a>
+        <h1 class="row">MultiLearn</h1>
+        <p class="center">
+          Une application d'apprentissage de vocabulaire donnant les moyens à ses utilisateurs de mieux apprendre.
+        </p>
+        <div class="row" id="prototype_multilearn">
+          <a href="https://marvelapp.com/prototype/7e51iji/screen/73967214" class="button" target="_blank">Prototype MultiLearn <br>(non codé et en Anglais)</a>
         </div>
-        <div class="row" id="logo_multilearn">
-          <picture>
-            <source srcset="../img/multilearn/multilearn_S_FR.jpg" media="(max-width:767px)">
-            <img src="../img/multilearn/multilearn_L_FR.jpg" alt="MultiLearn">
-          </picture>
+        <div class="row" id="context">
+          <h3>Contexte</h3>
+          <p>
+            J'ai travaillé sur ce projet fictif lors de ma formation pour devenir une UX Designer, avec CareerFoundry.
+          </p>
         </div>
-        <div class="row" id="overview_multilearn">
-          <div class="column overview" id="context_multilearn">
-            <h4>Contexte</h4>
+        <div class="row" id="role_timeline">
+          <div class="column rt" id="role">
+            <h3>Rôle</h3>
             <p>
-              J'ai travaillé sur ce projet fictif lors de ma formation pour devenir une UX Designer, avec CareerFoundry.
+              J'étais l'unique UX Designer.
             </p>
           </div>
-          <div class="role timeline" id="roletimeline_multilearn">
-            <div class="column overview" id="role_multilearn">
-              <h4>Mon rôle</h4>
-              <p>
-                Unique UX designer
-              </p>
-            </div>
-            <div class="column overview" id="timeline_multilearn">
-              <h4>Période</h4>
-              <p>
-                2 mois
-              </p>
-            </div>
+          <div class="column rt" id="timeline">
+            <h3>Période</h3>
+            <p>
+              2 mois
+            </p>
           </div>
-          <div class="column overview" id="tools_multilearn">
-            <h4>Outils</h4>
+        </div>
+        <div class="column rt" id="tools_used">
+          <h3>Outils utilisés</h3>
+          <div class="row" id="tools">
             <div class="row">
               <!--Google Draw-->
               <div class="column">
@@ -142,11 +152,11 @@
               </div>
               <!--end Google Meet-->
             </div>
-            <!--TOOLS ROW CLOSED-->
+            <!--Close Row Tools-->
           </div>
-          <!-- TOOLS COLUMN CLOSED-->
+          <!--Close Column Tools-->
         </div>
-        <!--ROW CLOSED-->
+        <!--Close Row Role_Tools-->
       </div>
       <!--CONTAINER CLOSED-->
     </div>
@@ -156,8 +166,8 @@
     <div class="section" id="summary_multilearn">
       <div class="container">
         <h2 class="center">Quel a été mon processus de design ?</h2>
-        <div class="img">
-          <picture>
+        <div class="center">
+          <picture class="img">
             <source srcset="../img/multilearn/design_process.png" media="(max-width:767px)">
             <img src="../img/multilearn/design_process@2x.png" alt="Design_Process">
           </picture>
@@ -214,19 +224,21 @@
         <div class="row">
           <div class="column">
             <h4>Analyse de la Compétition</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/multilearn/competitive_analysis.png" media="(max-width:767px)">
                 <img src="../img/multilearn/competitive_analysis@2x.png" alt="Quizlet_WordUp_FluentU">
               </picture>
             </div>
+            <div class="conclusion">
             <p>
               Pour mieux comprendre les attentes des utilisateurs, J'ai <b>commencé par analyser 3 applications similaires à MultiLearn</b>.
             </p>
           </div>
+          </div>
           <div class="column">
             <h4>Interviews d'Utilisateurs</h4>
-            <div class="img">
+            <div class="center">
               <div class="img">
                 <picture>
                   <source srcset="../img/multilearn/users_interviews.png" media="(max-width:767px)">
@@ -234,10 +246,12 @@
                 </picture>
               </div>
             </div>
+            <div class="conclusion">
             <p>
               Avec les résultats de l'analyse de la compétition en tête, J'ai <b>interviewé 5 utilisateurs potentiels</b> afin d'empathiser avec eux et mieux comprendre leurs besoins et attentes.<br>J'ai <b>analysé les résultas</b> des précédentes
               interviews <b>via ce que les participants « Faisaient », « Ressentaient » and « Pensaient »</b>.
             </p>
+          </div>
           </div>
         </div>
         <!--ROW CLOSED-->
@@ -260,27 +274,31 @@
         <div class="row">
           <div class="column">
             <h4>Persona</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/multilearn/persona.jpg" media="(max-width:767px)">
                 <img src="../img/multilearn/persona@2x.jpg" alt="Personas">
               </picture>
             </div>
+            <div class="conclusion">
             <p>
               Grâce à l'analyse des résultats, j'ai pu <b>définir un type d'utilisateurs</b> qui pourraient potentiellement utiliser MultiLearn, sous la proto-persona d'Ellis.
             </p>
           </div>
+          </div>
           <div class="column">
             <h4>Flows d'utilisateur</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/multilearn/user_flows.jpg" media="(max-width:767px)">
                 <img src="../img/multilearn/user_flows@2x.jpg" alt="User_Flow">
               </picture>
             </div>
+            <div class="conclusion">
             <p>
               En ayant défini les besoins et buts principaux ainsi que les comportments des utilisateurs potentiels via la persona d'Ailin, <b>j'ai pu travaillé sur</b> comment organiser MultiLearn par <b>la création de flows d'utilisateur</b>.
             </p>
+          </div>
           </div>
         </div>
         <!--ROW CLOSED-->
@@ -301,15 +319,17 @@
         <div class="row">
           <div class="column">
             <h4>Wireframing & Prototypage</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/multilearn/wireframing.png" media="(max-width:767px)">
                 <img src="../img/multilearn/wireframing@2x.png" alt="Evolution_Wireframes">
               </picture>
             </div>
+            <div class="conclusion">
             <p>
               Grâce aux user flows, j'ai <b>designé les différents écrans de 3 fonctionnalités clés de MultiLearn</b> : S'enregistrer / Se connecter - Flashcards - Cours. Puis, j'ai <b>lié les écrans pour en faire un prototype intéractif</b>.
             </p>
+          </div>
           </div>
         </div>
         <!--ROW CLOSED-->
@@ -330,15 +350,17 @@
         <div class="row">
           <div class="column">
             <h4>Test d'Ergonomie et Mise en Application des Feedbacks</h4>
-            <div class="img">
+            <div class="center">
               <picture class="img">
                 <source srcset="../img/multilearn/usability_test.png" media="(max-width:767px)">
                 <img src="../img/multilearn/usability_test@2x.png" alt="Usability_Test_Multilearn">
               </picture>
             </div>
+            <div class="conclusion">
             <p>
               J'ai <b>animé 3 tests d'ergonomie </b> à distance <b>pour évaluer l'intuitivité de MultiLearn</b>. J'ai ensuite <b>analysé les résultats</b> en classant mes observations <b>en fonction des degrés de sévérité de Jacob Nielsen</b>.
             </p>
+          </div>
           </div>
         </div>
         <!--ROW CLOSED-->
@@ -354,9 +376,6 @@
             j'ai appris</b> pendant ce projet <b>et ce sur quoi je dois m'améliorer</b> en tant que designer.</h3>
       </div>
       <div class="container">
-        <div class="center" id="prototype_multilearn">
-          <a href="https://marvelapp.com/prototype/7e51iji/screen/73967214" class="button" target="_blank">Prototype</a>
-        </div>
         <div class="row">
           <h4>Étapes Suivantes</h4>
           <div class="conclusion">
