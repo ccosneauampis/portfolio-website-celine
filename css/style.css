@@ -255,15 +255,17 @@ a.menu:active {
 
 .logo {
   width: 50px;
-  margin-top: -20px;
-  margin-bottom: 5px;
+  margin-top: -15px;
+}
+
+.logo_no_phone {
+  display: none;
 }
 
 #navigation {
   background-color: #FFFDFA;
   margin: 0;
   display: inline-block;
-  box-shadow: 0px 1px 4px 0px rgba(184, 140, 70, 0.38);
   position: fixed;
   top: 0;
   width: 100%;
@@ -281,19 +283,21 @@ a.menu:active {
 .topnav a {
   float: left;
   display: block;
-  color: #181A18;
+  color: #747674;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 17px;
 }
 
 /* Add an active class to highlight the current page */
 #myTopnav .active {
   background-color: #FFFDFA;
-  color: #B88C46;
+  color: #181A18;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -311,10 +315,10 @@ a.menu:active {
 .dropdown .dropbtn {
   font-size: 17px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   border: none;
   outline: none;
-  color: #181A18;
+  color: #747674;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -334,7 +338,7 @@ a.menu:active {
 /* Style the links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: #181A18;
+  color: #747674;
   padding: 12px 16px;
   text-decoration: none;
   text-transform: capitalize;
@@ -343,15 +347,12 @@ a.menu:active {
   text-align: left;
 }
 
-/* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
-  color: #B88C46;
-}
-
-/* Add a grey background to dropdown links on hover */
+/* Add a background to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #D4BA90;
   color: #181A18;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
@@ -581,6 +582,17 @@ main {
     font-size: 18px;
   }
 
+  .logo_phone {
+    display: none;
+  }
+  .logo_no_phone {
+    display: inline-block;
+  }
+  .logo {
+    width: 200px;
+    margin-top: -17px;
+  }
+
   /* Index */
   #hero_en, #hero_fr {
     height: 89vh;
@@ -776,14 +788,13 @@ main {
     right: 30px;
   }
 
-  header {
-    text-align: unset;
+  .logo {
+    width: 230px;
+    margin-top: -20px;
   }
 
-  .logo {
-    width: 60px;
-    margin-top: -15px;
-    margin-bottom: 0px;
+  header {
+    text-align: unset;
   }
 
   h1 {
@@ -899,6 +910,10 @@ main {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .topnav {
+    margin-top: 0px;
   }
 
   h2 {
