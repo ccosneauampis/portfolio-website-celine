@@ -90,36 +90,37 @@
       <div class="container">
         <div class="row">
           <div class="name_picture">
-            <div class="name">
+            <div class="name col-lg-7">
               <h1>Hi,<br>I'm Céline,<br>a UX Designer.</h1>
+              <div class="prompts sup1024">
+                <div class="prompt">
+                  <a href="about.html" class="button contact">ABOUT ME</a>
+                </div>
+                <div class="prompt">
+                  <a href="#prompt" class="button contact">MY PROJECTS</a>
+                </div>
+              </div>
             </div>
-            <div class="picture">
+            <div class="picture col-lg-5">
               <picture>
                 <source srcset="img/me.png" media="(max-width:767px)">
                 <img src="img/me.png" alt="Profile Picture">
               </picture>
             </div>
           </div>
-          <div class="arrow_down">
-            <a href="#presentation">
-              <img src="img/prompt.svg" alt="Button_to_presentation">
-            </a>
+        </div>
+        <div class="prompts inf1024">
+          <div class="prompt">
+            <a href="about.html" class="button contact">ABOUT ME</a>
+          </div>
+          <div class="prompt">
+            <a href="#prompt" class="button contact">MY PROJECTS</a>
           </div>
         </div>
       </div>
       <!--HERO CONTAINER CLOSED-->
     </div>
     <!--HERO SECTION CLOSED-->
-
-    <!--PRESENTATION SECTION-->
-    <div class="section" id="presentation">
-      <!--PRESENTATION CONTAINER-->
-      <div class="container">
-
-      </div>
-      <!--PRESENTATION CONTAINER CLOSED-->
-    </div>
-    <!--PRESENTATION SECTION CLOSED-->
 
     <!--WORK-->
     <div class="section" id="work">
@@ -131,61 +132,69 @@
           <h2>My latest projects</h2>
         </div>
       </div>
-      <div class="container">
-        <!--EXPERTSNOW-->
-        <div class="row" id="expertsnow">
-          <div class="column col-md-6 col-lg-7">
-            <picture>
-              <source srcset="img/expertsnow.jpg" media="(max-width:767px)">
-              <img src="img/expertsnow@2x.jpg" alt="ExpertsNow">
-            </picture>
-          </div>
-          <div class="column col-md-6 col-lg-5">
-            <h3>ExpertsNow <br><span>UX - UI</span></h3>
+      <div class="container projects">
+        <!--ROW 1 PROJECTS-->
+        <div class="row">
+          <div class="column" id="EN">
+            <h6>
+              UX/UI
+            </h6>
+            <h5>
+              ExpertsNow
+            </h5>
             <p>
-              I worked on ExpertsNow, a responsive web app, during my training with CareerFoundry. <br>I was the sole UX/UI designer of this 6-month project.
+              Fictitious project : created a <b>web responsive app</b> for users to have access to experts of all professional fields.
             </p>
-            <a href="expertsnow.html" class="button"> View ExpertsNow Case Study</a>
+            <a href="expertsnow.html" class="button"> >> ExpertsNow Case Study</a>
+            <div class="project_pix">
+              <picture>
+                <source srcset="img/E_N.png" media="(max-width:767px)">
+                <img src="img/E_N@2x.png" alt="ExpertsNow">
+              </picture>
+            </div>
+          </div>
+          <div class="column" id="OP">
+            <h6>
+              UX/UI/FRONTEND
+            </h6>
+            <h5>
+              Portfolio-Website
+            </h5>
+            <p>
+              Fictitious project : created and coded a <b>web responsive website</b> to be used as my online Portfolio to display my projects.
+            </p>
+            <a href="myportfoliowebsite.html" class="button"> >> Portfolio-Website Case Study</a>
+            <div class="project_pix">
+              <picture>
+                <source srcset="img/O_P.png" media="(max-width:767px)">
+                <img src="img/O_P@2x.png" alt="My Portfolio-Website">
+              </picture>
+            </div>
           </div>
         </div>
-        <!--EXPERTSNOW CLOSED-->
-
-        <!--MY PORTFOLIO-WEBSITE-->
-        <div class="row" id="myportfoliowebsite">
-          <div class="column col-md-6 col-lg-7 col-xl-4">
-            <picture>
-              <source srcset="img/myportfoliowebsite.jpg" media="(max-width:767px)">
-              <img src="img/myportfoliowebsite@2x.jpg" alt="My Portfolio-Website">
-            </picture>
-          </div>
-          <div class="column col-md-6 col-lg-5">
-            <h3>My Portfolio-Website <br><span>UX - UI - Frontend</span></h3>
+        <!--END ROW 1 PROJECTS-->
+        <!--ROW 2 PROJECTS-->
+        <div class="row">
+          <div class="column" id="ML">
+            <h6>
+              UX
+            </h6>
+            <h5>
+              MultiLearn
+            </h5>
             <p>
-              During my training with CareerFoundry, I developed my own portfolio website.<br>I was the sole UX/UI Designer & Front-end Developer of this 3 weeks project.
+              Fictitious project : created a <b>native app</b> aiming to empower people to learn new vocabulary and/or new languages.
             </p>
-            <a href="myportfoliowebsite.html" class="button"> View Portfolio-Website Case Study</a>
+            <a href="multilearn.html" class="button"> >> MultiLearn Case Study</a>
+            <div class="project_pix">
+              <picture>
+                <source srcset="img/ML.png" media="(max-width:767px)">
+                <img src="img/ML@2x.png" alt="MultiLearn">
+              </picture>
+            </div>
           </div>
         </div>
-        <!--MY PORTFOLIO-WEBSITE CLOSED-->
-
-        <!--MULTILEARN-->
-        <div class="row" id="multilearn">
-          <div class="column col-md-6 col-lg-7">
-            <picture>
-              <source srcset="img/multilearn.jpg" media="(max-width:767px)">
-              <img src="img/multilearn@2x.jpg" alt="MultiLearn">
-            </picture>
-          </div>
-          <div class="column col-md-6 col-lg-5">
-            <h3>MultiLearn <br><span>UX</span></h3>
-            <p>
-              I worked on MultiLearn, a native vocabulary learning app, during my training with CareerFoundry. <br>I was the sole UX designer of this 2-month project.
-            </p>
-            <a href="multilearn.html" class="button"> View MultiLearn Case Study</a>
-          </div>
-        </div>
-        <!--MULTILEARN CLOSED-->
-
+        <!--END ROW 2 PROJECTS-->
       </div>
       <!--WORK CONTAINER CLOSED-->
     </div>
