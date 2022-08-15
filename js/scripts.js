@@ -14,7 +14,7 @@ navbar = document.getElementById("navigation");
 window.addEventListener('scroll', function() {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollTop > lastScrollTop) {
-    navbar.style.top = '-93px';
+    navbar.style.top = '-95px';
   } else {
     navbar.style.top = '0';
   }

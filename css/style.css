@@ -818,7 +818,7 @@ main {
 
   /* Index */
   #hero_en, #hero_fr {
-    height: 90vh;
+    height: 83vh;
   }
 
   .picture {
@@ -826,7 +826,7 @@ main {
   }
 
   #hero_en img, #hero_fr img {
-    width: 70%;
+    width: 60%;
   }
 
   /* About */
