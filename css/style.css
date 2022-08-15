@@ -504,14 +504,11 @@ main {
   align-items: flex-end;
   justify-content: flex-end;
   margin-top: 40px;
-  margin-right: -100px;
-  margin-bottom: -10px;
 }
 
-#ML .project_pix {
-  width: 60%;
-  margin-left: 50px;
-  margin-right: 0;
+#ML .project_pix, #EN .project_pix, #OP .project_pix {
+  width: 130%;
+  margin-left: -40px;
 }
 
 /* About */
@@ -689,10 +686,9 @@ main {
     margin-bottom: 40px;
   }
 
-  .project_pix {
+  #EN .project_pix, #OP .project_pix, #ML .project_pix{
     margin-top: 60px;
-    margin-right: -150px;
-    margin-bottom: -40px;
+    margin-left: -80px;
   }
 
   /* About */
@@ -829,6 +825,10 @@ main {
     width: 60%;
   }
 
+  #EN .project_pix, #OP .project_pix, #ML .project_pix{
+    margin-left: -95px;
+  }
+
   /* About */
   #title {
     padding-top: 10px;
@@ -948,6 +948,14 @@ main {
 
   #ML {
     width: 47.5%;
+  }
+
+  #EN .project_pix, #OP .project_pix {
+    margin-left: -53px;
+  }
+
+  #ML .project_pix{
+    margin-left: -65px;
   }
 
   /* About */
