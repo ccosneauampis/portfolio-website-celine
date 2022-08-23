@@ -617,7 +617,6 @@ main {
 #contact {
   display: block;
   padding: 25px 0;
-  border-top: 1px solid #B88C46;
 }
 
 .column.contact {
@@ -1033,6 +1032,10 @@ main {
     padding: 25px 20px 25px 50px;
   }
 
+  #values_personnality, #skills_tools {
+    border: 1px solid #F1E8DA;
+  }
+
   #personnality, #tools {
     padding: 25px 50px 25px 20px;
   }
@@ -1106,10 +1109,6 @@ main {
 
   #skills li {
     font-size: revert;
-  }
-
-  #values_personnality, #skills_tools {
-    border: 1px solid #F1E8DA;
   }
 
   /* Footer */
