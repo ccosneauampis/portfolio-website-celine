@@ -1,3 +1,4 @@
+//BURGER MENU TO NAVBAR W/ LABELS
 // Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -8,6 +9,7 @@ function myFunction() {
   }
 }
 
+//HIDDING NAVBAR
 // When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var lastScrollTop;
 navbar = document.getElementById("navigation");
@@ -21,7 +23,10 @@ window.addEventListener('scroll', function() {
   lastScrollTop = scrollTop;
 });
 
-//Back-to-top Arrow
+//SLIDING EFFECT TO COMPARE BEFORE/AFTER USABILITY TEST
+
+
+//BACK-TO-TOP ARROW
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
