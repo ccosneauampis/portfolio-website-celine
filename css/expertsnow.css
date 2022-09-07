@@ -625,7 +625,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #collab_design, #access_design {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -783,6 +783,10 @@ h1, h2, h3, h4, h5, h6, p {
     width: 95%;
   }
 
+  #expertsnowpage_FR .cont_col {
+    width: 100%;
+  }
+
   #process_img {
     text-align: center;
   }
@@ -929,7 +933,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 18px;
   }
 
-  .cont_col {
+  #expertsnowpage_EN .cont_col {
     width: 90%;
   }
 
@@ -1007,11 +1011,12 @@ h1, h2, h3, h4, h5, h6, p {
   }
 
   #tools .row {
-    width: 100%;
+    justify-content: space-between;
+    width: 80%;
   }
 
   .cont_col {
-    width: 95%;
+    width: 100%;
   }
 
   #wireframing_2 img {
